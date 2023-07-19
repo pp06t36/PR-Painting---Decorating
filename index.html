@@ -4,105 +4,395 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Paint.co</title>
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- custom scss -->
     <link rel="stylesheet" href="scss/main.scss">
   </head>
-  <body>    
-     <!-- top bar -->
-  <div class="container-fluid  d-none d-lg-block bg-warning">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-dark py-2 pe-3 border-end border-dark" href=""><i class="bi bi-telephone text-dark me-2"></i>0117 123456</a>
-                    <a class="text-dark py-2 px-3" href=""><i class="bi bi-envelope text-dark me-2"></i>info@email.com</a>
+  <style>
+    
+  </style>
+<body>    
+    <!-- top bar -->
+    <div class="container-fluid  d-none d-lg-block bg-warning">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-dark py-2 pe-3 border-end border-dark" href=""><i class="bi bi-telephone text-dark me-2"></i>0117 123456</a>
+                        <a class="text-dark py-2 px-3" href=""><i class="bi bi-envelope text-dark me-2"></i>info@email.com</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-6 text-center text-lg-end">
-                <div class="d-inline-flex align-items-center">
-                    <a class="text-body py-2 px-3 border-end border-dark" href="https://www.facebook.com/Prpaintinganddecorating">
-                        <i class="fab fa-facebook-f text-dark"></i>
-                    </a>
-                    <a class="text-body py-2 px-3 border-end border-dark" href="">
-                        <i class="fab fa-twitter text-dark"></i>
-                    </a>
-                    <a class="text-body py-2 px-3 border-end border-dark" href="">
-                        <i class="fab fa-linkedin-in text-dark"></i>
-                    </a>
-                    <a class="text-body py-2 px-3 border-end border-dark" href="">
-                        <i class="fab fa-instagram text-dark"></i>
-                    </a>
-                    <a class="text-body py-2 ps-3" href="">
-                        <i class="fab fa-youtube text-dark"></i>
-                    </a>
+                <div class="col-sm-6 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-body py-2 px-3 border-end border-dark" href="https://www.facebook.com/Prpaintinganddecorating">
+                            <i class="fab fa-facebook-f text-dark"></i>
+                        </a>
+                        <a class="text-body py-2 px-3 border-end border-dark" href="">
+                            <i class="fab fa-twitter text-dark"></i>
+                        </a>
+                        <a class="text-body py-2 px-3 border-end border-dark" href="">
+                            <i class="fab fa-linkedin-in text-dark"></i>
+                        </a>
+                        <a class="text-body py-2 px-3 border-end border-dark" href="">
+                            <i class="fab fa-instagram text-dark"></i>
+                        </a>
+                        <a class="text-body py-2 ps-3" href="">
+                            <i class="fab fa-youtube text-dark"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-  <!-- nav bar -->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark py-3 sticky-top" aria-label="Fourth navbar example">
-    <div class="container-fluid px-4"> 
-      <a class="navbar-brand" href="#">PAINT IT</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="true" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark py-3 sticky-top" aria-label="Fourth navbar example">
+        <div class="container-fluid px-4"> 
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.sm.jpg" alt="Logo" width="48" height="48" class="rounded-circle border border-white d-none d-sm-inline-block">
+                <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white d-inline-block d-sm-none">
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="navbar-collapse collapse show  text-end" id="navbarsExample04">
-        <ul class="navbar-nav me-auto mb-2 mb-sm-0 nav-underline">
-          <li class="nav-item">
-            <a class="nav-link active ml-5" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Services</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Home</a></li>
-              <li><a class="dropdown-item" href="#">About</a></li>
-              <li><a class="dropdown-item" href="#">Services</a></li>
+        <div class="navbar-collapse collapse show  text-end" id="navbarsExample04">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0 nav-underline">
+            <li class="nav-item">
+                <a class="nav-link active ml-5" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Services</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="#">About</a></li>
+                <li><a class="dropdown-item" href="#">Services</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Contact</a>
+            </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Contact</a>
-          </li>
-        </ul>
-        <div class="d-none d-lg-flex align-items-center ps-4 ml-auto">
-          <i class="fa fa-2x fa-mobile-alt text-secondary me-3"></i>
-          <div>
-              <h5 class="text-primary mb-1"><small>Call Now</small></h5>
-              <h6 class="text-light m-0">+012 345 6789</h6>
-          </div>
-      </div>
-      </div>
-    </div>
-  </nav>
+            <div class="d-none d-lg-flex align-items-center ps-4 ml-auto">
+            <i class="fa fa-2x fa-mobile-alt text-secondary me-3"></i>
+            <div>
+                <h5 class="text-primary mb-1"><small>Call Now</small></h5>
+                <h6 class="text-light m-0">+012 345 6789</h6>
+            </div>
+        </div>
+        </div>
+        </div>
+    </nav>
   <!-- Hero -->
   <div class="container-fluid bg-warning">
     <div class="container col-xxl-8 px-4 py-md-2 py-sm-4 ">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-2">
         <div class="col-10 col-sm-8 col-lg-6">
           <img src="https://getbootstrap.com/docs/5.3/examples/heroes/bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
         </div>
         <div class="col-lg-6">
           <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
           <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-          <div class=" gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary rounded-pill btn-lg px-4 me-md-2">Contact us</button>
-            <button type="button" class="btn btn-outline-secondary rounded-pill btn-lg px-4">Get a quite</button>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contact us</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Get a quote</button>
           </div>
         </div>
       </div>
     </div>
-</div>
-  <div class="container-fluid overflow-hidden px-0 mt-n5">
-    <img class="img-responsive " src="./img/bkYellowDrip.svg" style="width: 100%; height: auto;">
-  </div>
+    </div>
+    <div class="container-fluid overflow-hidden px-0 mt-n5">
+        <img class="img-responsive mt-n5 " src="./img/bkYellowDrip.svg" style="width: 100%; height: auto;">
+    </div>
+    <!-- About -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row gx-0 mb-3 mb-lg-0">
+                <div class="col-lg-6 my-lg-5 py-lg-5">
+                    <div class="about-start p-5 bg-primary">
+                        <h1 class="display-5 mb-4">Welcome To Painter</h1>
+                        <p>Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et, tempor sit sit diam amet et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor magna dolore erat amet </p>
+                        <a href="" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-6" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="./img/600x600.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-0">
+                <div class="col-lg-6" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100" src="./img/600x600.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 my-lg-5 py-lg-5">
+                    <div class="about-end bg-primary p-5 text-end">
+                        <h1 class="display-5 mb-4">Why Choose Us?</h1>
+                        <p>Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et, tempor sit sit diam amet et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor magna dolore erat amet </p>
+                        <a href="" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">Get A Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services -->
+    <div class="container px-4 py-5" id="custom-cards">
+        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+        <h1 class="display-5">Professional Painting Services</h1>
+        <hr class="w-25 mx-auto text-primary" style="opacity: 1;">
+        </div>
+        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 align-items-stretch g-4">
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./img/mika-baumeister-dowajknGKnE-unsplash.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="p-3 mt-5 mb-4 display-6 lh-1 fw-bold text-center text-light rounded-4">Free quotation</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                    <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>California</small>
+                </li>
+                <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>5d</small>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="p-3 mt-5 mb-4 display-6 lh-1 fw-bold text-center text-light rounded-4">Interior decoration</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                    <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>Earth</small>
+                </li>
+                <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>3d</small>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./img/thanos-pal-61TfyNIrWmI-unsplash.jpg'); background-position: bottom center;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Floor restoration</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                    <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>4d</small>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Exterior decoration</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                    <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>California</small>
+                </li>
+                <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>5d</small>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Traditional finishes</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                    <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>4d</small>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Mildew removal</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                    <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>4d</small>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center ">Sash window restoration</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                    <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>4d</small>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Airless spray painting</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                    <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>Earth</small>
+                </li>
+                <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>3d</small>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Special finishes</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                    <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>4d</small>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Wallpaper & wallcoverings</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                    <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>California</small>
+                </li>
+                <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>5d</small>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Furniture painting</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                    <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>California</small>
+                </li>
+                <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>5d</small>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image:  url('./img/domingo-alvarez-e-tUXzeXh_JU8-unsplash.jpg');">>
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">graffiti removal</h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                    <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                    <small>California</small>
+                </li>
+                <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                    <small>5d</small>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
     <!-- BS JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>

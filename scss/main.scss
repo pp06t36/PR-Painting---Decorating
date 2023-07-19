@@ -1,9 +1,33 @@
 // custom colors
 
-$glass-effect: hsla(0, 0%, 0%, 0.7); 
+$glass-effect: hsla(0, 0%, 0%, 0.7);
+
+.glass-effect {
+  background-color: $glass-effect;
+}
+
 
 
 //custom margin
+
+$my-80: (
+  y: (
+    margin-top: ($spacer * 5) !important,
+    margin-bottom: ($spacer * 5) !important
+  )
+);
+
+@mixin make-margin($margin, $axis) {
+  @each $prop, $value in $margin {
+    #{$prop}: $value;
+  }
+}
+
+@each $key, $value in $my-80 {
+  .m#{$key}-80 {
+    @include make-margin($value, $key);
+  }
+}
 
 $my-80: {
     margin-top: ($spacer * 5) !important;    // 16px * 5 = 80px
