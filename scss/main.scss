@@ -1,0 +1,11 @@
+// custom colors
+
+$glass-effect: hsla(0, 0%, 0%, 0.7); 
+
+
+//custom margin
+
+$my-80: {
+    margin-top: ($spacer * 5) !important;    // 16px * 5 = 80px
+    margin-bottom: ($spacer * 5) !important; // 16px * 5 = 80px
+  }
