@@ -6,30 +6,26 @@ $glass-effect: hsla(0, 0%, 0%, 0.7);
   background-color: $glass-effect;
 }
 
-
+#glass {
+  background-color: green;
+}
 
 //custom margin
-
 $my-80: (
   y: (
-    margin-top: ($spacer * 5) !important,
-    margin-bottom: ($spacer * 5) !important
+    margin-top: $spacer * 5,
+    margin-bottom: $spacer * 5
   )
 );
 
-@mixin make-margin($margin, $axis) {
+@mixin make-margin($margin) {
   @each $prop, $value in $margin {
-    #{$prop}: $value;
+    #{$prop}: $value !important;
   }
 }
 
 @each $key, $value in $my-80 {
   .m#{$key}-80 {
-    @include make-margin($value, $key);
+    @include make-margin($value);
   }
 }
-
-$my-80: {
-    margin-top: ($spacer * 5) !important;    // 16px * 5 = 80px
-    margin-bottom: ($spacer * 5) !important; // 16px * 5 = 80px
-  }

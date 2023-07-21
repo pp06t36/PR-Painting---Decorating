@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+    <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Paint.co</title>
@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- custom scss -->
     <link rel="stylesheet" href="scss/main.scss">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <style>
     
@@ -92,21 +94,21 @@
     </nav>
     <!-- Hero -->
     <div class="container-fluid bg-warning">
-    <div class="container col-xxl-8 px-4 py-md-2 py-sm-4 ">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-2">
-        <div class="col-10 col-sm-8 col-lg-6">
-          <img src="https://getbootstrap.com/docs/5.3/examples/heroes/bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        <div class="container col-xxl-8 px-4 py-md-2 py-sm-4 ">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
+                <div class="d-none d-lg-block col-10 col-sm-8 col-lg-6">
+                    <img src="https://getbootstrap.com/docs/5.3/examples/heroes/bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6 text-lg-left">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">PR Painting and & decorating </h1>
+                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contact us</button>
+                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Get a quote</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
-          <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contact us</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Get a quote</button>
-          </div>
-        </div>
-      </div>
-    </div>
     </div>
     <div class="container-fluid overflow-hidden px-0 mt-n1">
         <img class="img-responsive  " src="./img/bkYellowDrip.svg" style="width: 100%; height: auto;">
@@ -398,7 +400,7 @@
         <div class="container py-5">
             <div class="row g-0 justify-content-end">
                 <div class="col-lg-8">
-                    <div class="bg-white text-center p-5">
+                    <div class="glass-effect bg-white text-center p-5">
                         <h1 class="mb-4">Request a Quote</h1>
                         <form>
                             <div class="row g-3">
@@ -451,799 +453,482 @@
             </div>
         </div>
     </div>
-  <!-- Testimonials responsive -->
-  <div class="container-fluid px-4 py-5">
-    <div class="row bg-primary h-100">
-    <div class="col-9">
-        <!-- Second Column Content with Carousel -->
-        <div id="carouselExampleCaptions" class="carousel slide carousel-fade text-dark">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
-        </div>
-        <div class="carousel-inner">
-            <!-- card one -->
-            <div class="carousel-item active">
-                <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                <!-- x-small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-block d-sm-none"><h5>Abby</h5>
-                    <p>Gemma and Becky are a credit to their profession.</p></span>
+    <!-- Testimonials responsive -->
+    <div class="container-fluid px-4 py-5">
+        <div class="row bg-primary h-100">
+            <div class="col-9">
+                <!-- Second Column Content with Carousel -->
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade text-dark">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="14" aria-label="Slide 15"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="15" aria-label="Slide 16"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="16" aria-label="Slide 17"></button>
+                    </div>
+                    <div class="carousel-inner">
+                    <!-- card one -->
+                    <div class="carousel-item active">
+                        <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
+                        <!-- x-small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-block d-sm-none"><h5>Abby</h5>
+                            <p>
+                                <i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>
+                                    Gemma and Becky are a credit to their profession.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p></span>
+                        </div>
+                        <!-- small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-none d-sm-block">
+                                <h5>Abby Bale</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Brilliant job of decorating our lounge, hallway and stairs. Then coming back to fix the mess my husband made of putting on some curtain ties.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- medium & large-->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-block">
+                                <h5>Abby Bale</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Brilliant job of decorating our lounge, hallway and stairs. Then coming back to fix the mess my husband made of putting on some curtain ties. Gemma and Becky are a credit to their profession and lovely people to meet.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- card two -->
+                    <div class="carousel-item">
+                        <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
+                        <!-- x-small -->
+                        <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                            <span class="d-block d-sm-none"><h5>Abbie</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Gemma and Becky are great at what they do ❤️❤️<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- small -->
+                        <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                            <span class="d-none d-sm-block"><h5>Abbie Abbie</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Gemma and Becky are great at what they do ❤️❤️<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- card three -->
+                    <div class="carousel-item">
+                        <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
+                        <!-- x-small -->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-block d-sm-none"><h5>Savannah</h5>
+                            <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Brilliant job. Would recommend!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p></span>
+                        </div>
+                        <!-- small -->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-none d-sm-block"><h5>Savannah Bee</h5>
+                            <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>First class job from Gemma and Becky from quote to finish, professional, quick, friendly and tidy. A top class job. Would recommend! Thanks.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p></span>
+                        </div>
+                        <!-- medium & large-->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-block"><h5>Savannah Bee</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Absolutely first class job from Gemma and Becky from quote to finish, professional, quick, friendly and tidy. Cannot fault their work, great communications and a top class job. Would recommend! Thanks.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p></span>
+                        </div>
+                    </div>
+                    <!-- card four -->
+                    <div class="carousel-item">
+                        <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
+                        <!-- x-small -->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-block d-sm-none">
+                                <h5>Lara</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Becky and Gemma have done such a fantastic job.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- small -->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-none d-sm-block">
+                                <h5>Lara Maley</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Becky and Gemma have done such a fantastic job for us. They really went above and beyond. I couldn't recommend them highly enough. Lovely people to have in your home.
+                                <i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- medium & large-->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-block">
+                                <h5>Lara Maley</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Becky and Gemma have done such a fantastic job for us. They really went above and beyond. They decorated our new loft conversion, study, bedroom and full hall stairs and landing. We are made up with the end result. 
+                                    I couldn't recommend them highly enough. They were always on time, they fitted us in super quickly, tidied up immaculately every day and we're just generally lovely people to have in your home. 
+                                <i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Card five -->
+                    <div class="carousel-item">
+                        <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
+                        <!-- x-small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-block d-sm-none">
+                                <h5>Adele</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>These decorators are seriously <span class="text-nowrap"><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i></span>.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-none d-sm-block">
+                                <h5>Adele Worrall</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>These decorators are seriously <span class="text-nowrap"><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i>.</span> Not a trace of them being here apart from our lovely freshly decorated rooms.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- medium & large-->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-block">
+                                <h5>Adele Worrall</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>These decorators are seriously <span class="text-nowrap"><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i>.</span>. Decorated 2 rooms in 2 days and were so professional. Not a trace of them being here apart from our lovely freshly decorated rooms.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Card six -->
+                    <div class="carousel-item">
+                        <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
+                        <!-- x-small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-block d-sm-none">
+                                <h5>Pip and Barry</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>I'm happy with the kitchen.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-none d-sm-block">
+                                <h5>Pip and Barry</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Thanks so much. I'm happy with the kitchen. It's so fresh and new.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- medium & large-->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-block">
+                                <h5>Pip and Barry</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Thanks so much. I'm happy with the kitchen. It's so fresh and new. Thanks for tidying up so well.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Card seven -->
+                    <div class="carousel-item">
+                        <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
+                        <!-- x-small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-block d-sm-none">
+                                <h5>Lesley Glover</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic job, brilliant decorators<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-none d-sm-block">
+                                <h5>Lesley Glover</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic job, brilliant decorators<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- medium & large-->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-block">
+                                <h5>Lesley Glover</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic job, brilliant decorators<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Card eight -->
+                    <div class="carousel-item">
+                        <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
+                        <!-- x-small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-block d-sm-none">
+                                <h5>Courtney</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Hard workers. 🙂 Highly recommended<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-none d-sm-block">
+                                <h5>Courtney Haskins</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Such hard workers who are quite evidently good.🙂 Highly recommended<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- medium & large-->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-block">
+                                <h5>Courtney Haskins</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Such hard workers who are quite evidently good at what they do and a pleasure to have around which is always a bonus 🙂 highly recommended<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Card nine -->
+                    <div class="carousel-item">
+                        <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
+                        <!-- x-small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-block d-sm-none">
+                                <h5>Billie</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>5 stars. Fantastic job. Thank you x<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-none d-sm-block">
+                                <h5>Billie Silk</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>5 stars. Fantastic job. Thank you x<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- medium & large-->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-block">
+                                <h5>Billie Silk</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>5 stars. Fantastic job. Thank you x<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Card ten -->
+                    <div class="carousel-item">
+                        <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
+                        <!-- x-small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-block d-sm-none">
+                                <h5>Jo </h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Absolutely fantastic job<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-none d-sm-block">
+                                <h5>Jo McWhirter</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Absolutely fantastic job, a real pleasure to have in the house!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- medium & large-->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-block">
+                                <h5>Jo McWhirter</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Gemma did an absolutely fantastic job, she worked extraordinarily hard and was a real pleasure to have in the house!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Card eleven -->
+                    <div class="carousel-item">
+                        <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
+                        <!-- x-small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-block d-sm-none">
+                                <h5>Jennifer</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Really impressed with their professionalism!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-none d-sm-block">
+                                <h5>Jennifer Stokes </h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Really impressed with their professionalism! No hesitation at all in recommending them. Many thanks ladies!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- medium & large-->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-block">
+                                <h5>Jennifer Stokes</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Gemma and Becky have done a fabulous job on our hall/stairs/landing. Really impressed with their professionalism! No hesitation at all in recommending them. Many thanks ladies!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Card twelve -->
+                    <div class="carousel-item">
+                        <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
+                        <!-- x-small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-block d-sm-none">
+                                <h5>Becky</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>They did a great job<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-none d-sm-block">
+                                <h5>Becky Marshall</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>They did a great job, painstakingly removing the wallpaper repairing our dodgy walls and making the place look great. Would definitely use them again<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- medium & large-->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-block">
+                                <h5>Becky Marshall</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Gemma and Becky have just finished decorating our hall and stairs, they did a great job, painstakingly removing the wallpaper repairing our dodgy walls and making the place look great.  They were lovely to have around and cleaned up so well after themselves each day that they sometimes left it cleaner than they found it! Would definitely use them again<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Card thirteen -->
+                    <div class="carousel-item">
+                        <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
+                        <!-- x-small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-block d-sm-none">
+                                <h5>Fran</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>The place looks great.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-none d-sm-block">
+                                <h5>Fran Kellett</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fab job on our hall, stairs and bedroom. The place looks great. They always kept in touch. Thankyou!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- medium & large-->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-block">
+                                <h5>Fran Kellett</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Gemma and Becky have done a fab job on our hall, stairs and bedroom. The place looks great. They always kept in touch, put up with my kids and did a fab job.  Thankyou!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Card fourteen -->
+                    <div class="carousel-item">
+                        <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
+                        <!-- x-small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-block d-sm-none">
+                                <h5>Jenny</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>The quality of their work is excellent<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-none d-sm-block">
+                                <h5>Jenny Clarke</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>The quality of their work is excellent and they work quickly and efficiently, they clean up every day and they were lovely to have around the house.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- medium & large-->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-block">
+                                <h5>Jenny Clarke</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Gemma and Becky just painted our new loft room and hallway. The quality of their work is excellent and they work quickly and efficiently, they clean up every day and they were lovely to have around the house - quiet and unobtrusive and they were really nice to my two young children!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Card fifteen -->
+                    <div class="carousel-item">
+                        <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
+                        <!-- x-small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-block d-sm-none">
+                                <h5>Grainne</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic end results.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-none d-sm-block">
+                                <h5>Grainne Odea-Jones</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic end results, hallway looks amazing, reasonable rates.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- medium & large-->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-block">
+                                <h5>Grainne Odea-Jones</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Lovely people, fantastic end results, hallway looks amazing, reasonable rates.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Card sixteen -->
+                    <div class="carousel-item">
+                        <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
+                        <!-- x-small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-block d-sm-none">
+                                <h5>Fey</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Great finish.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-none d-sm-block">
+                                <h5>Fey Caroline Lucy</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Lovely ladies. Fast, tidy, clean workers. Great finish.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- medium & large-->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-block">
+                                <h5>Fey Caroline Lucy </h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Lovely ladies. Fast, tidy, clean workers. Great finish. Happy days!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Card seventeen -->
+                    <div class="carousel-item">
+                        <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
+                        <!-- x-small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-block d-sm-none">
+                                <h5>John</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic service<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-none d-sm-block">
+                                <h5>John Duffin</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic service<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- medium & large-->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-block">
+                                <h5>John Duffin</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic service<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Card template -->
+                    <div class="carousel-item">
+                        <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
+                        <!-- x-small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-block d-sm-none">
+                                <h5>...</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>...<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- small -->
+                        <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-none d-sm-block">
+                                <h5>...</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>...<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                        <!-- medium & large-->
+                        <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
+                            <span class="d-none d-md-block">
+                                <h5>...</h5>
+                                <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>...<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
+                            </span>
+                        </div>
+                    </div>
                 </div>
-                <!-- small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-none d-sm-block">
-                        <h5>Abby Bale</h5>
-                        <p>Brilliant job of decorating our lounge, hallway and stairs. Then coming back to fix the mess my husband made of putting on some curtain ties.</p>
-                    </span>
-                </div>
-                <!-- medium & large-->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-block">
-                        <h5>Abby Bale</h5>
-                        <p>Brilliant job of decorating our lounge, hallway and stairs. Then coming back to fix the mess my husband made of putting on some curtain ties. Gemma and Becky are a credit to their profession and lovely people to meet.</p>
-                    </span>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <!-- card two -->
-            <div class="carousel-item">
-                <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                <!-- x-small -->
-                <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
-                    <span class="d-block d-sm-none"><h5>Abbie</h5>
-                        <p>Gemma and Becky are great at what they do ❤️❤️</p>
-                    </span>
-                </div>
-                <!-- small -->
-                <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
-                    <span class="d-none d-sm-block"><h5>Abbie Abbie</h5>
-                        <p>Gemma and Becky are great at what they do ❤️❤️</p>
-                    </span>
-                </div>
-            </div>
-            <!-- card three -->
-            <div class="carousel-item">
-                <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                <!-- x-small -->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-block d-sm-none"><h5>Savannah</h5>
-                    <p>Brilliant job. Would recommend!</p></span>
-                </div>
-                <!-- small -->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-none d-sm-block"><h5>Savannah Bee</h5>
-                    <p>First class job from Gemma and Becky from quote to finish, professional, quick, friendly and tidy. A top class job. Would recommend! Thanks.</p></span>
-                </div>
-                <!-- medium & large-->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-block"><h5>Savannah Bee</h5>
-                        <p>Absolutely first class job from Gemma and Becky from quote to finish, professional, quick, friendly and tidy. Cannot fault their work, great communications and a top class job. Would recommend! Thanks.</p></span>
-                </div>
-            </div>
-            <!-- card four -->
-            <div class="carousel-item">
-                <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                <!-- x-small -->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-block d-sm-none">
-                        <h5>Lara</h5>
-                        <p>Becky and Gemma have done such a fantastic job.</p>
-                    </span>
-                </div>
-                <!-- small -->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-none d-sm-block">
-                        <h5>Lara Maley</h5>
-                        <p>Becky and Gemma have done such a fantastic job for us. They really went above and beyond. I couldn't recommend them highly enough. Lovely people to have in your home.
-                        </p>
-                    </span>
-                </div>
-                <!-- medium & large-->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-block">
-                        <h5>Lara Maley</h5>
-                        <p>Becky and Gemma have done such a fantastic job for us. They really went above and beyond. They decorated our new loft conversion, study, bedroom and full hall stairs and landing. We are made up with the end result. 
-                            I couldn't recommend them highly enough. They were always on time, they fitted us in super quickly, tidied up immaculately every day and we're just generally lovely people to have in your home. 
-                        </p>
-                    </span>
-                </div>
-            </div>
-            <!-- Card five -->
-            <div class="carousel-item">
-                <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                <!-- x-small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-block d-sm-none">
-                        <h5>Adele</h5>
-                        <p>These decorators are seriously <span class="text-nowrap"><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i></span>.</p>
-                    </span>
-                </div>
-                <!-- small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-none d-sm-block">
-                        <h5>Adele Worrall</h5>
-                        <p>These decorators are seriously <span class="text-nowrap"><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i>.</span> Not a trace of them being here apart from our lovely freshly decorated rooms.</p>
-                    </span>
-                </div>
-                <!-- medium & large-->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-block">
-                        <h5>Adele Worrall</h5>
-                        <p>These decorators are seriously <span class="text-nowrap"><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i>.</span>. Decorated 2 rooms in 2 days and were so professional. Not a trace of them being here apart from our lovely freshly decorated rooms.</p>
-                    </span>
-                </div>
-            </div>
-            <!-- Card six -->
-            <div class="carousel-item">
-                <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                <!-- x-small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-block d-sm-none">
-                        <h5>Pip and Barry</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>I'm happy with the kitchen.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                    </span>
-                </div>
-                <!-- small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-none d-sm-block">
-                        <h5>Pip and Barry</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Thanks so much. I'm happy with the kitchen. It's so fresh and new.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                    </span>
-                </div>
-                <!-- medium & large-->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-block">
-                        <h5>Pip and Barry</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Thanks so much. I'm happy with the kitchen. It's so fresh and new. Thanks for tidying up so well.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                    </span>
-                </div>
-            </div>
-
-            <!-- Card seven -->
-            <div class="carousel-item">
-                <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                <!-- x-small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-block d-sm-none">
-                        <h5>Lesley Glover</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic job, brilliant decorators</p>
-                    </span>
-                </div>
-                <!-- small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-none d-sm-block">
-                        <h5>Lesley Glover</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic job, brilliant decorators</p>
-                    </span>
-                </div>
-                <!-- medium & large-->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-block">
-                        <h5>Lesley Glover</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic job, brilliant decorators</p>
-                    </span>
-                </div>
-            </div>
-
-            <!-- Card eight -->
-            <div class="carousel-item">
-                <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                <!-- x-small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-block d-sm-none">
-                        <h5>Courtney</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Hard workers. 🙂 Highly recommended</p>
-                    </span>
-                </div>
-                <!-- small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-none d-sm-block">
-                        <h5>Courtney Haskins</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Such hard workers who are quite evidently good.🙂 Highly recommended</p>
-                    </span>
-                </div>
-                <!-- medium & large-->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-block">
-                        <h5>Courtney Haskins</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Such hard workers who are quite evidently good at what they do and a pleasure to have around which is always a bonus 🙂 highly recommended</p>
-                    </span>
-                </div>
-            </div>
-
-            <!-- Card nine -->
-            <div class="carousel-item">
-                <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                <!-- x-small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-block d-sm-none">
-                        <h5>Billie</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>5 stars. Fantastic job. Thank you x</p>
-                    </span>
-                </div>
-                <!-- small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-none d-sm-block">
-                        <h5>Billie Silk</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>5 stars. Fantastic job. Thank you x</p>
-                    </span>
-                </div>
-                <!-- medium & large-->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-block">
-                        <h5>Billie Silk</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>5 stars. Fantastic job. Thank you x</p>
-                    </span>
-                </div>
-            </div>
-
-            <!-- Card ten -->
-            <div class="carousel-item">
-                <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                <!-- x-small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-block d-sm-none">
-                        <h5>Jo </h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Absolutely fantastic job</p>
-                    </span>
-                </div>
-                <!-- small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-none d-sm-block">
-                        <h5>Jo McWhirter</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Absolutely fantastic job, a real pleasure to have in the house!</p>
-                    </span>
-                </div>
-                <!-- medium & large-->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-block">
-                        <h5>Jo McWhirter</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Gemma did an absolutely fantastic job, she worked extraordinarily hard and was a real pleasure to have in the house!</p>
-                    </span>
-                </div>
-            </div>
-            <!-- Card eleven -->
-            <div class="carousel-item">
-                <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                <!-- x-small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-block d-sm-none">
-                        <h5>Jennifer</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Really impressed with their professionalism!</p>
-                    </span>
-                </div>
-                <!-- small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-none d-sm-block">
-                        <h5>Jennifer Stokes </h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Really impressed with their professionalism! No hesitation at all in recommending them. Many thanks ladies!</p>
-                    </span>
-                </div>
-                <!-- medium & large-->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-block">
-                        <h5>Jennifer Stokes</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Gemma and Becky have done a fabulous job on our hall/stairs/landing. Really impressed with their professionalism! No hesitation at all in recommending them. Many thanks ladies!</p>
-                    </span>
-                </div>
-            </div>
-            <!-- Card eleven -->
-            <div class="carousel-item">
-                <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                <!-- x-small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-block d-sm-none">
-                        <h5>Becky</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>They did a great job</p>
-                    </span>
-                </div>
-                <!-- small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-none d-sm-block">
-                        <h5>Becky Marshall</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>They did a great job, painstakingly removing the wallpaper repairing our dodgy walls and making the place look great. Would definitely use them again</p>
-                    </span>
-                </div>
-                <!-- medium & large-->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-block">
-                        <h5>Becky Marshall</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Gemma and Becky have just finished decorating our hall and stairs, they did a great job, painstakingly removing the wallpaper repairing our dodgy walls and making the place look great.  They were lovely to have around and cleaned up so well after themselves each day that they sometimes left it cleaner than they found it! Would definitely use them again</p>
-                    </span>
-                </div>
-            </div>
-            <!-- Card eleven -->
-            <div class="carousel-item">
-                <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                <!-- x-small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-block d-sm-none">
-                        <h5>Fran</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>The place looks great.</p>
-                    </span>
-                </div>
-                <!-- small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-none d-sm-block">
-                        <h5>Fran Kellett</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fab job on our hall, stairs and bedroom. The place looks great. They always kept in touch. Thankyou!</p>
-                    </span>
-                </div>
-                <!-- medium & large-->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-block">
-                        <h5>Fran Kellett</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Gemma and Becky have done a fab job on our hall, stairs and bedroom. The place looks great. They always kept in touch, put up with my kids and did a fab job.  Thankyou!</p>
-                    </span>
-                </div>
-            </div>
-            <!-- Card eleven -->
-            <div class="carousel-item">
-                <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                <!-- x-small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-block d-sm-none">
-                        <h5>...</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>...</p>
-                    </span>
-                </div>
-                <!-- small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-none d-sm-block">
-                        <h5>...</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>...</p>
-                    </span>
-                </div>
-                <!-- medium & large-->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-block">
-                        <h5>Jenny Clarke</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Gemma and Becky just painted our new loft room and hallway. The quality of their work is excellent and they work quickly and efficiently, they clean up every day and they were lovely to have around the house - quiet and unobtrusive and they were really nice to my two young children!</p>
-                    </span>
-                </div>
-            </div>
-            <!-- Card eleven -->
-            <div class="carousel-item">
-                <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                <!-- x-small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-block d-sm-none">
-                        <h5>Grainne</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic end results.</p>
-                    </span>
-                </div>
-                <!-- small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-none d-sm-block">
-                        <h5>Grainne Odea-Jones</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic end results, hallway looks amazing, reasonable rates.</p>
-                    </span>
-                </div>
-                <!-- medium & large-->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-block">
-                        <h5>Grainne Odea-Jones</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Lovely people, fantastic end results, hallway looks amazing, reasonable rates.</p>
-                    </span>
-                </div>
-            </div>
-            <!-- Card eleven -->
-            <div class="carousel-item">
-                <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                <!-- x-small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-block d-sm-none">
-                        <h5>Fey</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Great finish.</p>
-                    </span>
-                </div>
-                <!-- small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-none d-sm-block">
-                        <h5>Fey Caroline Lucy</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Lovely ladies. Fast, tidy, clean workers. Great finish.</p>
-                    </span>
-                </div>
-                <!-- medium & large-->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-block">
-                        <h5>Fey Caroline Lucy </h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Lovely ladies. Fast, tidy, clean workers. Great finish. Happy days!</p>
-                    </span>
-                </div>
-            </div>
-            <!-- Card eleven -->
-            <div class="carousel-item">
-                <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                <!-- x-small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-block d-sm-none">
-                        <h5>John</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic service</p>
-                    </span>
-                </div>
-                <!-- small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-none d-sm-block">
-                        <h5>John Duffin</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic service</p>
-                    </span>
-                </div>
-                <!-- medium & large-->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-block">
-                        <h5>John Duffin</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic service</p>
-                    </span>
-                </div>
-            </div>
-            <!-- Card template -->
-            <div class="carousel-item">
-                <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                <!-- x-small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-block d-sm-none">
-                        <h5>...</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>...</p>
-                    </span>
-                </div>
-                <!-- small -->
-                <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-none d-sm-block">
-                        <h5>...</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>...</p>
-                    </span>
-                </div>
-                <!-- medium & large-->
-                <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                    <span class="d-none d-md-block">
-                        <h5>...</h5>
-                        <p><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>...</p>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-        </div>
-        <!-- End of Second Column Content with Carousel -->
-    </div>
-    </div>
-</div>
-
-                <!-- Card seven -->
-                <div class="carousel-item">
-                    <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                    <!-- x-small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-block d-sm-none">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-none d-sm-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- medium & large-->
-                    <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Card eight -->
-                <div class="carousel-item">
-                    <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                    <!-- x-small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-block d-sm-none">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-none d-sm-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- medium & large-->
-                    <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Card nine -->
-                <div class="carousel-item">
-                    <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                    <!-- x-small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-block d-sm-none">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-none d-sm-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- medium & large-->
-                    <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Card ten -->
-                <div class="carousel-item">
-                    <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                    <!-- x-small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-block d-sm-none">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-none d-sm-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- medium & large-->
-                    <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                </div>
-                <!-- Card eleven -->
-                <div class="carousel-item">
-                    <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                    <!-- x-small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-block d-sm-none">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-none d-sm-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- medium & large-->
-                    <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                </div>
-                <!-- Card eleven -->
-                <div class="carousel-item">
-                    <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                    <!-- x-small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-block d-sm-none">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-none d-sm-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- medium & large-->
-                    <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                </div>
-                <!-- Card eleven -->
-                <div class="carousel-item">
-                    <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                    <!-- x-small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-block d-sm-none">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-none d-sm-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- medium & large-->
-                    <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                </div>
-                <!-- Card eleven -->
-                <div class="carousel-item">
-                    <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                    <!-- x-small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-block d-sm-none">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-none d-sm-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- medium & large-->
-                    <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                </div>
-                <!-- Card eleven -->
-                <div class="carousel-item">
-                    <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                    <!-- x-small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-block d-sm-none">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-none d-sm-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- medium & large-->
-                    <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                </div>
-                <!-- Card eleven -->
-                <div class="carousel-item">
-                    <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                    <!-- x-small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-block d-sm-none">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-none d-sm-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- medium & large-->
-                    <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                </div>
-                <!-- Card eleven -->
-                <div class="carousel-item">
-                    <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                    <!-- x-small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-block d-sm-none">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-none d-sm-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- medium & large-->
-                    <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                </div>
-                <!-- Card template -->
-                <div class="carousel-item">
-                    <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                    <!-- x-small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-block d-sm-none">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- small -->
-                    <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-none d-sm-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                    <!-- medium & large-->
-                    <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                        <span class="d-none d-md-block">
-                            <h5>...</h5>
-                            <p>...</p>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            </div>
-            <!-- End of Second Column Content with Carousel -->
-        </div>
         </div>
     </div>
-
     <!-- Footer -->
     <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
