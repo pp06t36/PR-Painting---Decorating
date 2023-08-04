@@ -1,1033 +1,1090 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Paint.co</title>
     <!-- font awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous" />
     <!-- custom scss -->
-    <link rel="stylesheet" href="scss/main.scss">
+    <link rel="stylesheet" href="scss/main.scss" />
     <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Carousel -->
+    <link href="carousel.css" rel="stylesheet" />
   </head>
-  <style>
-
-    @media (max-width: 420px) { 
-        .display-5 {
-            font-size: 1.25rem;
-            font-weight: 300;
-            line-height: 1.2;
-        }
-
-        .fs-4 {
-            font-size: 1rem !important
-        }
-
-        .carousel-caption {
-            padding-bottom: 5px;
-        }
-    }
-
-    #servicesOne {
-        background-image: none;
-    }
-
-    #servicesOne:hover {
-        background-image: url('./img/logo.sm.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    
-  </style>
-<body>    
+  <style></style>
+  <body>
     <!-- top bar -->
-    <div class="container-fluid  d-none d-lg-block bg-warning">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 text-center text-lg-start mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center">
-                        <a class="text-dark py-2 pe-3 border-end border-dark" href=""><i class="bi bi-telephone text-dark me-2"></i>0117 123456</a>
-                        <a class="text-dark py-2 px-3" href=""><i class="bi bi-envelope text-dark me-2"></i>info@email.com</a>
-                    </div>
-                </div>
-                <div class="col-sm-6 text-center text-lg-end">
-                    <div class="d-inline-flex align-items-center">
-                        <a class="text-body py-2 px-3 border-end border-dark" href="https://www.facebook.com/Prpaintinganddecorating">
-                            <i class="fab fa-facebook-f text-dark"></i>
-                        </a>
-                        <a class="text-body py-2 px-3 border-end border-dark" href="">
-                            <i class="fab fa-twitter text-dark"></i>
-                        </a>
-                        <a class="text-body py-2 px-3 border-end border-dark" href="">
-                            <i class="fab fa-linkedin-in text-dark"></i>
-                        </a>
-                        <a class="text-body py-2 px-3 border-end border-dark" href="">
-                            <i class="fab fa-instagram text-dark"></i>
-                        </a>
-                        <a class="text-body py-2 ps-3" href="">
-                            <i class="fab fa-youtube text-dark"></i>
-                        </a>
-                    </div>
-                </div>
+    <div class="container-fluid d-none d-lg-block bg-warning">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 text-center text-lg-start mb-2 mb-lg-0">
+            <div class="d-inline-flex align-items-center">
+              <a class="text-dark py-2 pe-3 border-end border-dark" href=""
+                ><i class="bi bi-telephone text-dark me-2"></i>0117 123456</a
+              >
+              <a class="text-dark py-2 px-3" href=""
+                ><i class="bi bi-envelope text-dark me-2"></i>info@email.com</a
+              >
             </div>
+          </div>
+          <div class="col-sm-6 text-center text-lg-end">
+            <div class="d-inline-flex align-items-center">
+              <a
+                class="text-body py-2 px-3 border-end border-dark"
+                href="https://www.facebook.com/Prpaintinganddecorating">
+                <i class="fab fa-facebook-f text-dark"></i>
+              </a>
+              <a class="text-body py-2 px-3 border-end border-dark" href="">
+                <i class="fab fa-twitter text-dark"></i>
+              </a>
+              <a class="text-body py-2 px-3 border-end border-dark" href="">
+                <i class="fab fa-linkedin-in text-dark"></i>
+              </a>
+              <a class="text-body py-2 px-3 border-end border-dark" href="">
+                <i class="fab fa-instagram text-dark"></i>
+              </a>
+              <a class="text-body py-2 ps-3" href="">
+                <i class="fab fa-youtube text-dark"></i>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark py-3 sticky-top" aria-label="Fourth navbar example">
-        <div class="container-fluid px-4"> 
-            <a class="navbar-brand" href="#">
-                <img src="./img/logo.sm.jpg" alt="Logo" width="48" height="48" class="rounded-circle border border-white d-none d-sm-inline-block">
-                <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white d-inline-block d-sm-none">
-            </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="true" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav
+      class="navbar navbar-expand-sm navbar-dark bg-dark py-3 sticky-top"
+      aria-label="Fourth navbar example">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./img/logo.sm.jpg"
+            alt="Logo"
+            width="48"
+            height="48"
+            class="rounded-circle border border-white d-none d-sm-inline-block" />
+          <img
+            src="./img/logo.sm.jpg"
+            alt="Logo"
+            width="32"
+            height="32"
+            class="rounded-circle border border-white d-inline-block d-sm-none" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample04"
+          aria-controls="navbarsExample04"
+          aria-expanded="true"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="navbar-collapse collapse show  text-end" id="navbarsExample04">
-            <ul class="navbar-nav me-auto mb-2 mb-sm-0 nav-underline">
+        <div
+          class="navbar-collapse collapse show text-end"
+          id="navbarsExample04">
+          <ul class="navbar-nav me-auto mb-2 mb-sm-0 nav-underline">
             <li class="nav-item">
-                <a class="nav-link active ml-5" aria-current="page" href="#">Home</a>
+              <a class="nav-link active ml-5" aria-current="page" href="#"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link">Services</a>
+              <a class="nav-link">Services</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-                <ul class="dropdown-menu">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Pages</a
+              >
+              <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Home</a></li>
                 <li><a class="dropdown-item" href="#">About</a></li>
                 <li><a class="dropdown-item" href="#">Services</a></li>
-                </ul>
+              </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link">Contact</a>
+              <a class="nav-link">Contact</a>
             </li>
-            </ul>
-            <div class="d-none d-lg-flex align-items-center ps-4 ml-auto">
+          </ul>
+          <div class="d-none d-lg-flex align-items-center ps-4 ml-auto">
             <i class="fa fa-2x fa-mobile-alt text-secondary me-3"></i>
             <div>
-                <h5 class="text-primary mb-1"><small>Call Now</small></h5>
-                <h6 class="text-light m-0">+012 345 6789</h6>
+              <h5 class="text-primary mb-1"><small>Call Now</small></h5>
+              <h6 class="text-light m-0">+012 345 6789</h6>
             </div>
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
     </nav>
     <!-- Hero -->
     <div class="container-fluid bg-warning py-5 py-lg-0">
-        <div class="container col-xxl-8 px-4 py-md-4 py-sm-4">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
-                <div class="d-none d-lg-block col-10 col-sm-8 col-lg-6">
-                    <img src="https://getbootstrap.com/docs/5.3/examples/heroes/bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-                </div>
-                <div class="col-lg-6 text-lg-left">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">PR Painting and & decorating </h1>
-                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contact us</button>
-                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Get a quote</button>
-                    </div>
-                </div>
+      <div class="container col-xxl-8 px-4 py-md-4 py-sm-4">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
+          <div class="d-none d-lg-block col-10 col-sm-8 col-lg-6">
+            <img
+              src="https://getbootstrap.com/docs/5.3/examples/heroes/bootstrap-themes.png"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy" />
+          </div>
+          <div class="col-lg-6 text-lg-left">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+              PR Painting and & decorating
+            </h1>
+            <p class="lead">
+              Quickly design and customize responsive mobile-first sites with
+              Bootstrap, the world’s most popular front-end open source toolkit.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                Contact us
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary btn-lg px-4">
+                Get a quote
+              </button>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <div class="container-fluid overflow-hidden px-0 mt-n1">
-        <img class="img-responsive  " src="./img/bkYellowDrip.svg" style="width: 100%; height: auto;">
+      <img
+        class="img-responsive"
+        src="./img/bkYellowDrip.svg"
+        style="width: 100%; height: auto" />
     </div>
     <!-- About -->
     <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row gx-0 mb-3 mb-lg-0 ">
-                <div class="col-lg-6 order-2" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="./img/600x600.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-6 my-lg-5 py-lg-5 order-1">
-                    <div class="about-start p-5 bg-primary">
-                        <h1 class="display-5 mb-4">Welcome To Painter</h1>
-                        <p>Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et, tempor sit sit diam amet et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor magna dolore erat amet </p>
-                        <a href="" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">Contact Us</a>
-                    </div>
-                </div>
+      <div class="container py-5">
+        <div class="row gx-0 mb-3 mb-lg-0">
+          <div class="col-lg-6 order-2" style="min-height: 400px">
+            <div class="position-relative h-100">
+              <img
+                class="position-absolute w-100 h-100"
+                src="./img/600x600.jpg"
+                style="object-fit: cover" />
             </div>
-            <div class="row gx-0">
-                
-                <div class="col-lg-6 my-lg-5 py-lg-5 order-2">
-                    <div class="about-end bg-primary p-5 text-end">
-                        <h1 class="display-5 mb-4">Why Choose Us?</h1>
-                        <p>Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et, tempor sit sit diam amet et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor magna dolore erat amet </p>
-                        <a href="" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">Get A Quote</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 order-1" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="./img/600x600.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
+          </div>
+          <div class="col-lg-6 my-lg-5 py-lg-5 order-1">
+            <div class="about-start p-5 bg-primary">
+              <h1 class="display-5 mb-4">Welcome To Painter</h1>
+              <p>
+                Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum
+                et, tempor sit sit diam amet et eos labore. Clita erat ipsum et
+                lorem et sit, sed stet no labore lorem sit. Sanctus clita duo
+                justo et tempor magna dolore erat amet
+              </p>
+              <a
+                href=""
+                class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4"
+                >Contact Us</a
+              >
             </div>
+          </div>
         </div>
+        <div class="row gx-0">
+          <div class="col-lg-6 my-lg-5 py-lg-5 order-2">
+            <div class="about-end bg-primary p-5 text-end">
+              <h1 class="display-5 mb-4">Why Choose Us?</h1>
+              <p>
+                Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum
+                et, tempor sit sit diam amet et eos labore. Clita erat ipsum et
+                lorem et sit, sed stet no labore lorem sit. Sanctus clita duo
+                justo et tempor magna dolore erat amet
+              </p>
+              <a
+                href=""
+                class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4"
+                >Get A Quote</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6 order-1" style="min-height: 400px">
+            <div class="position-relative h-100">
+              <img
+                class="position-absolute w-100 h-100"
+                src="./img/600x600.jpg"
+                style="object-fit: cover" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Services -->
     <div class="container px-4 py-5" id="custom-cards">
-        <div class="text-center mx-auto mb-5" style="max-width: 500px;">
-            <h1 class="display-5">Professional Painting Services</h1>
-            <hr class="w-25 mx-auto text-primary" style="opacity: 1;">
+      <div class="text-center mx-auto mb-5" style="max-width: 500px">
+        <h1 class="display-5">Professional Painting Services</h1>
+        <hr class="w-25 mx-auto text-primary" style="opacity: 1" />
+      </div>
+      <div
+        class="row row-cols-1 row-cols-lg-3 row-cols-md-2 align-items-stretch g-4">
+        <div class="col">
+          <div
+            id="servicesOne"
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('#');
+              background-position: bottom center;
+            ">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
+                Free Quotation
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="./img/logo.sm.jpg"
+                    alt="Logo"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white" />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>4d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 align-items-stretch g-4">
-            <div class="col">
-                <div id="servicesOne" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('#'); background-position: bottom center;">
-                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Free Quotation</h3>
-                        <ul class="d-flex list-unstyled mt-auto">
-                        <li class="me-auto">
-                            <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
-                        </li>
-                        <li class="d-flex align-items-center me-3">
-                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                            <small>Pakistan</small>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                            <small>4d</small>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('./img/thanos-pal-61TfyNIrWmI-unsplash.jpg');
+              background-position: bottom center;
+            ">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
+                Interior decoration
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="./img/logo.sm.jpg"
+                    alt="Logo"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white" />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>4d</small>
+                </li>
+              </ul>
             </div>
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./img/thanos-pal-61TfyNIrWmI-unsplash.jpg'); background-position: bottom center;">
-                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Interior decoration</h3>
-                        <ul class="d-flex list-unstyled mt-auto">
-                        <li class="me-auto">
-                            <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
-                        </li>
-                        <li class="d-flex align-items-center me-3">
-                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                            <small>Pakistan</small>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                            <small>4d</small>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./img/thanos-pal-61TfyNIrWmI-unsplash.jpg'); background-position: bottom center;">
-                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Floor restoration</h3>
-                        <ul class="d-flex list-unstyled mt-auto">
-                        <li class="me-auto">
-                            <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
-                        </li>
-                        <li class="d-flex align-items-center me-3">
-                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                            <small>Pakistan</small>
-                        </li>
-                        <li class="d-flex align-items-center">
-                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                            <small>4d</small>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Exterior decoration</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                        <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                        <small>California</small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                        <small>5d</small>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Traditional finishes</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                        <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                        <small>Pakistan</small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                        <small>4d</small>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Mildew removal</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                        <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                        <small>Pakistan</small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                        <small>4d</small>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center ">Sash window restoration</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                        <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                        <small>Pakistan</small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                        <small>4d</small>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Airless spray painting</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                        <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                        <small>Earth</small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                        <small>3d</small>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Special finishes</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                        <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                        <small>Pakistan</small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                        <small>4d</small>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Wallpaper & coverings</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                        <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                        <small>California</small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                        <small>5d</small>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Furniture painting</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                        <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                        <small>California</small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                        <small>5d</small>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">Graffiti removal</h3>
-                    <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                        <img src="./img/logo.sm.jpg" alt="Logo" width="32" height="32" class="rounded-circle border border-white">
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                        <small>California</small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                        <small>5d</small>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('./img/thanos-pal-61TfyNIrWmI-unsplash.jpg');
+              background-position: bottom center;
+            ">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
+                Floor restoration
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="./img/logo.sm.jpg"
+                    alt="Logo"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white" />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>4d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('unsplash-photo-3.jpg')">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
+                Exterior decoration
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="./img/logo.sm.jpg"
+                    alt="Logo"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white" />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>California</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>5d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('unsplash-photo-2.jpg')">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
+                Traditional finishes
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="./img/logo.sm.jpg"
+                    alt="Logo"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white" />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>4d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('unsplash-photo-2.jpg')">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
+                Mildew removal
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="./img/logo.sm.jpg"
+                    alt="Logo"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white" />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>4d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('unsplash-photo-2.jpg')">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
+                Sash window restoration
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="./img/logo.sm.jpg"
+                    alt="Logo"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white" />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>4d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
+                Airless spray painting
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="./img/logo.sm.jpg"
+                    alt="Logo"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white" />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Earth</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>3d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('unsplash-photo-2.jpg')">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
+                Special finishes
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="./img/logo.sm.jpg"
+                    alt="Logo"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white" />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>4d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('unsplash-photo-3.jpg')">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
+                Wallpaper & coverings
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="./img/logo.sm.jpg"
+                    alt="Logo"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white" />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>California</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>5d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('unsplash-photo-3.jpg')">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
+                Furniture painting
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="./img/logo.sm.jpg"
+                    alt="Logo"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white" />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>California</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>5d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('unsplash-photo-3.jpg')">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
+                Graffiti removal
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="./img/logo.sm.jpg"
+                    alt="Logo"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white" />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>California</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>5d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Get a quote -->
-    <div class="container-fluid my-70 py-4 img-fluid bg-primary" style="margin: 80px 0; background-image:  url('#'); background-size: cover;" >
-        <div class="container py-4">
-            <div class="row g-0 justify-content-start">
-                <div class="col-lg-8">
-                    <div class="glass-effect bg-white text-center p-5">
-                        <h1 class="mb-4">Request a Quote</h1>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Number" style="height: 55px;">
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control bg-light border-0 py-3" rows="2" placeholder="Message"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Get A Quote</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+    <div
+      class="container-fluid my-70 py-4 img-fluid bg-primary"
+      style="
+        margin: 80px 0;
+        background-image: url('#');
+        background-size: cover;
+      ">
+      <div class="container py-4">
+        <div class="row g-0 justify-content-start">
+          <div class="col-lg-8">
+            <div class="glass-effect bg-white text-center p-5">
+              <h1 class="mb-4">Request a Quote</h1>
+              <form>
+                <div class="row g-3">
+                  <div class="col-12 col-sm-6">
+                    <input
+                      type="text"
+                      class="form-control bg-light border-0"
+                      placeholder="Your Name"
+                      style="height: 55px" />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input
+                      type="email"
+                      class="form-control bg-light border-0"
+                      placeholder="Your Email"
+                      style="height: 55px" />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input
+                      type="text"
+                      class="form-control bg-light border-0"
+                      placeholder="Your Number"
+                      style="height: 55px" />
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      class="form-control bg-light border-0 py-3"
+                      rows="2"
+                      placeholder="Message"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary w-100 py-3" type="submit">
+                      Get A Quote
+                    </button>
+                  </div>
                 </div>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- The team -->
     <div class="container grid gap-3 px-4 py-5">
-        <div class="text-center mx-auto mb-5 py-5" style="max-width: 500px;">
-            <h1 class="display-5">Meet the Team </h1>
-            <hr class="w-25 mx-auto text-primary" style="opacity: 1;">
+      <div class="text-center mx-auto mb-5 py-5" style="max-width: 500px">
+        <h1 class="display-5">Meet the Team</h1>
+        <hr class="w-25 mx-auto text-primary" style="opacity: 1" />
+      </div>
+      <div class="row justify-content-evenly gap-5">
+        <div class="card px-0" style="width: 18rem">
+          <img
+            src="./img/simone-mascellari-SKnfgtlnsdU-unsplash.jpg"
+            class="card-img-top"
+            alt="Worker One" />
+          <div class="card-body bg-dark bg-gradient text-light">
+            <h5 class="card-title">Becky</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
         </div>
-        <div class="row justify-content-evenly gap-5">
-            <div class="card px-0" style="width: 18rem;">
-                <img src="./img/simone-mascellari-SKnfgtlnsdU-unsplash.jpg" class="card-img-top" alt="Worker One">
-                <div class="card-body bg-dark bg-gradient text-light">
-                    <h5 class="card-title">Becky</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
-            </div>
-            <div class="card px-0" style="width: 18rem;">
-                <img src="./img/avi-richards-PfUH_AuFE_0-unsplash.jpg" class="card-img-top" alt="Worker Two">
-                <div class="card-body text-end bg-dark bg-gradient text-light">
-                    <h5 class="card-title">Gemma</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                </div>
-            </div>
+        <div class="card px-0" style="width: 18rem">
+          <img
+            src="./img/avi-richards-PfUH_AuFE_0-unsplash.jpg"
+            class="card-img-top"
+            alt="Worker Two" />
+          <div class="card-body text-end bg-dark bg-gradient text-light">
+            <h5 class="card-title">Gemma</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Testimonials responsive -->
-    <div class="container-fluid py-5">
-        <div class="py-5 row bg-primary h-100 justify-content-end ">
-            <div class="col-lg-7">
-                <!-- Second Column Content with Carousel -->
-                <div id="carouselExampleCaptions" class="carousel slide carousel-fade text-dark">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12" aria-label="Slide 13"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13" aria-label="Slide 14"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="14" aria-label="Slide 15"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="15" aria-label="Slide 16"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="16" aria-label="Slide 17"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <!-- card one -->
-                        <div class="carousel-item active">
-                            <img src="./img/black.jpg" class="d-block w-100 h-90" style="opacity: 0;" alt="Background card">
-                            <!-- x-small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100 ">
-                                <span class="d-block d-sm-none text-start p-3"><h5 class="display-5">Abby</h5>
-                                <p class="fs-4 text-break">
-                                    <i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>
-                                        A credit to their profession.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p></span>
-                            </div>
-                            <!-- small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-none d-sm-block text-start">
-                                    <h5 class="display-5">Abby Bale</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Brilliant job of decorating our lounge, hallway and stairs. Then coming back to fix the mess my husband made of putting on some curtain ties.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- medium & large-->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-block text-start">
-                                    <h5 class="display-5">Abby Bale</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Brilliant job of decorating our lounge, hallway and stairs. Then coming back to fix the mess my husband made of putting on some curtain ties. Gemma and Becky are a credit to their profession and lovely people to meet.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- card two -->
-                        <div class="carousel-item">
-                            <img src="./img/black.jpg" class="d-block w-100 h-90" style="opacity: 0.5;" alt="...">
-                            <!-- x-small -->
-                            <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
-                                <span class="d-block d-sm-none"><h5 class="display-5">Abbie</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Gemma and Becky are great at what they do ❤️❤️<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- small -->
-                            <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
-                                <span class="d-none d-sm-block"><h5 class="display-5">Abbie Abbie</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Gemma and Becky are great at what they do ❤️❤️<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- card three -->
-                        <div class="carousel-item">
-                            <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                            <!-- x-small -->
-                            <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                                <span class="d-block d-sm-none"><h5 class="display-5">Savannah</h5>
-                                <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Brilliant job. Would recommend!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p></span>
-                            </div>
-                            <!-- small -->
-                            <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-none d-sm-block"><h5 class="display-5">Savannah Bee</h5>
-                                <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>First class job from Gemma and Becky from quote to finish, professional, quick, friendly and tidy. A top class job. Would recommend! Thanks.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p></span>
-                            </div>
-                            <!-- medium & large-->
-                            <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-block"><h5 class="display-5">Savannah Bee</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Absolutely first class job from Gemma and Becky from quote to finish, professional, quick, friendly and tidy. Cannot fault their work, great communications and a top class job. Would recommend! Thanks.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p></span>
-                            </div>
-                        </div>
-                        <!-- card four -->
-                        <div class="carousel-item">
-                            <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                            <!-- x-small -->
-                            <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                                <span class="d-block d-sm-none">
-                                    <h5 class="display-5">Lara</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Becky and Gemma have done such a fantastic job.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- small -->
-                            <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-none d-sm-block">
-                                    <h5 class="display-5">Lara Maley</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Becky and Gemma have done such a fantastic job for us. They really went above and beyond. I couldn't recommend them highly enough. Lovely people to have in your home.
-                                    <i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- medium & large-->
-                            <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-block">
-                                    <h5 class="display-5">Lara Maley</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Becky and Gemma have done such a fantastic job for us. They really went above and beyond. They decorated our new loft conversion, study, bedroom and full hall stairs and landing. We are made up with the end result. 
-                                        I couldn't recommend them highly enough. They were always on time, they fitted us in super quickly, tidied up immaculately every day and we're just generally lovely people to have in your home. 
-                                    <i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- Card five -->
-                        <div class="carousel-item">
-                            <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                            <!-- x-small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-block d-sm-none">
-                                    <h5 class="display-5">Adele</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>These decorators are seriously <span class="text-nowrap"><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i></span>.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-none d-sm-block">
-                                    <h5 class="display-5">Adele Worrall</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>These decorators are seriously <span class="text-nowrap"><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i>.</span> Not a trace of them being here apart from our lovely freshly decorated rooms.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- medium & large-->
-                            <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-block">
-                                    <h5 class="display-5">Adele Worrall</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>These decorators are seriously <span class="text-nowrap"><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i><i class="fa-solid fa-star d-inline-block"></i>.</span>. Decorated 2 rooms in 2 days and were so professional. Not a trace of them being here apart from our lovely freshly decorated rooms.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- Card six -->
-                        <div class="carousel-item">
-                            <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                            <!-- x-small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-block d-sm-none">
-                                    <h5 class="display-5">Pip and Barry</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>I'm happy with the kitchen.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-none d-sm-block">
-                                    <h5 class="display-5">Pip and Barry</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Thanks so much. I'm happy with the kitchen. It's so fresh and new.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- medium & large-->
-                            <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-block">
-                                    <h5 class="display-5">Pip and Barry</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Thanks so much. I'm happy with the kitchen. It's so fresh and new. Thanks for tidying up so well.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- Card seven -->
-                        <div class="carousel-item">
-                            <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                            <!-- x-small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-block d-sm-none">
-                                    <h5 class="display-5">Lesley Glover</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic job, brilliant decorators<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-none d-sm-block">
-                                    <h5 class="display-5">Lesley Glover</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic job, brilliant decorators<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- medium & large-->
-                            <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-block">
-                                    <h5 class="display-5">Lesley Glover</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic job, brilliant decorators<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- Card eight -->
-                        <div class="carousel-item">
-                            <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                            <!-- x-small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-block d-sm-none">
-                                    <h5 class="display-5">Courtney</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Hard workers. 🙂 Highly recommended<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-none d-sm-block">
-                                    <h5 class="display-5">Courtney Haskins</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Such hard workers who are quite evidently good.🙂 Highly recommended<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- medium & large-->
-                            <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-block">
-                                    <h5 class="display-5">Courtney Haskins</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Such hard workers who are quite evidently good at what they do and a pleasure to have around which is always a bonus 🙂 highly recommended<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- Card nine -->
-                        <div class="carousel-item">
-                            <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                            <!-- x-small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-block d-sm-none">
-                                    <h5 class="display-5">Billie</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>5 stars. Fantastic job. Thank you x<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-none d-sm-block">
-                                    <h5 class="display-5">Billie Silk</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>5 stars. Fantastic job. Thank you x<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- medium & large-->
-                            <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-block">
-                                    <h5 class="display-5">Billie Silk</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>5 stars. Fantastic job. Thank you x<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- Card ten -->
-                        <div class="carousel-item">
-                            <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                            <!-- x-small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-block d-sm-none">
-                                    <h5 class="display-5">Jo </h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Absolutely fantastic job<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-none d-sm-block">
-                                    <h5 class="display-5">Jo McWhirter</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Absolutely fantastic job, a real pleasure to have in the house!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- medium & large-->
-                            <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-block">
-                                    <h5 class="display-5">Jo McWhirter</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Gemma did an absolutely fantastic job, she worked extraordinarily hard and was a real pleasure to have in the house!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- Card eleven -->
-                        <div class="carousel-item">
-                            <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                            <!-- x-small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-block d-sm-none">
-                                    <h5 class="display-5">Jennifer</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Really impressed with their professionalism!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-none d-sm-block">
-                                    <h5 class="display-5">Jennifer Stokes </h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Really impressed with their professionalism! No hesitation at all in recommending them. Many thanks ladies!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- medium & large-->
-                            <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-block">
-                                    <h5 class="display-5">Jennifer Stokes</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Gemma and Becky have done a fabulous job on our hall/stairs/landing. Really impressed with their professionalism! No hesitation at all in recommending them. Many thanks ladies!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- Card twelve -->
-                        <div class="carousel-item">
-                            <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                            <!-- x-small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-block d-sm-none">
-                                    <h5 class="display-5">Becky</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>They did a great job<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-none d-sm-block">
-                                    <h5 class="display-5">Becky Marshall</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>They did a great job, painstakingly removing the wallpaper repairing our dodgy walls and making the place look great. Would definitely use them again<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- medium & large-->
-                            <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-block">
-                                    <h5 class="display-5">Becky Marshall</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Gemma and Becky have just finished decorating our hall and stairs, they did a great job, painstakingly removing the wallpaper repairing our dodgy walls and making the place look great.  They were lovely to have around and cleaned up so well after themselves each day that they sometimes left it cleaner than they found it! Would definitely use them again<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- Card thirteen -->
-                        <div class="carousel-item">
-                            <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                            <!-- x-small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-block d-sm-none">
-                                    <h5 class="display-5">Fran</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>The place looks great.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-none d-sm-block">
-                                    <h5 class="display-5">Fran Kellett</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fab job on our hall, stairs and bedroom. The place looks great. They always kept in touch. Thankyou!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- medium & large-->
-                            <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-block">
-                                    <h5 class="display-5">Fran Kellett</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Gemma and Becky have done a fab job on our hall, stairs and bedroom. The place looks great. They always kept in touch, put up with my kids and did a fab job.  Thankyou!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- Card fourteen -->
-                        <div class="carousel-item">
-                            <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                            <!-- x-small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-block d-sm-none">
-                                    <h5 class="display-5">Jenny</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>The quality of their work is excellent<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-none d-sm-block">
-                                    <h5 class="display-5">Jenny Clarke</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>The quality of their work is excellent and they work quickly and efficiently, they clean up every day and they were lovely to have around the house.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- medium & large-->
-                            <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-block">
-                                    <h5 class="display-5">Jenny Clarke</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Gemma and Becky just painted our new loft room and hallway. The quality of their work is excellent and they work quickly and efficiently, they clean up every day and they were lovely to have around the house - quiet and unobtrusive and they were really nice to my two young children!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- Card fifteen -->
-                        <div class="carousel-item">
-                            <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                            <!-- x-small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-block d-sm-none">
-                                    <h5 class="display-5">Grainne</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic end results.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-none d-sm-block">
-                                    <h5 class="display-5">Grainne Odea-Jones</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic end results, hallway looks amazing, reasonable rates.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- medium & large-->
-                            <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-block">
-                                    <h5 class="display-5">Grainne Odea-Jones</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Lovely people, fantastic end results, hallway looks amazing, reasonable rates.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- Card sixteen -->
-                        <div class="carousel-item">
-                            <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                            <!-- x-small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-block d-sm-none">
-                                    <h5 class="display-5">Fey</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Great finish.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-none d-sm-block">
-                                    <h5 class="display-5">Fey Caroline Lucy</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Lovely ladies. Fast, tidy, clean workers. Great finish.<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- medium & large-->
-                            <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-block">
-                                    <h5 class="display-5">Fey Caroline Lucy </h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Lovely ladies. Fast, tidy, clean workers. Great finish. Happy days!<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- Card seventeen -->
-                        <div class="carousel-item">
-                            <img src="./img/black.jpg" class="d-block w-100 h-90" alt="...">
-                            <!-- x-small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-block d-sm-none">
-                                    <h5 class="display-5">John</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic service<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- small -->
-                            <div class="carousel-caption d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-none d-sm-block">
-                                    <h5 class="display-5">John Duffin</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic service<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                            <!-- medium & large-->
-                            <div class="carousel-caption  d-flex justify-content-center align-items-center h-100">
-                                <span class="d-none d-md-block">
-                                    <h5 class="display-5">John Duffin</h5>
-                                    <p class="fs-4 text-break"><i class="fa-solid fa-quote-left" style="color: #e8ea5d;"></i>Fantastic service<i class="fa-solid fa-quote-right" style="color: #e8ea5d;"></i></p>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+    <div
+      class="container-fluid py-2 py-sm-3 py-md-4 py-lg-5 mt-3 mt-md-4 mt-lg-5"
+      style="
+        background-image: url('./img/david-pisnoy-46juD4zY1XA-unsplash.jpg');
+        background-size: cover;
+        background-position: right center;
+      ">
+      <div class="row pt-2 pt-sm-3 pt-md-4 pt-lg-5">
+        <div class="col-md-8">
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"></button>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
             </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <svg
+                  class="bd-placeholder-img"
+                  width="100%"
+                  height="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false">
+                  <rect
+                    width="100%"
+                    height="100%"
+                    fill="var(--bs-secondary-color)" />
+                </svg>
+                <div class="container">
+                  <div class="carousel-caption">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="text-start">
+                        <h1 class="text-start">Abby Bale</h1>
+                        <div class="ratings mb-1">
+                          <i class="fa fa-star fa-lg" style="color: white"></i>
+                          <i class="fa fa-star fa-lg" style="color: white"></i>
+                          <i class="fa fa-star fa-lg" style="color: white"></i>
+                          <i class="fa fa-star fa-lg" style="color: white"></i>
+                        </div>
+                        <p class="opacity-75 mb-5">
+                          Brilliant job of decorating our lounge, hallway and
+                          stairs. Then coming back to fix the mess my husband
+                          made of putting on some curtain ties. Gemma and Becky
+                          are a credit to their profession and lovely people to
+                          meet.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <svg
+                  class="bd-placeholder-img"
+                  width="100%"
+                  height="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false">
+                  <rect
+                    width="100%"
+                    height="100%"
+                    fill="var(--bs-secondary-color)" />
+                </svg>
+                <div class="container">
+                  <div class="carousel-caption">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="text-start">
+                        <h1 class="text-start">Abbie Abbie</h1>
+                        <div class="ratings mb-1">
+                          <i class="fa fa-star fa-lg" style="color: white"></i>
+                          <i class="fa fa-star fa-lg" style="color: white"></i>
+                          <i class="fa fa-star fa-lg" style="color: white"></i>
+                          <i class="fa fa-star fa-lg" style="color: white"></i>
+                        </div>
+                        <p class="opacity-75 mb-5">
+                          Becky and Gem are great at what they do.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <svg
+                  class="bd-placeholder-img"
+                  width="100%"
+                  height="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false">
+                  <rect
+                    width="100%"
+                    height="100%"
+                    fill="var(--bs-secondary-color)" />
+                </svg>
+                <div class="container">
+                  <div class="carousel-caption">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center pb-5">
+                      <div class="text-start">
+                        <h1>Savannah Bee</h1>
+                        <div class="ratings mb-1">
+                          <i class="fa fa-star fa-lg" style="color: white"></i>
+                          <i class="fa fa-star fa-lg" style="color: white"></i>
+                          <i class="fa fa-star fa-lg" style="color: white"></i>
+                          <i class="fa fa-star fa-lg" style="color: white"></i>
+                        </div>
+                        <p class="opacity-75 mb-5">
+                          Absolutely first class job from Gemma and Becky from
+                          quote to finish, professional, quick, friendly and
+                          tidy. Cannot fault their work, great communications
+                          and a top class job. Would recommend! Thanks.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="prev">
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide="next">
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
+      </div>
     </div>
-    
+
     <!-- Call to action -->
     <div class="container-fluid bg-primary mt-5 py-5">
-        <div class="container py-5">
-            <div class="row justify-content-start">
-                <div class="col-lg-6">
-                    <div class="p-5 bg-secondary">
-                        <h1 class="display-5 mb-4">Do you have a project?</h1>
-                        <p class="fs-4">Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et, tempor sit sit diam amet et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor magna dolore erat amet </p>
-                        <a href="" class="btn btn-primary rounded-pill py-md-3 px-md-5 mt-4">Contact Us</a>
-                    </div>
-                </div>
+      <div class="container py-5">
+        <div class="row justify-content-start">
+          <div class="col-lg-6">
+            <div class="p-5 bg-secondary">
+              <h1 class="display-5 mb-4">Do you have a project?</h1>
+              <p class="fs-4">
+                Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum
+                et, tempor sit sit diam amet et eos labore. Clita erat ipsum et
+                lorem et sit, sed stet no labore lorem sit. Sanctus clita duo
+                justo et tempor magna dolore erat amet
+              </p>
+              <a
+                href=""
+                class="btn btn-primary rounded-pill py-md-3 px-md-5 mt-4"
+                >Contact Us</a
+              >
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Footer -->
     <div class="container-fluid bg-dark py-5">
-        <div class="container py-5">
-            <footer>
-                <div class="row">
-                  <div class="col-12 col-md-6 col-lg-3 mt-5">
-                    <h5 class="text-primary">Contact Us</h5>
-                    <hr class="w-25 text-warning mb-4" style="opacity: 0.5;">
-                    <ul class="nav flex-column">
-                      <li class="nav-item mb-2"><p class="mb-4 text-light">Get in touch with us to arrange a free quotation.</p></li>
-                      <li class="nav-item mb-2"><p class="mb-2 text-light"><i class="fa fa-map-marker-alt text-primary me-3"></i>South West</p></li>
-                      <li class="nav-item mb-2"><p class="mb-2 text-light"><i class="fa fa-envelope text-primary me-3"></i>email@example.com</p></li>
-                      <li class="nav-item mb-2"><p class="mb-0 text-light"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-md-6 col-lg-3  mt-5">
-                    <h5 class="text-primary">Our Services</h5>
-                    <hr class="w-25 text-warning  mb-4" style="opacity: 0.5;">
-                    <ul class="nav flex-column">
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-primary">Internal decoration</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-primary">Exterior decoration</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-primary">Free quotation</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-primary">Special finishes</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-primary">Wallpapering</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-md-6 col-lg-3  mt-5">
-                    <h5 class="text-primary">Quick Links</h5>
-                    <hr class="w-25 text-warning mb-4" style="opacity: 0.5;">
-                    <ul class="nav flex-column">
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-primary">Home</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-primary">About</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-primary">Services</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-primary">Get a quote</a></li>
-                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-primary">Testimonials</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-12 col-md-6 col-lg-3  mt-5">
-                    <form>
-                      <h5 class="text-primary">Follow Us</h5>
-                      <hr class="w-25 text-warning mb-4" style="opacity: 0.5;">
-                      <div class="d-flex">
-                          <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                          <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                          <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                          <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
-                      </div>
-                    </form>
-                  </div>
+      <div class="container py-5">
+        <footer>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 mt-5">
+              <h5 class="text-primary">Contact Us</h5>
+              <hr class="w-25 text-warning mb-4" style="opacity: 0.5" />
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <p class="mb-4 text-light">
+                    Get in touch with us to arrange a free quotation.
+                  </p>
+                </li>
+                <li class="nav-item mb-2">
+                  <p class="mb-2 text-light">
+                    <i class="fa fa-map-marker-alt text-primary me-3"></i>South
+                    West
+                  </p>
+                </li>
+                <li class="nav-item mb-2">
+                  <p class="mb-2 text-light">
+                    <i class="fa fa-envelope text-primary me-3"></i
+                    >email@example.com
+                  </p>
+                </li>
+                <li class="nav-item mb-2">
+                  <p class="mb-0 text-light">
+                    <i class="fa fa-phone-alt text-primary me-3"></i>+012 345
+                    67890
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-5">
+              <h5 class="text-primary">Our Services</h5>
+              <hr class="w-25 text-warning mb-4" style="opacity: 0.5" />
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-primary"
+                    >Internal decoration</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-primary"
+                    >Exterior decoration</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-primary"
+                    >Free quotation</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-primary"
+                    >Special finishes</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-primary"
+                    >Wallpapering</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-5">
+              <h5 class="text-primary">Quick Links</h5>
+              <hr class="w-25 text-warning mb-4" style="opacity: 0.5" />
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-primary">Home</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-primary">About</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-primary"
+                    >Services</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-primary"
+                    >Get a quote</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-body-primary"
+                    >Testimonials</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-5">
+              <form>
+                <h5 class="text-primary">Follow Us</h5>
+                <hr class="w-25 text-warning mb-4" style="opacity: 0.5" />
+                <div class="d-flex">
+                  <a
+                    class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                    href="#"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a
+                    class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                    href="#"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a
+                    class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                    href="#"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a
+                    class="btn btn-lg btn-primary btn-lg-square rounded-circle"
+                    href="#"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
                 </div>
-            </footer>
-        </div>
-        
+              </form>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
     <!-- Sub-footer -->
     <div class="container-fluid bg-primary text-dark py-4">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0 text-light">Copyright © <a class="text-dark fw-bold" href="#">PR-Painting and Decorating</a>. All Rights Reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0 text-light">Designed by <a class="text-dark fw-bold ">Markham Webworks</a></p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-md-0 text-light">
+              Copyright ©
+              <a class="text-dark fw-bold" href="#"
+                >PR-Painting and Decorating</a
+              >. All Rights Reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <p class="mb-0 text-light">
+              Designed by <a class="text-dark fw-bold">Markham Webworks</a>
+            </p>
+          </div>
         </div>
+      </div>
     </div>
     <!-- BS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
-    <script>const myCarouselElement = document.querySelector('#myCarousel')
-
-            const carousel = new bootstrap.Carousel(myCarouselElement, {
-                interval: 2000,
-                touch: false
-            })
-    </script>
-
-    
-
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+  </body>
 </html>
