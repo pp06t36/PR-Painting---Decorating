@@ -13,20 +13,43 @@
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous" />
+      
     <!-- custom scss -->
-    <link rel="stylesheet" href="scss/main.scss" />
+    <link rel="stylesheet" href="css/main.min.css" />
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Carousel -->
     <link href="carousel.css" rel="stylesheet" />
   </head>
   <style>
-    /* .action-bg {
-      background-image: url("./img/becky3.png");
-      background-repeat: no-repeat;
-      background-position: right;
-      background-size: contain;
-    } */
+
+    .mistedGlass {
+            background-color: hsla(180, 4%, 95%, 0.7);
+            backdrop-filter: blur(20px);
+          }
+
+    .dropdown-menu {
+      background-color: hsla(180, 4%, 95%, 0.7);
+      backdrop-filter: blur(20px);
+    }
+
+
+
+
+    @media (min-width: 576px ) {
+
+      .container-navbar {
+        border-radius: 35px;
+        width: 85%;
+        margin: 0 auto;
+      }
+
+      .container-about {
+          width: 90%;
+          margin: 0 auto;
+      }
+    }
+   
 
     @media (min-width: 768px) {
       .action-bg {
@@ -34,99 +57,54 @@
       }
     }
 
-    .top-bar {
-      background-color: #b38ac5;
-    }
+    @media (max-width: 992px) {
 
-    .hero {
-      background-color: #b38ac5;
+      .bg-heroImg {
+        background-image: url(./img/heroImg-15.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+
     }
 
     .top {
-      background-color: #b38ac5;
+      background-color:hsla(279,100%,90%,1);
+      background-image:
+      radial-gradient(at 100% 45%, hsla(305,100%,59%,0.77) 0px, transparent 50%),
+      radial-gradient(at 39% 53%, hsla(279,100%,90%,1) 0px, transparent 50%),
+      radial-gradient(at 23% 77%, hsla(279,100%,90%,1) 0px, transparent 50%),
+      radial-gradient(at 24% 27%, hsla(279,100%,90%,1) 0px, transparent 50%),
+      radial-gradient(at 1% 2%, hsla(289,73%,66%,1) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, hsla(272,100%,62%,1) 0px, transparent 50%),
+      radial-gradient(at 24% 99%, hsla(272,100%,62%,1) 0px, transparent 50%); 
+    }
+
+    .gThree {
+  
+      margin: 80px 0;
+      background-image: url('./img/redPaint.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
     }
 
     body {
       padding: 0;
-      background-color: ;
+      background-color: #F5F5F5;
+      
     }
 
     .sub-footer {
-      background-color: #b38ac5;
+      background-color: #eeccff;
     }
-
-    .conNavbar {
-      width: 85%;
-      margin: 0 auto;;
-    }
-
-    .triangle {
-  position: relative;
-  height: 77px;
-}
-
-.triangle::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  border-style: solid;
-  border-width: 0 115px 115px 115px;
-  border-color: transparent transparent #fff transparent;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
     
-
-
-
   </style>
   <body>
-    <section class="top pt-5">
-      <!-- top bar -->
-      <!-- <div class="top-bar container-fluid d-none d-lg-block">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 text-center text-lg-start mb-2 mb-lg-0">
-              <div class="d-inline-flex align-items-center">
-                <a class="text-dark py-2 pe-3 border-end border-dark" href=""
-                  ><i class="bi bi-telephone text-dark me-2"></i>0117 123456</a
-                >
-                <a class="text-dark py-2 px-3" href=""
-                  ><i class="bi bi-envelope text-dark me-2"></i>info@email.com</a
-                >
-              </div>
-            </div>
-            <div class="col-sm-6 text-center text-lg-end">
-              <div class="d-inline-flex align-items-center">
-                <a
-                  class="text-body py-2 px-3 border-end border-dark"
-                  href="https://www.facebook.com/Prpaintinganddecorating">
-                  <i class="fab fa-facebook-f text-dark"></i>
-                </a>
-                <a class="text-body py-2 px-3 border-end border-dark" href="">
-                  <i class="fab fa-twitter text-dark"></i>
-                </a>
-                <a class="text-body py-2 px-3 border-end border-dark" href="">
-                  <i class="fab fa-linkedin-in text-dark"></i>
-                </a>
-                <a class="text-body py-2 px-3 border-end border-dark" href="">
-                  <i class="fab fa-instagram text-dark"></i>
-                </a>
-                <a class="text-body py-2 ps-3" href="">
-                  <i class="fab fa-youtube text-dark"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
+    <section class="top pt-sm-5">
       <!-- nav bar -->
       <nav
-        class="conNavbar navbar navbar-expand-sm navbar-light bg-light py-2 rounded-pill"
+        class="container-navbar navbar navbar-expand-sm navbar-light  py-2 py-lg-3 shadow mistedGlass"
         aria-label="Fourth navbar example">
         <div class="container-fluid px-4">
           <a class="navbar-brand" href="#">
@@ -135,13 +113,7 @@
               alt="Logo"
               width="48"
               height="48"
-              class="rounded-circle border border-white d-none d-sm-inline-block" />
-            <img
-              src="./img/logo.sm.jpg"
-              alt="Logo"
-              width="32"
-              height="32"
-              class="rounded-circle border border-white d-inline-block d-sm-none" />
+              class="rounded-circle border border-white d-block" />
           </a>
           <button
             class="navbar-toggler"
@@ -158,39 +130,39 @@
             class="navbar-collapse collapse show text-end"
             id="navbarsExample04">
             <ul class="navbar-nav me-auto mb-2 mb-sm-0 nav-underline">
-              <li class="nav-item">
+              <li class="nav-item ms-md-4">
                 <a class="nav-link active ml-5 text-dark" aria-current="page" href="#"
                   >Home</a
                 >
               </li>
-              <li class="nav-item text-dark">
+              <li class="nav-item text-dark ms-md-4">
                 <a class="nav-link" href="#">About</a>
               </li>
-              <li class="nav-item text-dark">
+              <li class="nav-item text-dark ms-md-4">
                 <a class="nav-link">Services</a>
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle text-dark"
+                  class="nav-link dropdown-toggle text-dark ms-md-4"
                   href="#"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                   >Pages</a
                 >
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu mistedGlass ">
                   <li><a class="dropdown-item text-dark" href="#">Home</a></li>
                   <li><a class="dropdown-item text-dark" href="#">About</a></li>
                   <li><a class="dropdown-item text-dark" href="#">Services</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark">Contact</a>
+                <a class="nav-link text-dark ms-md-4">Contact</a>
               </li>
             </ul>
             <div class="d-none d-lg-flex align-items-center ps-4 ml-auto">
               <i class="fa fa-2x fa-mobile-alt text-secondary me-3"></i>
               <div>
-                <h5 class="text-primary mb-1"><small>Call Now</small></h5>
+                <h5 class=" mb-1" style="color:  #6610f2"><small>Call Now</small></h5>
                 <h6 class="text-dark m-0">+012 345 6789</h6>
               </div>
             </div>
@@ -198,106 +170,92 @@
         </div>
       </nav>
       <!-- Hero -->
-      <div class="hero container-fluid py-5 py-lg-0">
-        <div class="container col-xxl-8 px-4 py-md-4 py-sm-4">
-          <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
-            <div class="d-none d-lg-block col-10 col-sm-8 col-lg-6">
-              <img
-                src="./img/b&g.png"
-                class="d-block mx-lg-auto img-fluid"
-                alt="Bootstrap Themes"
-                width="700"
-                height="500"
-                loading="lazy" />
-            </div>
-            <div class="col-lg-6 text-lg-left">
-              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-                Let's bring your vision to life
-              </h1>
-              <p class="lead">
-                P.R Painting and Decorating is a female painting and decorating company that can help you create your dream home.
-              </p>
-              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-                  Contact us
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-outline-secondary btn-lg px-4">
-                  Get a quote
-                </button>
+      <div class="hero container-fluid py-5 py-lg-0 ">
+        <div class="bg-heroImg">
+        <div class="container col-xxl-8 px-4 py-lg-5 py-md-4 py-sm-4  ">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            
+              <div class="d-none d-lg-block col-10 col-sm-8 col-lg-6">
+                <img
+                  src="./img/heroImg.png"
+                  class="d-block mx-lg-auto img-fluid"
+                  alt="Beck and Gemma in their safety equipment"
+                  width="100%"
+                  height="auto"
+                  loading="lazy" />
+              </div>
+              <div class="col-lg-6 text-lg-left">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-4 mb-3 text-primary">
+                  Let's bring your vision to life
+                </h1>
+                <p class="lead">
+                  P.R Painting and Decorating is a female painting and decorating company that can help you create your dream home.
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-lg px-4 me-md-2 shadow" style="background-color: #6610f2; color: white">
+                    Contact us
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary  btn-lg px-4 shadow">
+                    Get a quote
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <div class="container-fluid overflow-hidden px-0 mt-n1">
-      <img
-        class="img-responsive"
-        src="./img/drip.svg"
-        style="width: 100%; height: auto" />
-    </div>
-    <div class="triangle"></div>
-    <!-- About -->
     
-    <div class="container-fluid py-5 banner">
-      <div class="container py-5">
-        <div class="row gx-0 mb-3 mb-lg-0">
-          <div class="col-lg-6 order-2" style="min-height: 400px">
-            <div class="position-relative h-100">
-              <img
-                class="position-absolute w-100 h-100"
-                src="./img/600x600.jpg"
-                style="object-fit: cover" />
+      <!-- hero drip -->
+    
+      <div class="container-fluid overflow-hidden px-0 mt-n1">
+        <img
+          class="heroDrip img-responsive"
+          src="./img/drip.svg"
+          style="width: 100%; height: auto" />
+      </div>
+    </section>
+      
+    <!-- Concept -->
+    <section id="concept">
+      <hr class="featurette-divider">
+      <div class="container-fluid banner">
+        <div class="container  px-4 rounded-5 bg-white">
+          <div class="row featurette">
+            <div class="col-md-5">
+              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3" width="100%" height="auto" src="./img/Stuck at Home Staying Home.svg" >
             </div>
-          </div>
-          <div class="col-lg-6 my-lg-5 py-lg-5 order-1">
-            <div class="about-start p-5 bg-primary">
-              <h1 class="display-5 mb-4">Welcome To Painter</h1>
-              <p>
-                Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum
-                et, tempor sit sit diam amet et eos labore. Clita erat ipsum et
-                lorem et sit, sed stet no labore lorem sit. Sanctus clita duo
-                justo et tempor magna dolore erat amet
-              </p>
-              <a
-                href=""
-                class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4"
-                >Contact Us</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="row gx-0">
-          <div class="col-lg-6 my-lg-5 py-lg-5 order-2">
-            <div class="about-end bg-primary p-5 text-end">
-              <h1 class="display-5 mb-4">Why Choose Us?</h1>
-              <p>
-                Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum
-                et, tempor sit sit diam amet et eos labore. Clita erat ipsum et
-                lorem et sit, sed stet no labore lorem sit. Sanctus clita duo
-                justo et tempor magna dolore erat amet
-              </p>
-              <a
-                href=""
-                class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4"
-                >Get A Quote</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-6 order-1" style="min-height: 400px">
-            <div class="position-relative h-100">
-              <img
-                class="position-absolute w-100 h-100"
-                src="./img/600x600.jpg"
-                style="object-fit: cover" />
+            <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1">Your home, <span class="text-body-secondary">our canvas.</span></h2>
+              <p class="lead">At P.R Painting and Decorating, our focus is on making your spaces truly special. Our all-female team is dedicated to making your dream home a reality. From elegant strokes of color to the finest finishing touches, we bring a fresh perspective and creative flair to every project.  </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Appeal -->
+    <section id="Appeal">
+      <hr class="featurette-divider">
+      <div class="container-fluid banner">
+        <div class="container  px-4 rounded-5 bg-white">
+          <div class="row featurette">
+            <div class="col-md-5 order-md-2">
+              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3" width="100%" height="auto" src="./img/undefined.png" >
+            </div>
+            <div class="col-md-7 order-md-1">
+              <h2 class="featurette-heading fw-normal lh-1">Why <span class="text-body-secondary">choose us?</span></h2>
+              <p class="lead">P.R Painting and Decorating stands out as a unique and empowering choice for your home transformation. With a team of skilled female professionals, we bring a fresh perspective to the world of painting and decorating. Our commitment to quality craftsmanship, attention to detail, and personalized service ensures that your vision is not just met, but exceeded. We believe in creating spaces that resonate with your personality and style, making us your ideal partner for crafting a living environment that truly feels like home.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
     <!-- Services -->
+    <hr class="featurette-divider">
     <div class="container px-4 py-5" id="custom-cards">
       <div class="text-center mx-auto mb-5" style="max-width: 500px">
         <h1 class="display-5">Professional Painting Services</h1>
@@ -305,44 +263,8 @@
       </div>
       <div
         class="row row-cols-1 row-cols-lg-3 row-cols-md-2 align-items-stretch g-4">
-        <div class="col">
-          <div
-            id="servicesOne"
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="
-              background-image: url('#');
-              background-position: bottom center;
-            ">
-            <div
-              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                Free Quotation
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="./img/logo.sm.jpg"
-                    alt="Logo"
-                    width="32"
-                    height="32"
-                    class="rounded-circle border border-white" />
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#geo-fill"></use>
-                  </svg>
-                  <small>Pakistan</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>4d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        
+        <!-- Interior decoration -->
         <div class="col">
           <div
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
@@ -380,17 +302,19 @@
             </div>
           </div>
         </div>
+        <!-- Finishes -->
         <div class="col">
           <div
+            id="servicesOne"
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
             style="
-              background-image: url('./img/thanos-pal-61TfyNIrWmI-unsplash.jpg');
+              background-image: url('#');
               background-position: bottom center;
             ">
             <div
               class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
               <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                Floor restoration
+                Finishes
               </h3>
               <ul class="d-flex list-unstyled mt-auto">
                 <li class="me-auto">
@@ -417,6 +341,47 @@
             </div>
           </div>
         </div>
+
+        <!-- Free Quotation -->
+        <div class="col d-lg-none">
+          <div
+            id="servicesOne"
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="
+              background-image: url('#');
+              background-position: bottom center;
+            ">
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
+                Free Quotation
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="./img/logo.sm.jpg"
+                    alt="Logo"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white" />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Pakistan</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>4d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Exterior decoration -->
         <div class="col">
           <div
             class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
@@ -450,287 +415,16 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-2.jpg')">
-            <div
-              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                Traditional finishes
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="./img/logo.sm.jpg"
-                    alt="Logo"
-                    width="32"
-                    height="32"
-                    class="rounded-circle border border-white" />
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#geo-fill"></use>
-                  </svg>
-                  <small>Pakistan</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>4d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-2.jpg')">
-            <div
-              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                Mildew removal
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="./img/logo.sm.jpg"
-                    alt="Logo"
-                    width="32"
-                    height="32"
-                    class="rounded-circle border border-white" />
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#geo-fill"></use>
-                  </svg>
-                  <small>Pakistan</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>4d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-2.jpg')">
-            <div
-              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                Sash window restoration
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="./img/logo.sm.jpg"
-                    alt="Logo"
-                    width="32"
-                    height="32"
-                    class="rounded-circle border border-white" />
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#geo-fill"></use>
-                  </svg>
-                  <small>Pakistan</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>4d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
-            <div
-              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                Airless spray painting
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="./img/logo.sm.jpg"
-                    alt="Logo"
-                    width="32"
-                    height="32"
-                    class="rounded-circle border border-white" />
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#geo-fill"></use>
-                  </svg>
-                  <small>Earth</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>3d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-2.jpg')">
-            <div
-              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                Special finishes
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="./img/logo.sm.jpg"
-                    alt="Logo"
-                    width="32"
-                    height="32"
-                    class="rounded-circle border border-white" />
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#geo-fill"></use>
-                  </svg>
-                  <small>Pakistan</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>4d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-3.jpg')">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                Wallpaper & coverings
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="./img/logo.sm.jpg"
-                    alt="Logo"
-                    width="32"
-                    height="32"
-                    class="rounded-circle border border-white" />
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#geo-fill"></use>
-                  </svg>
-                  <small>California</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>5d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-3.jpg')">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                Furniture painting
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="./img/logo.sm.jpg"
-                    alt="Logo"
-                    width="32"
-                    height="32"
-                    class="rounded-circle border border-white" />
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#geo-fill"></use>
-                  </svg>
-                  <small>California</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>5d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-3.jpg')">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                Graffiti removal
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="./img/logo.sm.jpg"
-                    alt="Logo"
-                    width="32"
-                    height="32"
-                    class="rounded-circle border border-white" />
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#geo-fill"></use>
-                  </svg>
-                  <small>California</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>5d</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
+    
+    
 
     <!-- Get a quote -->
+    <hr class="featurette-divider">
     <div
-      class="container-fluid my-70 py-4"
-      style="
-        margin: 80px 0;
-        background-image: url('./img/redPaint.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: right;
-      ">
+      class="container-fluid my-70 py-4 bg-primary"
+      >
       <div class="container py-4 pain">
         <div class="row g-0 justify-content-start mt-5">
           <div class="col-lg-8">
@@ -777,14 +471,15 @@
           <div class="col-lg-4 align-self-end mb-5">
             <img
               class="d-none d-md-none d-lg-block mx-lg-auto img-fluid"
-              src="./img/gem4.png"
-              style="width: 60%; height: auto" />
+              src="./img/quote.png"
+              style="width: 90%; height: auto" />
           </div>
         </div>
       </div>
     </div>
 
     <!-- The team -->
+    <hr class="featurette-divider">
     <div class="container grid gap-3 px-4 py-5">
       <div class="text-center mx-auto" style="max-width: 500px">
         <h1 class="display-5">Meet the Team</h1>
@@ -823,6 +518,7 @@
     </div>
 
     <!-- Testimonials responsive -->
+    <hr class="featurette-divider">
     <div
       class="container-fluid py-2 py-sm-3 py-md-4 py-lg-5 mt-3 mt-md-4 mt-lg-5"></div>
       <div
@@ -991,6 +687,7 @@
     </div>
 
     <!-- Call to action -->
+    <hr class="featurette-divider">
     <div
       class="container-fluid mt-5 py-5 "
       style="
