@@ -24,17 +24,18 @@
   <style>
 
     .mistedGlass {
-            background-color: hsla(180, 4%, 95%, 0.7);
-            backdrop-filter: blur(20px);
-          }
+      background: rgba(250,250,250,0.25);
+      box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+      backdrop-filter: blur(4.5px);
+      -webkit-backdrop-filter: blur(4.5px);
+      border-radius: 10px;
+
+    }
 
     .dropdown-menu {
       background-color: hsla(180, 4%, 95%, 0.7);
       backdrop-filter: blur(20px);
     }
-
-
-
 
     @media (min-width: 576px ) {
 
@@ -91,7 +92,7 @@
 
     body {
       padding: 0;
-      background-color: #F5F5F5;
+      background-color: #e4e4e4;
       
     }
 
@@ -127,7 +128,7 @@
           </button>
 
           <div
-            class="navbar-collapse collapse show text-end"
+            class="navbar-collapse collapse show text-end "
             id="navbarsExample04">
             <ul class="navbar-nav me-auto mb-2 mb-sm-0 nav-underline">
               <li class="nav-item ms-md-4">
@@ -149,7 +150,7 @@
                   aria-expanded="false"
                   >Pages</a
                 >
-                <ul class="dropdown-menu mistedGlass ">
+                <ul class="dropdown-menu mistedGlass">
                   <li><a class="dropdown-item text-dark" href="#">Home</a></li>
                   <li><a class="dropdown-item text-dark" href="#">About</a></li>
                   <li><a class="dropdown-item text-dark" href="#">Services</a></li>
@@ -193,11 +194,11 @@
                 </p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                   <button type="button" class="btn btn-lg px-4 me-md-2 shadow" style="background-color: #6610f2; color: white">
-                    Contact us
+                    About us
                   </button>
                   <button
                     type="button"
-                    class="btn btn-outline-primary  btn-lg px-4 shadow">
+                    class="btn btn-outline-dark  btn-lg px-4 shadow">
                     Get a quote
                   </button>
                 </div>
@@ -208,7 +209,6 @@
       </div>
     
       <!-- hero drip -->
-    
       <div class="container-fluid overflow-hidden px-0 mt-n1">
         <img
           class="heroDrip img-responsive"
@@ -217,249 +217,260 @@
       </div>
     </section>
       
-    <!-- Concept -->
-    <section id="concept">
-      <hr class="featurette-divider">
-      <div class="container-fluid banner">
-        <div class="container  px-4 rounded-5 bg-white">
+    <!-- About -->
+    
+    <section id="Appeal">
+      <div class="container-fluid banner mt-5 mb-md-5">
+        <div class="container  px-4 rounded-5 ">
           <div class="row featurette">
-            <div class="col-md-5">
-              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3" width="100%" height="auto" src="./img/Stuck at Home Staying Home.svg" >
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">Why <span class="text-body-secondary">choose us?</span></h2>
+              <p class="lead">P.R Painting and Decorating's team of skilled female professionals bring a fresh perspective to the world of painting and decorating. We believe in creating spaces that resonate with your personality and style, making us your ideal partner for crafting a living environment that truly feels like home.</p>
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 shadow">
+               Free Quotation
+              </button>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-5 mb-3 mt-4 mt-md-5 order-md-1">
+              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid " width="500px" height="auto" src="./img/Appeal.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Concept -->
+    <section id="concept" class="mb-5">
+      <div class="container-fluid banner">
+        <div class="container px-4 rounded-5 bg-transparent">
+          <div class="row featurette ">
+            <div class="col-md-5 mb-3 mt-md-5 order-md-2 bg-transparent">
+              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3" width="500px" height="auto" src="./img/Stuck at Home Staying Home.svg" >
+            </div>
+            <div class="col-md-7 order-md-1 ">
               <h2 class="featurette-heading fw-normal lh-1">Your home, <span class="text-body-secondary">our canvas.</span></h2>
               <p class="lead">At P.R Painting and Decorating, our focus is on making your spaces truly special. Our all-female team is dedicated to making your dream home a reality. From elegant strokes of color to the finest finishing touches, we bring a fresh perspective and creative flair to every project.  </p>
+              <a href="#" class="btn btn-primary btn-lg px-4 me-md-2 shadow">
+                Traditional finishes
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Appeal -->
-    <section id="Appeal">
-      <hr class="featurette-divider">
-      <div class="container-fluid banner">
-        <div class="container  px-4 rounded-5 bg-white">
-          <div class="row featurette">
-            <div class="col-md-5 order-md-2">
-              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3" width="100%" height="auto" src="./img/undefined.png" >
-            </div>
-            <div class="col-md-7 order-md-1">
-              <h2 class="featurette-heading fw-normal lh-1">Why <span class="text-body-secondary">choose us?</span></h2>
-              <p class="lead">P.R Painting and Decorating stands out as a unique and empowering choice for your home transformation. With a team of skilled female professionals, we bring a fresh perspective to the world of painting and decorating. Our commitment to quality craftsmanship, attention to detail, and personalized service ensures that your vision is not just met, but exceeded. We believe in creating spaces that resonate with your personality and style, making us your ideal partner for crafting a living environment that truly feels like home.</p>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </section>
 
     <!-- Services -->
-    <hr class="featurette-divider">
-    <div class="container px-4 py-5" id="custom-cards">
-      <div class="text-center mx-auto mb-5" style="max-width: 500px">
-        <h1 class="display-5">Professional Painting Services</h1>
-        <hr class="w-25 mx-auto text-primary" style="opacity: 1" />
-      </div>
-      <div
-        class="row row-cols-1 row-cols-lg-3 row-cols-md-2 align-items-stretch g-4">
-        
-        <!-- Interior decoration -->
-        <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="
-              background-image: url('./img/thanos-pal-61TfyNIrWmI-unsplash.jpg');
-              background-position: bottom center;
-            ">
+    <section id="services" class="my-5 pb-md-5" style="background-image: url('./img/services-bg.svg'); background-position: center; background-size: cover;">
+     
+      <div class="container px-4 py-5" id="custom-cards">
+        <div class="text-center mx-auto my-5" style="max-width: 500px">
+          <h2 class="featurette-heading fw-normal lh-1">Professional Painting Services</h2>
+          <hr class="w-25 mx-auto text-primary" style="opacity: 1" />
+        </div>
+        <div
+          class="row row-cols-1 row-cols-lg-3 row-cols-md-2 align-items-stretch g-4 mb-5">
+          
+          <!-- Interior decoration -->
+          <div class="col">
             <div
-              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                Interior decoration
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="./img/logo.sm.jpg"
-                    alt="Logo"
-                    width="32"
-                    height="32"
-                    class="rounded-circle border border-white" />
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#geo-fill"></use>
-                  </svg>
-                  <small>Pakistan</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>4d</small>
-                </li>
-              </ul>
+              class="card card-cover h-100 overflow-hidden text-bg-primary rounded-4 shadow-lg"
+              style="
+                background-image: url('./img/thanos-pal-61TfyNIrWmI-unsplash.jpg');
+                background-position: bottom center;
+              ">
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
+                  Interior decoration
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="./img/logo.sm.jpg"
+                      alt="Logo"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white" />
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>Pakistan</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>4d</small>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Finishes -->
-        <div class="col">
-          <div
-            id="servicesOne"
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="
-              background-image: url('#');
-              background-position: bottom center;
-            ">
+          <!-- Finishes -->
+          <div class="col">
             <div
-              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                Finishes
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="./img/logo.sm.jpg"
-                    alt="Logo"
-                    width="32"
-                    height="32"
-                    class="rounded-circle border border-white" />
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#geo-fill"></use>
-                  </svg>
-                  <small>Pakistan</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>4d</small>
-                </li>
-              </ul>
+              id="servicesOne"
+              class="card card-cover h-100 overflow-hidden text-bg-light rounded-4 shadow-lg"
+              style="
+                background-image: url('#');
+                background-position: bottom center;
+              ">
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-secondary text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
+                  Finishes
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="./img/logo.sm.jpg"
+                      alt="Logo"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white" />
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small class="text-secondary">Pakistan</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>4d</small>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Free Quotation -->
-        <div class="col d-lg-none">
-          <div
-            id="servicesOne"
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="
-              background-image: url('#');
-              background-position: bottom center;
-            ">
+          <!-- Free Quotation -->
+          <div class="col d-lg-none">
             <div
-              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                Free Quotation
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="./img/logo.sm.jpg"
-                    alt="Logo"
-                    width="32"
-                    height="32"
-                    class="rounded-circle border border-white" />
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#geo-fill"></use>
-                  </svg>
-                  <small>Pakistan</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>4d</small>
-                </li>
-              </ul>
+              id="servicesOne"
+              class="card card-cover h-100 overflow-hidden text-bg-dark border border-dark rounded-4 shadow-lg"
+              style="
+                background-image: url('#');
+                background-position: bottom center;
+              ">
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-primary text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
+                  Free Quotation
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="./img/logo.sm.jpg"
+                      alt="Logo"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white" />
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>Pakistan</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>4d</small>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- Exterior decoration -->
-        <div class="col">
-          <div
-            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-            style="background-image: url('unsplash-photo-3.jpg')">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                Exterior decoration
-              </h3>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img
-                    src="./img/logo.sm.jpg"
-                    alt="Logo"
-                    width="32"
-                    height="32"
-                    class="rounded-circle border border-white" />
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#geo-fill"></use>
-                  </svg>
-                  <small>California</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em">
-                    <use xlink:href="#calendar3"></use>
-                  </svg>
-                  <small>5d</small>
-                </li>
-              </ul>
+          <!-- Exterior decoration -->
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-secondary rounded-4 shadow-lg"
+              style="background-image: url('unsplash-photo-3.jpg')">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center text-dark">
+                  Exterior decoration
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto text-dark">
+                  <li class="me-auto">
+                    <img
+                      src="./img/logo.sm.jpg"
+                      alt="Logo"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white" />
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>California</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>5d</small>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     
     
 
     <!-- Get a quote -->
-    <hr class="featurette-divider">
     <div
-      class="container-fluid my-70 py-4 bg-primary"
-      >
-      <div class="container py-4 pain">
-        <div class="row g-0 justify-content-start mt-5">
+      class="container-fluid py-md-4 mb-5" style="background-color:#e4e4e4;">
+      
+      <div class="container mb-5 pain">
+        <div class="row g-0 justify-content-start mt-sm-0 mt-md-4">
+          <div class="col-lg-4 align-self-end mb-5">
+            <img
+              class="d-none d-md-none d-lg-block mx-lg-auto img-fluid"
+              src="./img/quotation-img.svg"
+              style="width: 90%; height: auto" />
+          </div>
           <div class="col-lg-8">
-            <div class="bg-white text-center p-4">
-              <h1 class="mb-4">Request a Quote</h1>
+            <div class="text-bg-light text-center p-4  rounded-3 shadow">
+              <h1 class="mb-4 ">Request a Quote</h1>
               <form>
                 <div class="row g-3">
                   <div class="col-12 col-sm-6">
                     <input
                       type="text"
-                      class="form-control bg-light border-0"
+                      class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3"
                       placeholder="Your Name"
                       style="height: 55px" />
                   </div>
                   <div class="col-12 col-sm-6">
                     <input
                       type="email"
-                      class="form-control bg-light border-0"
+                      class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3"
                       placeholder="Your Email"
                       style="height: 55px" />
                   </div>
                   <div class="col-12 col-sm-6">
                     <input
                       type="text"
-                      class="form-control bg-light border-0"
+                      class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3"
                       placeholder="Your Number"
                       style="height: 55px" />
                   </div>
                   <div class="col-12">
                     <textarea
-                      class="form-control bg-light border-0 py-3"
+                      class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3 py-3"
                       rows="2"
                       placeholder="Message"></textarea>
                   </div>
-                  <div class="col-12">
+                  <div class="col-12 col-lg-4">
                     <button class="btn btn-primary w-100 py-3" type="submit">
                       Get A Quote
                     </button>
@@ -468,63 +479,62 @@
               </form>
             </div>
           </div>
-          <div class="col-lg-4 align-self-end mb-5">
-            <img
-              class="d-none d-md-none d-lg-block mx-lg-auto img-fluid"
-              src="./img/quote.png"
-              style="width: 90%; height: auto" />
-          </div>
+          
         </div>
       </div>
     </div>
 
     <!-- The team -->
-    <hr class="featurette-divider">
-    <div class="container grid gap-3 px-4 py-5">
-      <div class="text-center mx-auto" style="max-width: 500px">
-        <h1 class="display-5">Meet the Team</h1>
-        <hr class="w-25 mx-auto text-primary" style="opacity: 1" />
-      </div>
-      <div class="row justify-content-evenly gap-5 pb-5">
-        <div class="card px-0" style="width: 18rem">
-          <img
-            src="./img/simone-mascellari-SKnfgtlnsdU-unsplash.jpg"
-            class="card-img-top"
-            alt="Worker One" />
-          <div class="card-body bg-dark bg-gradient text-light">
-            <h5 class="card-title">Becky</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+<!-- 
+    <section id="team" class="py-5 my-5 pb-md-5" style="background-image: url('./img/paintservices.svg'); background-position: center; background-size: cover;">
+     
+      <div class="container px-4 py-5" id="custom-cards">
+        <div class="text-center mx-auto my-5" style="max-width: 500px">
+          <h2 class="featurette-heading fw-normal lh-1">Meet the Team</h2>
+          <hr class="w-25 mx-auto text-primary" style="opacity: 1" />
+        </div>
+        <div class="container grid gap-3 px-4 py-5">
+          <div class="row justify-content-evenly gap-5 pb-5">
+            <div class="card px-0" style="width: 18rem">
+              <img
+                src="./img/simone-mascellari-SKnfgtlnsdU-unsplash.jpg"
+                class="card-img-top"
+                alt="Worker One" />
+              <div class="card-body bg-dark bg-gradient text-light">
+                <h5 class="card-title">Becky</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card px-0" style="width: 18rem">
+              <img
+                src="./img/avi-richards-PfUH_AuFE_0-unsplash.jpg"
+                class="card-img-top"
+                alt="Worker Two" />
+              <div class="card-body text-end bg-dark bg-gradient text-light">
+                <h5 class="card-title">Gemma</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card px-0" style="width: 18rem">
-          <img
-            src="./img/avi-richards-PfUH_AuFE_0-unsplash.jpg"
-            class="card-img-top"
-            alt="Worker Two" />
-          <div class="card-body text-end bg-dark bg-gradient text-light">
-            <h5 class="card-title">Gemma</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-          </div>
-        </div>
       </div>
-    </div>
+    </section> -->
 
     <!-- Testimonials responsive -->
-    <hr class="featurette-divider">
-    <div
-      class="container-fluid py-2 py-sm-3 py-md-4 py-lg-5 mt-3 mt-md-4 mt-lg-5"></div>
+    <!-- <div
+      class="container-fluid py-2 py-sm-3 py-md-4 py-lg-5 mt-3 mt-md-4 mt-lg-5 mb-5">
       <div
         class="row justify-content-md-end pt-2 pt-sm-3 pt-md-4 pt-lg-5"
         style="
-          background-image: url('./img/OIP.jpg');
+          background-image: url('./img/testimonal-bg.svg');
           background-position: center;
           background-size: cover;
           background-repeat: no-repeat; width: 100%;
@@ -684,190 +694,183 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Call to action -->
-    <hr class="featurette-divider">
-    <div
-      class="container-fluid mt-5 py-5 "
-      style="
-        background-image: url('./img/yellowPaintBrush.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: left;
-        
-      ">
-      <div class="action-bg container-lg py-5">
-        <div class="row justify-content-md-start">
-          <div class="col-10 col-lg-8">
-            <div class="p-4 p-md-5">
-              <h1 class="display-5 mb-4">Do you have a project?</h1>
-              <p class="fs-4">
-                Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum
-                et, tempor sit sit diam amet et eos labore. Clita erat ipsum et
-                lorem et sit, sed stet no labore lorem sit. Sanctus clita duo
-                justo et tempor magna dolore erat amet
-              </p>
-              <a
-                href=""
-                class="btn btn-primary rounded-pill py-md-3 px-md-5 mt-2 mt-md-4"
-                >Contact Us</a
-              >
+    <!-- <section id="project" class="py-5 my-5 pb-md-5" style="background-image: url('./img/paintservices.svg'); background-position: left; background-size: cover;">
+      
+      <div class="container-fluid banner mt-5 mb-md-5">
+        <div class="container  px-4 rounded-5 ">
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">Do you have a <span class="text-body-secondary">project?</span></h2>
+              <p class="lead">P.R Painting and Decorating's team of skilled female professionals bring a fresh perspective to the world of painting and decorating. We believe in creating spaces that resonate with your personality and style, making us your ideal partner for crafting a living environment that truly feels like home.</p>
+              <a href="#" class="btn btn-primary mb-3">
+                Free quotation
+              </a>
             </div>
-          </div>
-          <div class="col-lg-4">
-            <img
-              class="d-none d-md-none d-lg-block mx-lg-auto img-fluid"
-              src="./img/becky4.png"
-              style="width: 60%; height: auto" />
+            <div class="col-md-5 mb-3 mt-md-5 order-md-1">
+              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid " width="500px" height="auto" src="./img/project-bg.svg">
+            </div>
           </div>
         </div>
       </div>
-    </div>
+     
+      
+    </section> -->
+    
+
+
+    
+    
     <!-- Footer -->
-    <div class="container-fluid bg-dark py-5 mt-5">
-      <div class="container py-5">
-        <footer>
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-3 mt-5">
-              <h5 class="text-primary">Contact Us</h5>
-              <hr class="w-25 text-warning mb-4" style="opacity: 0.5" />
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <p class="mb-4 text-light">
-                    Get in touch with us to arrange a free quotation.
-                  </p>
-                </li>
-                <li class="nav-item mb-2">
-                  <p class="mb-2 text-light">
-                    <i class="fa fa-map-marker-alt text-primary me-3"></i>South
-                    West
-                  </p>
-                </li>
-                <li class="nav-item mb-2">
-                  <p class="mb-2 text-light">
-                    <i class="fa fa-envelope text-primary me-3"></i
-                    >email@example.com
-                  </p>
-                </li>
-                <li class="nav-item mb-2">
-                  <p class="mb-0 text-light">
-                    <i class="fa fa-phone-alt text-primary me-3"></i>+012 345
-                    67890
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 mt-5">
-              <h5 class="text-primary">Our Services</h5>
-              <hr class="w-25 text-warning mb-4" style="opacity: 0.5" />
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-primary"
-                    >Internal decoration</a
-                  >
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-primary"
-                    >Exterior decoration</a
-                  >
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-primary"
-                    >Free quotation</a
-                  >
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-primary"
-                    >Special finishes</a
-                  >
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-primary"
-                    >Wallpapering</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 mt-5">
-              <h5 class="text-primary">Quick Links</h5>
-              <hr class="w-25 text-warning mb-4" style="opacity: 0.5" />
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-primary">Home</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-primary">About</a>
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-primary"
-                    >Services</a
-                  >
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-primary"
-                    >Get a quote</a
-                  >
-                </li>
-                <li class="nav-item mb-2">
-                  <a href="#" class="nav-link p-0 text-body-primary"
-                    >Testimonials</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 mt-5">
-              <form>
-                <h5 class="text-primary">Follow Us</h5>
+    <footer style="background-image: url('./img/footer-bg.svg'); background-position: top; background-size: cover;">
+      <div class="container-fluid py-5 mt-5">
+        <div class="container pt-3">
+          <footer>
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-3 mt-5">
+                <h5 class="text-primary">Contact Us</h5>
                 <hr class="w-25 text-warning mb-4" style="opacity: 0.5" />
-                <div class="d-flex">
-                  <a
-                    class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
-                    href="#"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a
-                    class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
-                    href="#"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a
-                    class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
-                    href="#"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                  <a
-                    class="btn btn-lg btn-primary btn-lg-square rounded-circle"
-                    href="#"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </div>
-              </form>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <p class="mb-4 text-secondary">
+                      Get in touch with us to arrange a free quotation.
+                    </p>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <p class="mb-2 text-secondary">
+                      <i class="fa fa-map-marker-alt text-primary me-3"></i>South
+                      West
+                    </p>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <p class="mb-2 text-secondary">
+                      <i class="fa fa-envelope text-primary me-3"></i
+                      >email@example.com
+                    </p>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <p class="mb-0 text-secondary">
+                      <i class="fa fa-phone-alt text-primary me-3"></i>+012 345
+                      67890
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 mt-5">
+                <h5 class="text-primary">Our Services</h5>
+                <hr class="w-25 text-warning mb-4" style="opacity: 0.5" />
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-primary"
+                      >Internal decoration</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-primary"
+                      >Exterior decoration</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-primary"
+                      >Free quotation</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-primary"
+                      >Special finishes</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-primary"
+                      >Wallpapering</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 mt-5">
+                <h5 class="text-primary">Quick Links</h5>
+                <hr class="w-25 text-warning mb-4" style="opacity: 0.5" />
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-primary">Home</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-primary">About</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-primary"
+                      >Services</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-primary"
+                      >Get a quote</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-primary"
+                      >Testimonials</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 mt-5">
+                <form>
+                  <h5 class="text-primary">Follow Us</h5>
+                  <hr class="w-25 text-warning mb-4" style="opacity: 0.5" />
+                  <div class="d-flex">
+                    <a
+                      class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                      href="#"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                      href="#"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                      class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                      href="#"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a
+                      class="btn btn-lg btn-primary btn-lg-square rounded-circle"
+                      href="#"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                </form>
+              </div>
             </div>
-          </div>
-        </footer>
+          </footer>
+        </div>
       </div>
-    </div>
+    </footer>
     <!-- Sub-footer -->
-    <div class="sub-footer container-fluid text-dark py-4">
-      <div class="container">
-        <div class="row g-0">
-          <div class="col-md-6 text-center text-md-start">
-            <p class="mb-md-0 text-light">
-              Copyright ©
-              <a class="text-dark fw-bold" href="#"
-                >PR-Painting and Decorating</a
-              >. All Rights Reserved.
-            </p>
-          </div>
-          <div class="col-md-6 text-center text-md-end">
-            <p class="mb-0 text-light">
-              Designed by <a class="text-dark fw-bold">Markham Webworks</a>
-            </p>
+    <section id="sub-footer">
+      <div class="container-fluid text-dark py-4" style="background-color: F3EEF1;">
+        <div class="container">
+          <div class="row g-0">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="mb-md-0 text-secondary">
+                Copyright ©
+                <a class="text-dark fw-bold" href="#"
+                  >PR-Painting and Decorating</a
+                >. All Rights Reserved.
+              </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <p class="mb-0 text-secondary">
+                Designed by <a class="text-dark fw-bold">Markham Webworks</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- BS JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
