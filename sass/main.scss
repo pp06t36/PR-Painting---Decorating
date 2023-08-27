@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// import functions first (so you can use them in this file)
+@import "../node_modules/bootstrap/scss/functions";
+
+// redefine variables not dependent on anything else
+
 //global variable
 $enable-rounded: false;
-
 $enable-negative-margins: true;
 
 // theme color variables
@@ -8,6 +16,20 @@ $primary:#c77dff;
 $secondary:#9747f9;
 $light:#f5f5f5;
 $dark:#1b1a1c;
+
+// font family
+$font-family-base:'Montserrat', sans-serif;
+$headings-font-family: 'Raleway', sans-serif;
+
+
+
+
+//  font size
+$font-size-base: 1rem;
+$lead-font-size: $font-size-base* 1.5;
+
+//  heading
+
 
 // import variable and mixins files 
 // any redefined vars above will be incorporated int he file (maps)
@@ -18,10 +40,13 @@ $dark:#1b1a1c;
 
 // anything that depends on variables/ mixins files defined below
 
+// add colors to theme
 $custom-colors: (
     "accent":#6610f2,
+    "secondary-light":#ead7f8,
+    "secondary-dark": #2E1852
 );
-
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
 
 //import whole bootstrap sass lib
