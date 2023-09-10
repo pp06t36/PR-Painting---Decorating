@@ -43,8 +43,8 @@ $lead-font-size: $font-size-base* 1.5;
 // add colors to theme
 $custom-colors: (
     "accent":#6610f2,
-    "secondary-light":#ead7f8,
-    "secondary-dark": #2E1852
+    "primary-light":#E4C2FF,
+    "primary-dark": #2E0052,
 );
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
