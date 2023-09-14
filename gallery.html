@@ -19,8 +19,6 @@
     <link rel="stylesheet" href="css/main.min.css" />
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Carousel -->
-    <link href="carousel.css" rel="stylesheet" />
   </head>
   <style>
 
@@ -96,10 +94,10 @@
     <section class="top pt-sm-3 pt-md-5">
       <!-- nav bar -->
       <nav
-        class="container-navbar navbar navbar-expand-sm navbar-light py-2 py-lg-3 mb-sm-4 mb-md-0"
+        class="container-navbar navbar navbar-expand-sm navbar-light py-2 py-lg-3  "
         aria-label="Fourth navbar example">
         <div class="container-fluid px-4">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img
               src="./img/logo.sm.jpg"
               alt="Logo"
@@ -123,15 +121,15 @@
             id="navbarsExample04">
             <ul class="navbar-nav me-auto mb-2 mb-sm-0 nav-underline">
               <li class="nav-item ms-md-4">
-                <a class="nav-link  ml-5 text-dark" aria-current="page" href="index.html"
+                <a class="nav-link ml-5 text-dark" aria-current="page" href="index.html"
                   >Home</a
                 >
               </li>
               <li class="nav-item text-dark ms-md-4">
-                <a class="nav-link active" href="about.html">About</a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
               <li class="nav-item text-dark ms-md-4">
-                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link active text-dark" href="services.html">Services</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -142,8 +140,8 @@
                   >Pages</a
                 >
                 <ul class="dropdown-menu bg-gradient ">
-                  <li><a class="dropdown-item text-dark" href="gallery.html">Gallery</a></li>
-                  <li><a class="dropdown-item text-dark" href="#testimonials">Testimonials</a></li>
+                  <li><a class="dropdown-item text-dark" href="index.html">Gallery</a></li>
+                  <li><a class="dropdown-item text-dark" href="about.html">Testimonials</a></li>
                   <li><a class="dropdown-item text-dark" href="services.html">Services</a></li>
                 </ul>
               </li>
@@ -164,147 +162,227 @@
       <!-- Hero -->
       <div class="hero container-fluid mt-sm-3 py-4 pt-4 py-lg-5">
         <div class="bg-heroImg">
-        <div class="container col-xxl-8 px-4 py-lg-5 py-md-4 py-sm-4">
-          <div class="row flex-lg-row-reverse align-items-center g-5 justify-content-center">
-              <div class="order-lg-2 col-lg-7 text-lg-left">
-                <h1 class="display-4 fw-bold text-body-emphasis lh-4 mb-3 text-primary">
-                  Why <span class="text-accent">choose</span> us?
-                </h1>
-                <p class="lead">
-                  P.R Painting and Decorating's team of  <span class="text-accent fw-bold">skilled female professionals</span> believe in creating spaces that resonate with your personality and style.
-                </p>
-                <div class=" d-grid gap-2 d-md-flex justify-content-md-start">
-                  <button type="button" class="btn btn-lg btn-accent px-4 me-md-2 shadow">
-                    Testimonials
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary-dark border-3 btn-lg px-4 shadow">
-                    Contact Us
-                  </button>
+          <div class="container col-xxl-8 py-lg-5 py-md-4 py-sm-4">
+            <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 1779.03px;">
+              <!-- card 1 -->
+              <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+                <div class="card">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://images.unsplash.com/photo-1505821100160-522e6d017a36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1967&q=80" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <div class="card-img-overlay">
+                    <!-- <h5 class="card-title text-primary-dark fw-bold">Interior Decoration</h5> -->
+                </div>
+                  <div class="card-body bg-light">
+                    <h5 class="card-title">Interior Decoration</h5>
+                    <!-- <p class="card-text"></p> -->
+                  </div>
                 </div>
               </div>
-              <div class="order-lg-1 d-block col-10 col-sm-8 col-lg-5">
-                <img
-                  src="./img/heroImg.svg"
-                  class="d-block mx-lg-auto img-fluid"
-                  alt="Beck and Gemma in their safety equipment"
-                  width="100%"
-                  height="auto"
-                  loading="lazy" />
+              <!-- card 2 -->
+              <div class="col-sm-6 col-lg-3 col-md-4 mb-4 " style="position: absolute; left: 0%; top: 337.505px;">
+                <div class="card p-3 bg-light">
+                  <figure class="p-3 mb-0">
+                    <blockquote class="blockquote">
+                      <p>Be faithful to your own taste, because nothing you really like is ever out of style.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer mb-0 text-muted">
+                      Billy Baldwin
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <!-- card 3 -->
+              <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 507.992px;">
+                <div class="card">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://images.unsplash.com/photo-1532323544230-7191fd51bc1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80 " alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+          
+                  <div class="card-body bg-light">
+                    <h5 class="card-title">Exterior decoration</h5>
+                    <!-- <p class="card-text"></p> -->
+                  </div>
+                </div>
+              </div>
+              <!-- card 4 -->
+              <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 885.48px;">
+                <div class="card bg-primary text-white text-center p-3">
+                  <figure class="mb-0">
+                    <blockquote class="blockquote">
+                      <p>Decorating golden rule: Live with what you love.</p>
+                    </blockquote>
+                    <!-- <figcaption class="blockquote-footer mb-0 text-white">
+                      Someone famous in <cite title="Source Title">Source Title</cite>
+                    </figcaption>
+                  </figure> -->
+                </div>
+              </div>
+              <!-- card 5 -->
+              <div class="col-sm-6 col-lg-3 col-md-4 mb-4 " style="position: absolute; left: 0%; top: 1023.99px;">
+                <div class="card text-center">
+                  <div class="card-body bg-secondary">
+                    <h5 class="card-title">Do you have a project?</h5>
+                    <p class="card-text">Contact us for a free quotation.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- card 6 -->
+              <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 1177.48px;">
+                <div class="card">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://images.unsplash.com/photo-1576504677634-06b2130bd1f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1926&q=80" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                </div>
+              </div>
+              <!-- card 7 -->
+              <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 1463.03px;">
+                <div class="card p-3 text-end">
+                  <figure class="mb-0">
+                    <blockquote class="blockquote">
+                      <p>Home is the nicest word there is.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer mb-0 text-muted">
+                      Laura Ingalls Wilder
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <!-- card 8 -->
+              <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 1601.54px;">
+                <div class="card">
+                  <div class="card-body bg-accent">
+                    <h5 class="card-title text-light">Card title</h5>
+                    <p class="card-text text-light">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- card 1 -->
+              <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+                <div class="card">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://images.unsplash.com/photo-1505821100160-522e6d017a36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1967&q=80" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <div class="card-img-overlay">
+                    <h5 class="card-title text-light">Classic living</h5>
+                </div>
+                  <!-- <div class="card-body">
+                    <h5 class="card-title">A doctor's waiting room</h5>
+                    <p class="card-text"></p>
+                  </div> -->
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 337.505px;">
+                <div class="card p-3 bg-light">
+                  <figure class="p-3 mb-0">
+                    <blockquote class="blockquote">
+                      <p>Be faithful to your own taste, because nothing you really like is ever out of style.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer mb-0 text-muted">
+                      Billy Baldwin
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <!-- card 3 -->
+              <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 507.992px;">
+                <div class="card">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://images.unsplash.com/photo-1532323544230-7191fd51bc1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80 " alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+          
+                  <div class="card-body">
+                    <h5 class="card-title">A white back yard</h5>
+                    <!-- <p class="card-text"></p> -->
+                  </div>
+                </div>
+              </div>
+              <!-- card 4 -->
+              <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 885.48px;">
+                <div class="card bg-primary text-white text-center p-3">
+                  <figure class="mb-0">
+                    <blockquote class="blockquote">
+                      <p>Decorating golden rule: Live with what you love.</p>
+                    </blockquote>
+                    <!-- <figcaption class="blockquote-footer mb-0 text-white">
+                      Someone famous in <cite title="Source Title">Source Title</cite>
+                    </figcaption>
+                  </figure> -->
+                </div>
+              </div>
+              <!-- card 5 -->
+              <div class="col-sm-6 col-lg-3 col-md-4 mb-4 " style="position: absolute; left: 0%; top: 1023.99px;">
+                <div class="card text-center">
+                  <div class="card-body bg-secondary">
+                    <h5 class="card-title">Do you have a project?</h5>
+                    <p class="card-text">Contact us for a free quotation.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- card 6 -->
+              <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 1177.48px;">
+                <div class="card">
+                  <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://images.unsplash.com/photo-1576504677634-06b2130bd1f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1926&q=80" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                </div>
+              </div>
+              <!-- card 7 -->
+              <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 1463.03px;">
+                <div class="card p-3 text-end">
+                  <figure class="mb-0">
+                    <blockquote class="blockquote">
+                      <p>Home is the nicest word there is.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer mb-0 text-muted">
+                      Laura Ingalls Wilder
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <!-- card 8 -->
+              <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 1601.54px;">
+                <div class="card">
+                  <div class="card-body bg-accent">
+                    <h5 class="card-title text-light">Card title</h5>
+                    <p class="card-text text-light">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- hero drip -->
-      <div class="container-fluid overflow-hidden px-0">
+      <div class="container-fluid overflow-hidden px-0 mt-n1">
         <img
           class="heroDrip img-responsive"
           src="./img/drip.svg"
           style="width: 100%; height: auto" />
       </div>
     </section>
-
-    <!-- Crew -->
-    <section id="crew" class="my-md-5 py-sm-3 py-md-5">
-      <div class="container px-4 py-5 " id="custom-cards">
-        <div
-          class="row row-cols-1 row-cols-lg-2 row-cols-md-1 align-items-stretch justify-content-evenly g-5 my-5">
-          <!-- Becky -->
-          <div class="col">
-            <div
-              class="card card-cover card--about h-100 overflow-hidden bg-secondary rounded-4"
-              style="
-                background-image: url('./img/thanos-pal-61TfyNIrWmI-unsplash.jpg');
-                background-position: bottom center;
-              ">
-              <div
-                class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                  Becky 
-                </h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img
-                      src="./img/logo.sm.jpg"
-                      alt="Logo"
-                      width="32"
-                      height="32"
-                      class="rounded-circle border border-white" />
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#geo-fill"></use>
-                    </svg>
-                    <small></small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#calendar3"></use>
-                    </svg>
-                    <small></small>
-                  </li>
-                </ul>
-              </div>
+    <!-- Interior -->
+    <!-- <section id="Interior" class="pt-5 mt-5">
+      <div class="container-fluid banner">
+        <div class="container  px-4 rounded-5 ">
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">Transform <span class="text-body-secondary">your interiors</span></h2>
+              <p class="fs-3"> Our interior decoration services are designed to breathe new life into your living spaces. With a keen eye for detail and a passion for design, our skilled team of female professionals will work closely with you to create interiors that reflect your unique style and personality. Whether you're seeking a cosy and inviting atmosphere or a sleek and modern look, we've got the expertise to make it happen. Let us transform your home's interiors into spaces you'll love to live in.</p>
+              <button type="button" class="btn btn-primary-dark btn-lg px-4 me-md-2 shadow">
+               Interior decoration
+              </button>
             </div>
-          </div>
-          <!-- Gemma -->
-          <div class="col">
-            <div
-              id="servicesOne"
-              class="card card-cover card--about h-100 overflow-hidden bg-secondary-light rounded-4"
-              style="
-                background-image: url('#');
-                background-position: bottom center;
-              ">
-              <div
-                class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                  Gemma
-                </h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img
-                      src="./img/logo.sm.jpg"
-                      alt="Logo"
-                      width="32"
-                      height="32"
-                      class="rounded-circle border border-white" />
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#geo-fill"></use>
-                    </svg>
-                    <small class="text-secondary"></small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#calendar3"></use>
-                    </svg>
-                    <small></small>
-                  </li>
-                </ul>
-              </div>
+            <div class="col-md-5 mb-3 mt-4 mt-md-5 order-md-1">
+              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid " width="500px" height="auto" src="./img/Appeal.svg">
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Concept -->
-    <!-- <section id="concept" class="py-5">
-      <div class="container-fluid banner">
+    </section> -->
+    <!-- exterior -->
+    <!-- <section id="exterior" class="">
+      <div class="container-fluid banner my-5">
         <div class="container px-4 rounded-5 bg-transparent">
-          <div class="row featurette">
-            <div class="col-md-8 order-lg-2">
-              <h2 class="featurette-heading fw-normal lh-1">Your home, <span class="text-body-secondary">our canvas.</span></h2>
-              <p class="fs-3">At P.R Painting and Decorating, our focus is on making your spaces truly special. Our all-female team is dedicated to making your dream home a reality. From elegant strokes of colour to the finest finishing touches, we bring a fresh perspective and creative flair to every project, making us your ideal partners for crafting a living environment that truly feels like home.</p>
-              <a href="tradfin.html" class="btn btn-primary-dark btn-lg px-4 me-md-2 shadow">
-                Traditional finishes
-              </a>
-            </div>
-            <div class="col-md-4 mb-3 mt-md-5 bg-transparent">
+          <div class="row featurette ">
+            <div class="col-md-5 mb-3 mt-md-5 order-md-2 bg-transparent">
               <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3"  width="500px" height="auto" src="./img/Stuck at Home Staying Home.svg" >
+            </div>
+            <div class="col-md-7 order-md-1">
+              <h2 class="featurette-heading fw-normal lh-1">Make your<span class="text-body-secondary"> exterior shine.</span></h2>
+              <p class="fs-3">Our exterior decoration services are all about enhancing the visual charm of your home. Our team of skilled female professionals is experienced in revitalizing exteriors, whether you're looking for a traditional or a contemporary makeover. From fresh coats of paint to unique finishing touches, we'll work closely with you to give your home that impressive first impression it deserves. Let us transform your exterior spaces and make your home the envy of the neighborhood.</p>
+              <a href="#" class="btn btn-primary-dark btn-lg px-4 me-md-2 shadow">
+                exterior decoration
+              </a>
             </div>
           </div>
         </div>
@@ -312,177 +390,112 @@
     </section> -->
 
 
-    <!-- Crew -->
-    <section id="testimonials" class="my-md-5 py-sm-3 py-md-5" style="background-image: url('./img/services-bg.svg'); background-position: center; background-size: cover;">
-      <div
-      class="container-fluid">
-      <div
-        class="row justify-content-md-end pt-2 pt-sm-3 pt-md-4 my-md-5"
-        style="
-          background-image: url('./img/testimonal-bg.svg');
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat; width: 100%; height: 90%;
-        ">
-        <div class="col-lg-6 ">
-          <div id="myCarousel" class="carousel slide " data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#myCarousel"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"></button>
-              <button
-                type="button"
-                data-bs-target="#myCarousel"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button
-                type="button"
-                data-bs-target="#myCarousel"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+  
+    
+    
+
+    <!-- Contact US -->
+    <div
+      class="container-fluid py-md-4 mb-4" style="background-color:#e4e4e4;">
+      
+      <div class="container mb-5 pain">
+        <div class="row g-0 justify-content-start mt-sm-0 mt-md-4">
+          <div class="col-lg-4 align-self-end mb-5">
+            <img
+              class="d-none d-md-none d-lg-block mx-lg-auto img-fluid"
+              src="./img/quotation-img.svg"
+              style="width: 50%; height: auto" />
+          </div>
+          <div class="col-lg-8 ">
+            <div class="text-bg-light text-center p-4 rounded-3 shadow">
+              <h1 class="mb-4 ">Contact Us</h1>
+              <form>
+                <div class="row g-3">
+                  <div class="col-12 col-sm-6">
+                    <input
+                      type="text"
+                      class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3"
+                      placeholder="Your Name"
+                      style="height: 55px" />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input
+                      type="email"
+                      class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3"
+                      placeholder="Your Email"
+                      style="height: 55px" />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input
+                      type="text"
+                      class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3"
+                      placeholder="Your Number"
+                      style="height: 55px" />
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3 py-3"
+                      rows="2"
+                      placeholder="Message"></textarea>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                    <button class="btn btn-accent border-3 w-100 py-3" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
-            <div class="carousel-inner mistedGlass">
-              <div class="carousel-item active">
-                <svg
-                  class="bd-placeholder-img"
-                  width="100%"
-                  height="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false">
-                  <rect
-                    width="100%"
-                    height="100%"
-                    fill="var(--bs-secondary-color)" />
-                </svg>
-                <div class="container">
-                  <div class="carousel-caption">
-                    <div
-                      class="d-flex flex-column align-items-center justify-content-center pb-5">
-                      <div class="text-start">
-                        <h1 class="text-start">Abby Bale</h1>
-                        <div class="ratings mb-1">
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                        </div>
-                        <p class="opacity-75 mb-md-5">
-                          Brilliant job of decorating our lounge, hallway and
-                          stairs. Then coming back to fix the mess my husband
-                          made of putting on some curtain ties. Gemma and Becky
-                          are a credit to their profession and lovely people to
-                          meet.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <svg
-                  class="bd-placeholder-img"
-                  width="100%"
-                  height="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false">
-                  <rect
-                    width="100%"
-                    height="100%"
-                    fill="var(--bs-secondary-color)" />
-                </svg>
-                <div class="container">
-                  <div class="carousel-caption">
-                    <div
-                      class="d-flex flex-column align-items-center justify-content-center pb-5">
-                      <div class="text-start">
-                        <h1 class="text-start">Abbie Abbie</h1>
-                        <div class="ratings mb-1">
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                        </div>
-                        <p class="opacity-75 mb-5">
-                          Becky and Gem are great at what they do.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <svg
-                  class="bd-placeholder-img"
-                  width="100%"
-                  height="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false">
-                  <rect
-                    width="100%"
-                    height="100%"
-                    fill="var(--bs-secondary-color)" />
-                </svg>
-                <div class="container">
-                  <div class="carousel-caption">
-                    <div
-                      class="d-flex flex-column align-items-center justify-content-center pb-5">
-                      <div class="text-start">
-                        <h1>Savannah Bee</h1>
-                        <div class="ratings mb-1">
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                        </div>
-                        <p class="opacity-75 mb-5">
-                          Absolutely first class job from Gemma and Becky from
-                          quote to finish, professional, quick, friendly and
-                          tidy. Cannot fault their work, great communications
-                          and a top class job. Would recommend! Thanks.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- The team -->
+<!-- 
+    <section id="team" class="py-5 my-5 pb-md-5" style="background-image: url('./img/paintservices.svg'); background-position: center; background-size: cover;">
+     
+      <div class="container px-4 py-5" id="custom-cards">
+        <div class="text-center mx-auto my-5" style="max-width: 500px">
+          <h2 class="featurette-heading fw-normal lh-1">Meet the Team</h2>
+          <hr class="w-25 mx-auto text-primary" style="opacity: 1" />
+        </div>
+        <div class="container grid gap-3 px-4 py-5">
+          <div class="row justify-content-evenly gap-5 pb-5">
+            <div class="card px-0" style="width: 18rem">
+              <img
+                src="./img/simone-mascellari-SKnfgtlnsdU-unsplash.jpg"
+                class="card-img-top"
+                alt="Worker One" />
+              <div class="card-body bg-dark bg-gradient text-light">
+                <h5 class="card-title">Becky</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide="prev">
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide="next">
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="card px-0" style="width: 18rem">
+              <img
+                src="./img/avi-richards-PfUH_AuFE_0-unsplash.jpg"
+                class="card-img-top"
+                alt="Worker Two" />
+              <div class="card-body text-end bg-dark bg-gradient text-light">
+                <h5 class="card-title">Gemma</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      </div>
-    </section>
+    </section> -->
 
-    <!-- Testimonials responsive -->
     <!-- Testimonials responsive -->
     <!-- <div
       class="container-fluid py-2 py-sm-3 py-md-4 py-lg-5 mt-3 mt-md-4 mt-lg-5 mb-5">
@@ -675,30 +688,6 @@
     </section> -->
     
 
-    <!-- Call to action -->
-    <!-- <section id="project" class="py-5 my-5 pb-md-5" style="background-image: url('./img/paintservices.svg'); background-position: left; background-size: cover;">
-      
-      <div class="container-fluid banner mt-5 mb-md-5">
-        <div class="container  px-4 rounded-5 ">
-          <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading fw-normal lh-1">Do you have a <span class="text-body-secondary">project?</span></h2>
-              <p class="lead">P.R Painting and Decorating's team of skilled female professionals bring a fresh perspective to the world of painting and decorating. We believe in creating spaces that resonate with your personality and style, making us your ideal partner for crafting a living environment that truly feels like home.</p>
-              <a href="#" class="btn btn-primary mb-3">
-                Free quotation
-              </a>
-            </div>
-            <div class="col-md-5 mb-3 mt-md-5 order-md-1">
-              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid " width="500px" height="auto" src="./img/project-bg.svg">
-            </div>
-          </div>
-        </div>
-      </div>
-     
-      
-    </section>
-    
-
 
     
     
@@ -854,6 +843,8 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
   </body>
 </html>
