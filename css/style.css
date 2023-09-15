@@ -138,7 +138,7 @@
 }
 
 .servicesHidden {
-    opacity: .1;
+    opacity: 0;
 }
 
 .servicesHidden:hover {
@@ -175,36 +175,85 @@
 /* About */
 
 .card--about {
-    box-shadow: rgba(178, 178, 178, 0.4) 0px 8px 16px;
+    box-shadow: rgba(112, 112, 112, 0.4) 0px 8px 16px;
 }
 
 .card--about:hover {
     transform: scale(1.025);
-    box-shadow: rgba(178, 178, 178, 0.4) 0px 16px 48px;
+    box-shadow: rgba(112, 112, 112, 0.4) 0px 16px 48px;
 }
 
-    /* icons */
+.card--about:hover .aboutEffect {
+    bottom: 0;
+    height: 320px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background:#A53DFF;
+    opacity: .7;
+    animation: popBackground 0.3s ease-in
+}
 
-    .hoverMediaIcon {
-        transition: color 0.6s ease-in-out, transform 0.6s ease-in-out;
+.aboutHidden {
+    opacity: 0;
+}
+
+.aboutHidden:hover {
+    opacity: 1;
+}
+
+@keyframes popBackground {
+    0% {
+        height: 20px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%
     }
 
-    .hoverMediaIcon:hover {
-        background-color: black;
-        border-color: #000000;
-        color:#E4C2FF;
-        transform: scale(1.1);
-
+    50% {
+        height: 80px;
+        border-top-left-radius: 75%;
+        border-top-right-radius: 75%
     }
 
-    .hoverIconSmall {
-        transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    75% {
+        height: 160px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 85%
     }
 
-    .hoverIconSmall:hover {
-        color: #000000 !important;
-        transform: scale(1.5)!important;
+    100% {
+        height: 320px;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%
     }
+}
+
+
+
+/* icons */
+
+.hoverMediaIcon {
+    transition: color 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.hoverMediaIcon:hover {
+    background-color: black;
+    border-color: #000000;
+    color:#E4C2FF;
+    transform: scale(1.1);
+
+}
+
+.hoverIconSmall {
+    transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.hoverIconSmall:hover {
+    color: #000000 !important;
+    transform: scale(1.5)!important;
+}
+
+
 
     
 

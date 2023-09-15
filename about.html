@@ -99,7 +99,7 @@
         class="container-navbar navbar navbar-expand-sm navbar-light py-2 py-lg-3 mb-sm-4 mb-md-0"
         aria-label="Fourth navbar example">
         <div class="container-fluid px-4">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img
               src="./img/logo.sm.jpg"
               alt="Logo"
@@ -144,18 +144,20 @@
                 <ul class="dropdown-menu bg-gradient ">
                   <li><a class="dropdown-item text-dark" href="gallery.html">Gallery</a></li>
                   <li><a class="dropdown-item text-dark" href="#testimonials">Testimonials</a></li>
-                  <li><a class="dropdown-item text-dark" href="services.html">Services</a></li>
+                  <li><a class="dropdown-item text-dark" href="index.html#quote">Free quotation</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-dark ms-md-4">Contact Us</a>
               </li>
             </ul>
-            <div class="d-none d-lg-flex align-items-center ps-4 ml-auto">
-              <i class="fa fa-2x fa-mobile-alt text-accent me-3"></i>
+            <div class="d-none d-lg-flex align-items-center ps-4 ml-auto ">
+              <i class=" fa fa-2x fa-mobile-alt text-accent me-3 hoverIconSmall"></i>
               <div>
-                <h5 class=" mb-1" ><small class="text-accent">Call Now</small></h5>
-                <h6 class="text-dark m-0">+012 345 6789</h6>
+                <h5 class=" mb-1"><small class="text-accent">Call Now</small></h5>
+                <h6 class=" m-0">
+                  <a class="text-dark link-underline-opacity-0" href="tel:+0123456789">+012 345 6789</a>
+                </h6>
               </div>
             </div>
           </div>
@@ -174,14 +176,17 @@
                   P.R Painting and Decorating's team of  <span class="text-accent fw-bold">skilled female professionals</span> believe in creating spaces that resonate with your personality and style.
                 </p>
                 <div class=" d-grid gap-2 d-md-flex justify-content-md-start">
-                  <button type="button" class="btn btn-lg btn-accent px-4 me-md-2 shadow">
+                  <a 
+                  class="btn btn-lg btn-accent px-4 me-md-2 shadow" 
+                  role="button"
+                  href="#testimonials">
                     Testimonials
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary-dark border-3 btn-lg px-4 shadow">
+                  </a>
+                  <a class="btn btn-outline-primary-dark border-3 btn-lg px-4 shadow"
+                  role="button"
+                  href="contact.html">
                     Contact Us
-                  </button>
+                  </a>
                 </div>
               </div>
               <div class="order-lg-1 d-block col-10 col-sm-8 col-lg-5">
@@ -207,22 +212,18 @@
     </section>
 
     <!-- Crew -->
-    <section id="crew" class="my-md-5 py-sm-3 py-md-5">
-      <div class="container px-4 py-5 " id="custom-cards">
+    <section id="crew">
+      <div class="container px-4 py-3" id="custom-cards">
         <div
-          class="row row-cols-1 row-cols-lg-2 row-cols-md-1 align-items-stretch justify-content-evenly g-5 my-5">
+          class="row row-cols-1 row-cols-lg-2 row-cols-md-1 align-items-stretch justify-content-evenly g-5 my-4">
           <!-- Becky -->
-          <div class="col">
-            <div
-              class="card card-cover card--about h-100 overflow-hidden bg-secondary rounded-4"
-              style="
-                background-image: url('./img/thanos-pal-61TfyNIrWmI-unsplash.jpg');
-                background-position: bottom center;
-              ">
-              <div
-                class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                  Becky 
+          <div class="col ">
+            <div class="card card-cover card--about h-100 overflow-hidden rounded-4"
+              style="background-image: url('https://scontent-gmp1-1.xx.fbcdn.net/v/t1.18169-9/10933807_337061666476986_9176126969491762659_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=JKy9iTZZf0sAX-qUF6X&_nc_ht=scontent-gmp1-1.xx&oh=00_AfAGAOPArMJCKFt7dS6g7LXLOgasVzd7Udg-QVc-zN4b_w&oe=652B24BC'); background-position: center center; background-size: cover;">
+              <div class="aboutEffect"></div>
+              <div class="d-flex flex-column h-100 p-5 pb-3">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center ">
+                  <a href="Interior.html" class="text-light text-shadow-1 display-6 lh-1 fw-bold stretched-link link-underline link-offset-1 link-underline-opacity-0 aboutHidden">Becky</a>
                 </h3>
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="me-auto">
@@ -253,15 +254,18 @@
           <div class="col">
             <div
               id="servicesOne"
-              class="card card-cover card--about h-100 overflow-hidden bg-secondary-light rounded-4"
+              class="card card-cover card--about h-100 overflow-hidden rounded-4"
               style="
-                background-image: url('#');
-                background-position: bottom center;
+                background-image: url('https://scontent-gmp1-1.xx.fbcdn.net/v/t39.30808-6/302985280_1917779978405139_5020317794457641591_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=52f669&_nc_ohc=nob9v0N8CV0AX-R82t4&_nc_ht=scontent-gmp1-1.xx&oh=00_AfDadCpVBXmcaMs6tv7YkyCTbqmg9WEDenf0Y_1B6lDZKQ&oe=65092D94');
+                background-position: center center; background-size: cover;
               ">
+              <div class="aboutEffect"></div>
               <div
-                class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                  Gemma
+                class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 text-center ">
+                  <a href="contact.html"
+                    class="text-light display-6 lh-1 fw-bold stretched-link link-underline link-offset-1 link-underline-opacity-0 aboutHidden"
+                    >Gemma</a>
                 </h3>
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="me-auto">
@@ -276,7 +280,7 @@
                     <svg class="bi me-2" width="1em" height="1em">
                       <use xlink:href="#geo-fill"></use>
                     </svg>
-                    <small class="text-secondary"></small>
+                    <small></small>
                   </li>
                   <li class="d-flex align-items-center">
                     <svg class="bi me-2" width="1em" height="1em">
@@ -291,26 +295,6 @@
         </div>
       </div>
     </section>
-    <!-- Concept -->
-    <!-- <section id="concept" class="py-5">
-      <div class="container-fluid banner">
-        <div class="container px-4 rounded-5 bg-transparent">
-          <div class="row featurette">
-            <div class="col-md-8 order-lg-2">
-              <h2 class="featurette-heading fw-normal lh-1">Your home, <span class="text-body-secondary">our canvas.</span></h2>
-              <p class="fs-3">At P.R Painting and Decorating, our focus is on making your spaces truly special. Our all-female team is dedicated to making your dream home a reality. From elegant strokes of colour to the finest finishing touches, we bring a fresh perspective and creative flair to every project, making us your ideal partners for crafting a living environment that truly feels like home.</p>
-              <a href="tradfin.html" class="btn btn-primary-dark btn-lg px-4 me-md-2 shadow">
-                Traditional finishes
-              </a>
-            </div>
-            <div class="col-md-4 mb-3 mt-md-5 bg-transparent">
-              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3"  width="500px" height="auto" src="./img/Stuck at Home Staying Home.svg" >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
 
     <!-- Crew -->
     <section id="testimonials" class="my-md-5 py-sm-3 py-md-5" style="background-image: url('./img/services-bg.svg'); background-position: center; background-size: cover;">
@@ -649,58 +633,38 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div> 
+    </section>-->
 
-    <!-- Call to action -->
-    <!-- <section id="project" class="py-5 my-5 pb-md-5" style="background-image: url('./img/paintservices.svg'); background-position: left; background-size: cover;">
-      
+    <!-- transform call to action  -->
+    <section id="transformCTA">
       <div class="container-fluid banner mt-5 mb-md-5">
-        <div class="container  px-4 rounded-5 ">
+        <div class="container px-4 rounded-5">
           <div class="row featurette">
             <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading fw-normal lh-1">Do you have a <span class="text-body-secondary">project?</span></h2>
-              <p class="lead">P.R Painting and Decorating's team of skilled female professionals bring a fresh perspective to the world of painting and decorating. We believe in creating spaces that resonate with your personality and style, making us your ideal partner for crafting a living environment that truly feels like home.</p>
-              <a href="#" class="btn btn-primary mb-3">
-                Free quotation
-              </a>
+              <h2 class="featurette-heading fw-normal lh-1">
+                Read to <span class="text-accent">transform</span> your space?
+              </h2>
+              <p class="fs-3">
+                We'd love to hear all about your painting and decorating project. Whether it's a fresh coat of paint, a complete room makeover, or a creative mural, our expert team is here to bring your vision to life. Share the details with us, and let's get started on creating the home of your dreams.
+              </p>
+              <a class="btn btn-primary-dark btn-lg px-4 me-md-2 shadow"
+                role="button"
+                href="contact.html">
+                Contact Us
+            </a>
             </div>
-            <div class="col-md-5 mb-3 mt-md-5 order-md-1">
-              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid " width="500px" height="auto" src="./img/project-bg.svg">
+            <div class="col-md-5 mb-3 mt-4 mt-md-5 order-md-1">
+              <img
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid"
+                width="500px"
+                height="auto"
+                src="./img/Appeal.svg" />
             </div>
           </div>
         </div>
       </div>
-     
-      
-    </section> -->
-    
-
-    <!-- Call to action -->
-    <!-- <section id="project" class="py-5 my-5 pb-md-5" style="background-image: url('./img/paintservices.svg'); background-position: left; background-size: cover;">
-      
-      <div class="container-fluid banner mt-5 mb-md-5">
-        <div class="container  px-4 rounded-5 ">
-          <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading fw-normal lh-1">Do you have a <span class="text-body-secondary">project?</span></h2>
-              <p class="lead">P.R Painting and Decorating's team of skilled female professionals bring a fresh perspective to the world of painting and decorating. We believe in creating spaces that resonate with your personality and style, making us your ideal partner for crafting a living environment that truly feels like home.</p>
-              <a href="#" class="btn btn-primary mb-3">
-                Free quotation
-              </a>
-            </div>
-            <div class="col-md-5 mb-3 mt-md-5 order-md-1">
-              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid " width="500px" height="auto" src="./img/project-bg.svg">
-            </div>
-          </div>
-        </div>
-      </div>
-     
-      
     </section>
-    
-
-
-    
     
     <!-- Footer -->
     <footer class="pt-md-2" style="background-image: url('./img/footer-bg.svg'); background-position: top; background-size: cover;">
@@ -718,21 +682,21 @@
                     </p>
                   </li>
                   <li class="nav-item mb-2">
-                    <p class="mb-2 text-dark">
-                      <i class="fa fa-map-marker-alt text-primary me-3"></i>South
-                      West
+                    <p class="mb-2">
+                      <i class="fa fa-map-marker-alt text-primary me-3 hoverIconSmall"></i><a class="text-dark link-offset-2 link-offset-3-hover link-underline link-underline-accent link-underline-opacity-0 link-underline-opacity-75-hover " href="https://www.google.com/maps/@51.4661585,-2.5745038,12.72z?entry=ttu">South
+                      West</a>
                     </p>
                   </li>
                   <li class="nav-item mb-2">
                     <p class="mb-2 text-dark">
-                      <i class="fa fa-envelope text-primary me-3"></i
-                      >email@example.com
+                      <i class="fa fa-envelope text-primary me-3 hoverIconSmall"></i
+                      ><a class="text-dark link-offset-2 link-offset-3-hover link-underline link-underline-accent link-underline-opacity-0 link-underline-opacity-75-hover " href="mailto:email@email.com">email@example.com</a>
                     </p>
                   </li>
                   <li class="nav-item mb-2">
-                    <p class="mb-0 text-dark">
-                      <i class="fa fa-phone-alt text-primary me-3"></i>+012 345
-                      67890
+                    <p class="mb-0">
+                      <i class="fa fa-phone-alt text-primary me-3 hoverIconSmall"></i>
+                      <a class="text-dark link-offset-2 link-offset-3-hover link-underline link-underline-accent link-underline-opacity-0 link-underline-opacity-75-hover " href="tel:+0123456789">+012 345 6789</a>
                     </p>
                   </li>
                 </ul>
@@ -752,7 +716,7 @@
                     >
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-dark"
+                    <a href="index.html#quote" class="nav-link p-0 text-dark"
                       >Free quotation</a
                     >
                   </li>
@@ -773,23 +737,23 @@
                 <hr class="w-25 text-secondary mb-4" style="opacity: 0.5" />
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-dark">Home</a>
+                    <a href="index.html" class="nav-link p-0 text-dark">Home</a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-dark">About</a>
+                    <a href="about.html" class="nav-link p-0 text-dark">About</a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-dark"
+                    <a href="services.html" class="nav-link p-0 text-dark"
                       >Services</a
                     >
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-dark"
-                      >Get a quote</a
+                    <a href="contact.html" class="nav-link p-0 text-dark"
+                      >Contact us</a
                     >
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-dark"
+                    <a href="#testimonials" class="nav-link p-0 text-dark"
                       >Testimonials</a
                     >
                   </li>
@@ -801,22 +765,22 @@
                   <hr class="w-25 text-secondary mb-4" style="opacity: 0.5" />
                   <div class="d-flex">
                     <a
-                      class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                      class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2 hoverMediaIcon"
                       href="#"
                       ><i class="fab fa-twitter"></i
                     ></a>
                     <a
-                      class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                      class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2 hoverMediaIcon"
                       href="#"
                       ><i class="fab fa-facebook-f"></i
                     ></a>
                     <a
-                      class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                      class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2 hoverMediaIcon"
                       href="#"
                       ><i class="fab fa-linkedin-in"></i
                     ></a>
                     <a
-                      class="btn btn-lg btn-primary btn-lg-square rounded-circle"
+                      class="btn btn-lg btn-primary btn-lg-square rounded-circle hoverMediaIcon"
                       href="#"
                       ><i class="fab fa-instagram"></i
                     ></a>
@@ -836,7 +800,7 @@
             <div class="col-md-6 text-center text-md-start">
               <p class="mb-md-0 text-dark">
                 Copyright ©
-                <a class="text-accent fw-bold" href="#"
+                <a class="text-accent fw-bold" href="index.html"
                   >PR-Painting and Decorating</a
                 >. All Rights Reserved.
               </p>

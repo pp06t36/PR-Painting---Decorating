@@ -178,8 +178,8 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item text-dark" href="services.html"
-                      >Services</a
+                    <a class="dropdown-item text-dark" href="#quote"
+                      >Free quotation</a
                     >
                   </li>
                 </ul>
@@ -189,13 +189,13 @@
               </li>
             </ul>
             <div class="d-none d-lg-flex align-items-center ps-4 ml-auto">
-              <i class="fa fa-2x fa-mobile-alt text-accent me-3 hoverIconSmall grow "></i>
+              <i class="fa fa-2x fa-mobile-alt text-accent me-3 hoverIconSmall "></i>
               <div>
                 <h5 class="mb-1">
-                  <small class="text-accent hoverIconSmall">Call Now</small>
+                  <small class="text-accent">Call Now</small>
                 </h5>
                 <h6 class=" m-0">
-                  <a class="text-dark link-underline link-offset-1 link-underline-opacity-0 iconGrow" href="tel:+0123456789">+0123456789</a>
+                  <a class="text-dark link-underline link-offset-1 link-underline-opacity-0" href="tel:+0123456789">+012 345 6789</a>
                 </h6>
               </div>
             </div>
@@ -219,16 +219,18 @@
                   decorating company that can help you create your dream home.
                 </p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                  <button
-                    type="button"
-                    class="btn btn-lg btn-accent px-4 me-md-2 shadow">
+                  
+                  <a class="btn btn-lg btn-accent px-4 me-md-2 shadow"
+                    role="button"
+                    href="about.html">
                     About us
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary-dark border-3 btn-lg px-4 shadow">
-                    Get a quote
-                  </button>
+                  </a>
+
+                  <a class="btn btn-outline-primary-dark border-3 btn-lg px-4 shadow"
+                    role="button"
+                    href="#quote">
+                    Request a quote
+                  </a>
                 </div>
               </div>
               <div class="order-lg-1 d-block col-10 col-sm-8 col-lg-5">
@@ -269,11 +271,11 @@
                 your personality and style, making us your ideal partner for
                 crafting a living environment that truly feels like home.
               </p>
-              <button
-                type="button"
-                class="btn btn-primary-dark btn-lg px-4 me-md-2 shadow">
+              <a class="btn btn-primary-dark btn-lg px-4 me-md-2 shadow"
+                role="button"
+                href="#quote">
                 Free Quotation
-              </button>
+            </a>
             </div>
             <div class="col-md-5 mb-3 mt-4 mt-md-5 order-md-1">
               <img
@@ -312,14 +314,13 @@
               <a
                 href="#"
                 class="btn btn-primary-dark btn-lg px-4 me-md-2 shadow">
-                Traditional finishes
+                Finishes
               </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- Services -->
     <section
       id="services"
@@ -334,7 +335,7 @@
           class="row row-cols-1 row-cols-lg-3 row-cols-md-2 align-items-stretch g-4 my-5">
           
           <!-- Interior decoration -->
-          <div id="" class="col ">
+          <div class="col ">
             <div class="card card-cover card--service h-100 overflow-hidden bg-secondary rounded-4 services--interior"
               style="background-image: url('https://images.unsplash.com/photo-1589834390005-5d4fb9bf3d32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'); background-position: center center; background-size: cover;">
               <div class="serviceEffect"></div>
@@ -497,78 +498,74 @@
       </div>
     </section>
 
-    <!-- Get a quote -->
-    <div class="container-fluid py-md-4 mb-4" style="background-color: #e4e4e4">
-      <div class="container mb-5 pain">
-        <div class="row g-0 justify-content-start mt-sm-0 mt-md-4">
-          <div class="col-lg-4 align-self-end mb-5">
-            <img
-              class="d-none d-md-none d-lg-block mx-lg-auto img-fluid"
-              src="./img/quotation-img.svg"
-              style="width: 50%; height: auto" />
-          </div>
-          <div class="col-lg-8">
-            <div class="text-bg-light text-center p-4 rounded-3 shadow">
-              <h1 class="mb-4">Request a Quote</h1>
-              <form>
-                <div class="row g-3">
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="text"
-                      class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3"
-                      placeholder="Your Name"
-                      style="height: 55px" />
+    <!-- quote -->
+    <section id="quote">
+      <div class="container-fluid py-md-4 mb-4" style="background-color: #e4e4e4">
+        <div class="container mb-5 pain">
+          <div class="row g-0 justify-content-start mt-sm-0 mt-md-4">
+            <div class="col-lg-4 align-self-end mb-5">
+              <img
+                class="d-none d-md-none d-lg-block mx-lg-auto img-fluid"
+                src="./img/quotation-img.svg"
+                style="width: 50%; height: auto" />
+            </div>
+            <div class="col-lg-8">
+              <div class="text-bg-light text-center p-4 rounded-3 shadow">
+                <h1 class="mb-4">Request a Free Quotation</h1>
+                <form>
+                  <div class="row g-3">
+                    <div class="col-12 col-sm-6">
+                      <input
+                        type="text"
+                        class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3"
+                        placeholder="Jane Smith"
+                        style="height: 55px" />
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <input
+                        type="email"
+                        class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3"
+                        placeholder="mine@email.com"
+                        style="height: 55px" />
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <input
+                        type="text"
+                        class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3"
+                        placeholder="0117 9856354"
+                        style="height: 55px" />
+                    </div>
+                    <div class="col-12">
+                      <textarea
+                        class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3 py-3"
+                        rows="2"
+                        placeholder="Hello, I would love a free quotation for three rooms to be...."></textarea>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      <button
+                        class="btn btn-accent border-3 w-100 py-3"
+                        type="submit">
+                        Send
+                      </button>
+                    </div>
                   </div>
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="email"
-                      class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3"
-                      placeholder="Your Email"
-                      style="height: 55px" />
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="text"
-                      class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3"
-                      placeholder="Your Number"
-                      style="height: 55px" />
-                  </div>
-                  <div class="col-12">
-                    <textarea
-                      class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3 py-3"
-                      rows="2"
-                      placeholder="Message"></textarea>
-                  </div>
-                  <div class="col-12 col-lg-4">
-                    <button
-                      class="btn btn-accent border-3 w-100 py-3"
-                      type="submit">
-                      Get A Quote
-                    </button>
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Footer -->
-    <footer
-      class="pt-md-2"
-      style="
-        background-image: url('./img/footer-bg.svg');
-        background-position: top;
-        background-size: cover;
-      ">
+    <footer class="pt-md-2" style="background-image: url('./img/footer-bg.svg'); background-position: top; background-size: cover;">
       <div class="container-fluid py-5 mt-5">
         <div class="container pt-3">
           <footer>
             <div class="row">
               <div class="col-12 col-md-6 col-lg-3 mt-5">
                 <h5 class="text-secondary-dark">Contact Us</h5>
-                <hr class="w-25 text-secondary mb-4" style="opacity: 0.5" />
+                <hr class="w-25 text-secondary mb-4" style="opacity: 0.5"/>
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
                     <p class="mb-4 text-dark">
@@ -576,21 +573,21 @@
                     </p>
                   </li>
                   <li class="nav-item mb-2">
-                    <p class="mb-2 text-dark">
-                      <i class="fa fa-map-marker-alt text-primary me-3 hoverIconSmall"></i
-                      >South West
+                    <p class="mb-2">
+                      <i class="fa fa-map-marker-alt text-primary me-3 hoverIconSmall"></i><a class="text-dark link-offset-2 link-offset-3-hover link-underline link-underline-accent link-underline-opacity-0 link-underline-opacity-75-hover " href="https://www.google.com/maps/@51.4661585,-2.5745038,12.72z?entry=ttu">South
+                      West</a>
                     </p>
                   </li>
                   <li class="nav-item mb-2">
                     <p class="mb-2 text-dark">
-                      <i class="fa fa-envelope text-primary me-3 hoverIconSmall "></i
-                      >email@example.com
+                      <i class="fa fa-envelope text-primary me-3 hoverIconSmall"></i
+                      ><a class="text-dark link-offset-2 link-offset-3-hover link-underline link-underline-accent link-underline-opacity-0 link-underline-opacity-75-hover " href="mailto:email@email.com">email@example.com</a>
                     </p>
                   </li>
                   <li class="nav-item mb-2">
-                    <p class="mb-0 text-dark">
-                      <i class="fa fa-phone-alt text-primary me-3 hoverIconSmall"></i>+012 345
-                      67890
+                    <p class="mb-0">
+                      <i class="fa fa-phone-alt text-primary me-3 hoverIconSmall"></i>
+                      <a class="text-dark link-offset-2 link-offset-3-hover link-underline link-underline-accent link-underline-opacity-0 link-underline-opacity-75-hover " href="tel:+0123456789">+012 345 6789</a>
                     </p>
                   </li>
                 </ul>
@@ -610,7 +607,7 @@
                     >
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-dark"
+                    <a href="index.html#quote" class="nav-link p-0 text-dark"
                       >Free quotation</a
                     >
                   </li>
@@ -620,7 +617,9 @@
                     >
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-dark">Wallpapering</a>
+                    <a href="#" class="nav-link p-0 text-dark"
+                      >Wallpapering</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -629,19 +628,25 @@
                 <hr class="w-25 text-secondary mb-4" style="opacity: 0.5" />
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-dark">Home</a>
+                    <a href="index.html" class="nav-link p-0 text-dark">Home</a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-dark">About</a>
+                    <a href="about.html" class="nav-link p-0 text-dark">About</a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-dark">Services</a>
+                    <a href="services.html" class="nav-link p-0 text-dark"
+                      >Services</a
+                    >
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-dark">Get a quote</a>
+                    <a href="contact.html" class="nav-link p-0 text-dark"
+                      >Contact us</a
+                    >
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-dark">Testimonials</a>
+                    <a href="about.html#testimonials" class="nav-link p-0 text-dark"
+                      >Testimonials</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -653,7 +658,7 @@
                     <a
                       class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2 hoverMediaIcon"
                       href="#"
-                      ><i id="" class="fab fa-twitter "></i
+                      ><i class="fab fa-twitter"></i
                     ></a>
                     <a
                       class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2 hoverMediaIcon"
@@ -666,7 +671,7 @@
                       ><i class="fab fa-linkedin-in"></i
                     ></a>
                     <a
-                      class="btn btn-lg btn-primary btn-lg-square rounded-circle hoverMediaIcon "
+                      class="btn btn-lg btn-primary btn-lg-square rounded-circle hoverMediaIcon"
                       href="#"
                       ><i class="fab fa-instagram"></i
                     ></a>
@@ -680,15 +685,13 @@
     </footer>
     <!-- Sub-footer -->
     <section id="sub-footer">
-      <div
-        class="container-fluid text-dark py-4"
-        style="background-color: F3EEF1">
+      <div class="container-fluid text-dark py-4" style="background-color: F3EEF1;">
         <div class="container">
           <div class="row g-0">
             <div class="col-md-6 text-center text-md-start">
               <p class="mb-md-0 text-dark">
                 Copyright ©
-                <a class="text-accent fw-bold" href="#"
+                <a class="text-accent fw-bold" href="index.html"
                   >PR-Painting and Decorating</a
                 >. All Rights Reserved.
               </p>

@@ -142,20 +142,22 @@
                   >Pages</a
                 >
                 <ul class="dropdown-menu bg-gradient ">
-                  <li><a class="dropdown-item text-dark" href="index.html">Gallery</a></li>
-                  <li><a class="dropdown-item text-dark" href="about.html">Testimonials</a></li>
-                  <li><a class="dropdown-item text-dark" href="services.html">Services</a></li>
+                  <li><a class="dropdown-item text-dark" href="gallery.html">Gallery</a></li>
+                  <li><a class="dropdown-item text-dark" href="about.html#testimonials">Testimonials</a></li>
+                  <li><a class="dropdown-item text-dark" href="index.html#quote">Free quotation</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark ms-md-4">Contact Us</a>
+                <a class="nav-link text-dark ms-md-4" href="contact.html">Contact Us</a>
               </li>
             </ul>
             <div class="d-none d-lg-flex align-items-center ps-4 ml-auto">
-              <i class="fa fa-2x fa-mobile-alt text-accent me-3"></i>
+              <i class="fa fa-2x fa-mobile-alt text-accent me-3 hoverIconSmall"></i>
               <div>
                 <h5 class=" mb-1" ><small class="text-accent">Call Now</small></h5>
-                <h6 class="text-dark m-0">+012 345 6789</h6>
+                <h6 class=" m-0">
+                  <a class="text-dark link-underline link-offset-1 link-underline-opacity-0" href="tel:+0123456789">+012 345 6789</a>
+                </h6>
               </div>
             </div>
           </div>
@@ -174,14 +176,16 @@
                   At P.R Painting and Decorating we are dedicated to bringing your vision to life. Whether it's transforming your home's <span class="text-accent fw-bold">interior</span> or <span class="text-accent fw-bold">exterior</span> with <span class="text-accent fw-bold">traditional</span>  or <span class="text-accent fw-bold">contemporary finishes</span>, we're here to make your dream home a reality.
                 </p>
                 <div class=" d-grid gap-2 d-md-flex justify-content-md-start">
-                  <button type="button" class="btn btn-lg btn-accent px-4 me-md-2 shadow">
+                  <a class="btn btn-lg btn-accent px-4 me-md-2 shadow"
+                  role="button"
+                  href="gallery.html" >
                     Gallery
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary-dark border-3 btn-lg px-4 shadow">
-                    Free Quotation
-                  </button>
+                  </a>
+                  <a class="btn btn-outline-primary-dark border-3 btn-lg px-4 shadow"
+                    role="button"
+                    href="index.html#quote">
+                    Free quotation
+                  </a>
                 </div>
               </div>
               <div class="order-lg-1 d-block col-10 col-sm-8 col-lg-5">
@@ -216,7 +220,7 @@
               
               <p class="fs-3">Whether you're seeking a cosy and inviting atmosphere or a sleek and modern look, we've got the expertise to make it happen. Let us transform your home's interiors into spaces you'll love to live in.</p>
               <button type="button" class="btn btn-primary-dark btn-lg px-4 me-md-2 shadow">
-               Interior decoration
+               Gallery
               </button>
             </div>
             <div class="col-md-5 mb-3 mt-4 mt-md-5 order-md-1">
@@ -239,435 +243,124 @@
               <p class="fs-3">Our exterior decoration services are all about enhancing the visual charm of your home. Our team of skilled female professionals is experienced in revitalizing exteriors, whether you're looking for a traditional or a contemporary makeover. </p>
               <p class="fs-3">From fresh coats of paint to unique finishing touches, we'll work closely with you to give your home that impressive first impression it deserves. Let us transform your exterior spaces and make your home the envy of the neighborhood.</p>
               <a href="#" class="btn btn-primary-dark btn-lg px-4 me-md-2 shadow">
-                Exterior decoration
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Services -->
-    <section id="services" class="my-md-5 pb-md-5" style="background-image: url('./img/services-bg.svg'); background-position: center; background-size: cover;">
-     
-      <div class="container px-4 py-5" id="custom-cards">
-        <!-- <div class="text-center mx-auto my-5" style="max-width: 500px">
-          <h2 class="featurette-heading fw-normal lh-1">Professional Painting Services</h2>
-          <hr class="w-25 mx-auto text-light" style="opacity: 1" />
-        </div> -->
-        <div
-          class="row row-cols-1 row-cols-lg-3 row-cols-md-2 align-items-stretch g-4 my-5">
-          
-          <!-- Interior decoration -->
-          <div class="col">
-            <div
-              class="card card-cover h-100 overflow-hidden bg-secondary rounded-4 shadow-lg"
-              style="
-                background-image: url('./img/thanos-pal-61TfyNIrWmI-unsplash.jpg');
-                background-position: bottom center;
-              ">
-              <div
-                class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                  Traditonal Finishes 
-                </h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img
-                      src="./img/logo.sm.jpg"
-                      alt="Logo"
-                      width="32"
-                      height="32"
-                      class="rounded-circle border border-white" />
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#geo-fill"></use>
-                    </svg>
-                    <small></small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#calendar3"></use>
-                    </svg>
-                    <small></small>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Finishes -->
-          <div class="col">
-            <div
-              id="servicesOne"
-              class="card card-cover h-100 overflow-hidden bg-secondary-light rounded-4 shadow-lg"
-              style="
-                background-image: url('#');
-                background-position: bottom center;
-              ">
-              <div
-                class="d-flex flex-column h-100 p-5 pb-3 text-dark text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">
-                  Free Quotation
-                </h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img
-                      src="./img/logo.sm.jpg"
-                      alt="Logo"
-                      width="32"
-                      height="32"
-                      class="rounded-circle border border-white" />
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#geo-fill"></use>
-                    </svg>
-                    <small class="text-secondary"></small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#calendar3"></use>
-                    </svg>
-                    <small></small>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Exterior decoration -->
-          <div class="col">
-            <div
-              class="card card-cover h-100 overflow-hidden bg-primary rounded-4 shadow-lg"
-              style="background-image: url('unsplash-photo-3.jpg')">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center text-dark">
-                  Modern Finishes  
-                </h3>
-                <ul class="d-flex list-unstyled mt-auto text-dark">
-                  <li class="me-auto">
-                    <img
-                      src="./img/logo.sm.jpg"
-                      alt="Logo"
-                      width="32"
-                      height="32"
-                      class="rounded-circle border border-white" />
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#geo-fill"></use>
-                    </svg>
-                    <small></small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#calendar3"></use>
-                    </svg>
-                    <small></small>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
-
-    <!-- Get a quote -->
-    <div
-      class="container-fluid py-md-4 mb-4" style="background-color:#e4e4e4;">
-      
-      <div class="container mb-5 pain">
-        <div class="row g-0 justify-content-start mt-sm-0 mt-md-4">
-          <div class="col-lg-4 align-self-end mb-5">
-            <img
-              class="d-none d-md-none d-lg-block mx-lg-auto img-fluid"
-              src="./img/quotation-img.svg"
-              style="width: 50%; height: auto" />
-          </div>
-          <div class="col-lg-8 ">
-            <div class="text-bg-light text-center p-4 rounded-3 shadow">
-              <h1 class="mb-4 ">Request a Quote</h1>
-              <form>
-                <div class="row g-3">
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="text"
-                      class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3"
-                      placeholder="Your Name"
-                      style="height: 55px" />
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="email"
-                      class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3"
-                      placeholder="Your Email"
-                      style="height: 55px" />
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="text"
-                      class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3"
-                      placeholder="Your Number"
-                      style="height: 55px" />
-                  </div>
-                  <div class="col-12">
-                    <textarea
-                      class="form-control bg-light border-0 border-2 border-dark-subtle border-bottom rounded-0 rounded-top-3 py-3"
-                      rows="2"
-                      placeholder="Message"></textarea>
-                  </div>
-                  <div class="col-12 col-lg-4">
-                    <button class="btn btn-accent border-3 w-100 py-3" type="submit">
-                      Get A Quote
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-
-    <!-- The team -->
-<!-- 
-    <section id="team" class="py-5 my-5 pb-md-5" style="background-image: url('./img/paintservices.svg'); background-position: center; background-size: cover;">
-     
-      <div class="container px-4 py-5" id="custom-cards">
-        <div class="text-center mx-auto my-5" style="max-width: 500px">
-          <h2 class="featurette-heading fw-normal lh-1">Meet the Team</h2>
-          <hr class="w-25 mx-auto text-primary" style="opacity: 1" />
-        </div>
-        <div class="container grid gap-3 px-4 py-5">
-          <div class="row justify-content-evenly gap-5 pb-5">
-            <div class="card px-0" style="width: 18rem">
-              <img
-                src="./img/simone-mascellari-SKnfgtlnsdU-unsplash.jpg"
-                class="card-img-top"
-                alt="Worker One" />
-              <div class="card-body bg-dark bg-gradient text-light">
-                <h5 class="card-title">Becky</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the
-                  bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card px-0" style="width: 18rem">
-              <img
-                src="./img/avi-richards-PfUH_AuFE_0-unsplash.jpg"
-                class="card-img-top"
-                alt="Worker Two" />
-              <div class="card-body text-end bg-dark bg-gradient text-light">
-                <h5 class="card-title">Gemma</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up the
-                  bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- Testimonials responsive -->
-    <!-- <div
-      class="container-fluid py-2 py-sm-3 py-md-4 py-lg-5 mt-3 mt-md-4 mt-lg-5 mb-5">
-      <div
-        class="row justify-content-md-end pt-2 pt-sm-3 pt-md-4 pt-lg-5"
-        style="
-          background-image: url('./img/testimonal-bg.svg');
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat; width: 100%;
-        ">
-        <div class="col-md-8">
-          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#myCarousel"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"></button>
-              <button
-                type="button"
-                data-bs-target="#myCarousel"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button
-                type="button"
-                data-bs-target="#myCarousel"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <svg
-                  class="bd-placeholder-img"
-                  width="100%"
-                  height="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false">
-                  <rect
-                    width="100%"
-                    height="100%"
-                    fill="var(--bs-secondary-color)" />
-                </svg>
-                <div class="container">
-                  <div class="carousel-caption">
-                    <div
-                      class="d-flex flex-column align-items-center justify-content-center pb-5">
-                      <div class="text-start">
-                        <h1 class="text-start">Abby Bale</h1>
-                        <div class="ratings mb-1">
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                        </div>
-                        <p class="opacity-75 mb-5">
-                          Brilliant job of decorating our lounge, hallway and
-                          stairs. Then coming back to fix the mess my husband
-                          made of putting on some curtain ties. Gemma and Becky
-                          are a credit to their profession and lovely people to
-                          meet.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <svg
-                  class="bd-placeholder-img"
-                  width="100%"
-                  height="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false">
-                  <rect
-                    width="100%"
-                    height="100%"
-                    fill="var(--bs-secondary-color)" />
-                </svg>
-                <div class="container">
-                  <div class="carousel-caption">
-                    <div
-                      class="d-flex flex-column align-items-center justify-content-center pb-5">
-                      <div class="text-start">
-                        <h1 class="text-start">Abbie Abbie</h1>
-                        <div class="ratings mb-1">
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                        </div>
-                        <p class="opacity-75 mb-5">
-                          Becky and Gem are great at what they do.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <svg
-                  class="bd-placeholder-img"
-                  width="100%"
-                  height="100%"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  preserveAspectRatio="xMidYMid slice"
-                  focusable="false">
-                  <rect
-                    width="100%"
-                    height="100%"
-                    fill="var(--bs-secondary-color)" />
-                </svg>
-                <div class="container">
-                  <div class="carousel-caption">
-                    <div
-                      class="d-flex flex-column align-items-center justify-content-center pb-5">
-                      <div class="text-start">
-                        <h1>Savannah Bee</h1>
-                        <div class="ratings mb-1">
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                          <i class="fa fa-star fa-lg" style="color: white"></i>
-                        </div>
-                        <p class="opacity-75 mb-5">
-                          Absolutely first class job from Gemma and Becky from
-                          quote to finish, professional, quick, friendly and
-                          tidy. Cannot fault their work, great communications
-                          and a top class job. Would recommend! Thanks.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide="prev">
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#myCarousel"
-              data-bs-slide="next">
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- Call to action -->
-    <!-- <section id="project" class="py-5 my-5 pb-md-5" style="background-image: url('./img/paintservices.svg'); background-position: left; background-size: cover;">
-      
-      <div class="container-fluid banner mt-5 mb-md-5">
-        <div class="container  px-4 rounded-5 ">
-          <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-              <h2 class="featurette-heading fw-normal lh-1">Do you have a <span class="text-body-secondary">project?</span></h2>
-              <p class="lead">P.R Painting and Decorating's team of skilled female professionals bring a fresh perspective to the world of painting and decorating. We believe in creating spaces that resonate with your personality and style, making us your ideal partner for crafting a living environment that truly feels like home.</p>
-              <a href="#" class="btn btn-primary mb-3">
                 Free quotation
               </a>
             </div>
-            <div class="col-md-5 mb-3 mt-md-5 order-md-1">
-              <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid " width="500px" height="auto" src="./img/project-bg.svg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- traditional finishes -->
+    <section id="tradFinishes" class="my-md-5 pb-md-5" style="background-image: url('./img/services-bg.svg'); background-position: center; background-size: cover;">
+      <div class="container-fluid banner mt-5 mb-md-5">
+        <div class="container px-4 rounded-5">
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">
+                Traditional <span class="text-body-secondary">Finishes</span>
+              </h2>
+              <p class="fs-3">
+                Whether it's restoring the luster of ornate crown moldings, refinishing vintage hardwood floors to their former glory, or meticulously hand-painting intricate patterns on furniture, our expertise in traditional finishes brings a touch of sophistication to any space. </p>
+                <p class="fs-3">We understand the importance of preserving the character of bygone eras while seamlessly blending it with modern aesthetics. Let us transform your home with the warmth and character that only traditional finishes can provide, creating an inviting ambiance that stands the test of time.
+              </p>
+              
+            </div>
+            <div class="col-md-5 mb-3 mt-4 mt-md-5 order-md-1">
+              <img
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid"
+                width="500px"
+                height="auto"
+                src="./img/Appeal.svg" />
             </div>
           </div>
         </div>
       </div>
-     
-      
-    </section> -->
+    </section>
+    
+    <!-- modern finishes -->
+    <section id="modFinishes" class="mb-5">
+      <div class="container-fluid banner">
+        <div class="container px-4 rounded-5 bg-transparent">
+          <div class="row featurette">
+            <div class="col-md-5 mb-3 mt-md-5 order-md-2 bg-transparent">
+              <img
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3"
+                width="500px"
+                height="auto"
+                src="./img/Stuck at Home Staying Home.svg" />
+            </div>
+            <div class="col-md-7 order-md-1">
+              <h2 class="featurette-heading fw-normal lh-1">
+                Modern  <span class="text-body-secondary">finishes</span>
+              </h2>
+              <p class="fs-3">
+                Crafting modern finishes is about embracing innovation and minimalism. Our team excels at clean lines, minimalist palettes, and cutting-edge design. From perfect neutrals to minimalist fixtures, we bring your vision to life for homes and offices.
+              </p>
+              <p class="fs-3">
+                In the realm of modern finishes, we pride ourselves on our ability to transform ordinary spaces. Our approach focuses on merging functionality with aesthetics, using clean, crisp lines, and a refined color palette to create an environment that feels fresh and uncluttered.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary-dark btn-lg px-4 me-md-2 shadow">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- special finishes -->
+     <section id="specFinishes" class="my-md-5 pb-md-5" style="background-image: url('./img/services-bg.svg'); background-position: center; background-size: cover;">
+      <div class="container-fluid banner mt-5 mb-md-5">
+        <div class="container px-4 rounded-5">
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">
+                Special <span class="text-body-secondary">Finishes</span>
+              </h2>
+              <p class="fs-3">
+                Transform your space with our expertise in specialty finishes. From captivating faux textures that replicate natural elements to mesmerizing metallic accents that exude glamour, we specialize in crafting unique and unforgettable designs. Our mastery of these distinctive finishes ensures that your space becomes a one-of-a-kind masterpiece, leaving a lasting impression and elevating its aesthetics to an extraordinary level of sophistication that sets it apart from the ordinary
+              </p>
+              
+            </div>
+            <div class="col-md-5 mb-3 mt-4 mt-md-5 order-md-1">
+              <img
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid"
+                width="500px"
+                height="auto"
+                src="./img/Appeal.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- wallpaper -->
+    <section id="wallpaper" class="mb-5">
+      <div class="container-fluid banner">
+        <div class="container px-4 rounded-5 bg-transparent">
+          <div class="row featurette">
+            <div class="col-md-5 mb-3 mt-md-5 order-md-2 bg-transparent">
+              <img
+                class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-3"
+                width="500px"
+                height="auto"
+                src="./img/Stuck at Home Staying Home.svg" />
+            </div>
+            <div class="col-md-7 order-md-1">
+              <h2 class="featurette-heading fw-normal lh-1">
+                 Timeless <span class="text-body-secondary">Wallpaper </span> 
+              </h2>
+              <p class="fs-3">
+                Celebrate Your Walls with Elegant Wallpapering. From timeless patterns that exude classic charm to bold, contemporary designs that make a statement, our wallpapering services cater to a wide range of interior styles. Our meticulous installation process ensures a flawless and visually stunning backdrop, transforming your room into a masterpiece of design. Discover the endless possibilities of wallpaper and let us elevate your space, creating an atmosphere that truly reflects your unique style and personality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     
 
 
@@ -689,21 +382,21 @@
                     </p>
                   </li>
                   <li class="nav-item mb-2">
-                    <p class="mb-2 text-dark">
-                      <i class="fa fa-map-marker-alt text-primary me-3"></i>South
-                      West
+                    <p class="mb-2">
+                      <i class="fa fa-map-marker-alt text-primary me-3 hoverIconSmall"></i><a class="text-dark link-offset-2 link-offset-3-hover link-underline link-underline-accent link-underline-opacity-0 link-underline-opacity-75-hover " href="https://www.google.com/maps/@51.4661585,-2.5745038,12.72z?entry=ttu">South
+                      West</a>
                     </p>
                   </li>
                   <li class="nav-item mb-2">
                     <p class="mb-2 text-dark">
-                      <i class="fa fa-envelope text-primary me-3"></i
-                      >email@example.com
+                      <i class="fa fa-envelope text-primary me-3 hoverIconSmall"></i
+                      ><a class="text-dark link-offset-2 link-offset-3-hover link-underline link-underline-accent link-underline-opacity-0 link-underline-opacity-75-hover " href="mailto:email@email.com">email@example.com</a>
                     </p>
                   </li>
                   <li class="nav-item mb-2">
-                    <p class="mb-0 text-dark">
-                      <i class="fa fa-phone-alt text-primary me-3"></i>+012 345
-                      67890
+                    <p class="mb-0">
+                      <i class="fa fa-phone-alt text-primary me-3 hoverIconSmall"></i>
+                      <a class="text-dark link-offset-2 link-offset-3-hover link-underline link-underline-accent link-underline-opacity-0 link-underline-opacity-75-hover " href="tel:+0123456789">+012 345 6789</a>
                     </p>
                   </li>
                 </ul>
@@ -723,7 +416,7 @@
                     >
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-dark"
+                    <a href="index.html#quote" class="nav-link p-0 text-dark"
                       >Free quotation</a
                     >
                   </li>
@@ -744,23 +437,23 @@
                 <hr class="w-25 text-secondary mb-4" style="opacity: 0.5" />
                 <ul class="nav flex-column">
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-dark">Home</a>
+                    <a href="index.html" class="nav-link p-0 text-dark">Home</a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-dark">About</a>
+                    <a href="about.html" class="nav-link p-0 text-dark">About</a>
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-dark"
+                    <a href="services.html" class="nav-link p-0 text-dark"
                       >Services</a
                     >
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-dark"
-                      >Get a quote</a
+                    <a href="contact.html" class="nav-link p-0 text-dark"
+                      >Contact us</a
                     >
                   </li>
                   <li class="nav-item mb-2">
-                    <a href="#" class="nav-link p-0 text-dark"
+                    <a href="#testimonials" class="nav-link p-0 text-dark"
                       >Testimonials</a
                     >
                   </li>
@@ -772,22 +465,22 @@
                   <hr class="w-25 text-secondary mb-4" style="opacity: 0.5" />
                   <div class="d-flex">
                     <a
-                      class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                      class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2 hoverMediaIcon"
                       href="#"
                       ><i class="fab fa-twitter"></i
                     ></a>
                     <a
-                      class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                      class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2 hoverMediaIcon"
                       href="#"
                       ><i class="fab fa-facebook-f"></i
                     ></a>
                     <a
-                      class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+                      class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2 hoverMediaIcon"
                       href="#"
                       ><i class="fab fa-linkedin-in"></i
                     ></a>
                     <a
-                      class="btn btn-lg btn-primary btn-lg-square rounded-circle"
+                      class="btn btn-lg btn-primary btn-lg-square rounded-circle hoverMediaIcon"
                       href="#"
                       ><i class="fab fa-instagram"></i
                     ></a>
@@ -807,7 +500,7 @@
             <div class="col-md-6 text-center text-md-start">
               <p class="mb-md-0 text-dark">
                 Copyright ©
-                <a class="text-accent fw-bold" href="#"
+                <a class="text-accent fw-bold" href="index.html"
                   >PR-Painting and Decorating</a
                 >. All Rights Reserved.
               </p>
