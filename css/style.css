@@ -189,8 +189,8 @@
     width: 100%;
     position: absolute;
     z-index: -1;
-    background:#A53DFF;
-    opacity: .7;
+    background:#8408f0;
+    opacity: .9;
     animation: popBackground 0.3s ease-in
 }
 
