@@ -16,7 +16,6 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-
     <!-- custom scss -->
     <link rel="stylesheet" href="css/main.min.css" />
     <!-- custom css -->
@@ -107,6 +106,12 @@
     }
   </style>
   <body>
+    <!-- scroll to top -->
+    <button onclick="topFunction()" id="toTopBtn" title="Go to top">
+      <i class="bi bi-arrow-up-circle-fill" style="font-size: 30px;"></i>
+    </button>
+
+    <!-- header background -->
     <section class="top pt-sm-3 pt-md-4">
       <!-- nav bar -->
       <nav
@@ -160,8 +165,8 @@
                 >
                 <ul class="dropdown-menu bg-gradient">
                   <li>
-                    <a class="dropdown-item text-dark" href="gallery.html"
-                      >Gallery</a
+                    <a class="dropdown-item text-dark" href="ourWork.html"
+                      >Our Work</a
                     >
                   </li>
                   <li>
@@ -195,7 +200,7 @@
         </div>
       </nav>
       <!-- Hero -->
-      <div class="hero container-fluid mt-sm-3 py-4 pt-4 py-lg-5">
+      <div class="hero container-fluid mt-3 py-4 pt-4 py-lg-5">
         <div class="bg-heroImg">
           <div class="container col-xxl-8 px-4 py-lg-5 py-md-4 py-sm-4">
             <div
@@ -203,8 +208,7 @@
               <div class="order-lg-2 col-lg-7 text-lg-left">
                 <h1
                   class="display-4 fw-bold text-body-emphasis lh-4 mb-3 text-primary">
-                  Let us bring <span class="text-accent">your vision</span> to
-                  life
+                  Turning <span class="text-accent">Dreams </span>into</span> <span class="text-accent">Reality</span> 
                 </h1>
                 <p class="lead">
                   P.R Painting and Decorating is a female painting and
@@ -220,7 +224,7 @@
 
                   <a class="btn btn-outline-accent border-3 btn-lg px-4 shadow"
                     role="button"
-                    href="#quote">
+                    href="quote.html">
                     Request a quote
                   </a>
                 </div>
@@ -247,6 +251,7 @@
           style="width: 100%; height: auto" />
       </div>
     </section>
+
     <!-- About -->
     <section id="Appeal">
       <div class="container-fluid banner mt-5 mb-md-5">
@@ -254,7 +259,7 @@
           <div class="row featurette">
             <div class="col-md-7 order-md-2">
               <h2 class="display-5 fw-normal lh-1">
-                Why <span class="text-body-secondary">choose us?</span>
+                Why <span class="text-accent">choose us?</span>
               </h2>
               <p class="fs-3">
                 P.R Painting and Decorating's team of skilled female
@@ -265,7 +270,7 @@
               </p>
               <a class="btn btn-primary-dark btn-lg px-4 me-md-2 shadow"
                 role="button"
-                href="#quote">
+                href="quote.html">
                 Free Quotation
             </a>
             </div>
@@ -294,7 +299,7 @@
             </div>
             <div class="col-md-7 order-md-1">
               <h2 class="display-5 fw-normal lh-1">
-                Your home, <span class="text-body-secondary">our canvas.</span>
+                Your home, <span class="text-accent">our canvas.</span>
               </h2>
               <p class="fs-3">
                 At P.R Painting and Decorating, our focus is on making your
@@ -304,15 +309,16 @@
                 creative flair to every project.
               </p>
               <a
-                href="#"
+                href="services.html"
                 class="btn btn-primary-dark btn-lg px-4 me-md-2 shadow">
-                Services
+                Our Services
               </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Services -->
     <section
       id="services"
@@ -324,7 +330,7 @@
       ">
       <div class="container px-4 py-5" id="custom-cards">
         <div class="row justify-content-center">
-          <h2 class="display-3 text-body-emphasis text-center fw-normal lh-1 pt-3 pt-md-">Services</h2>
+          <h2 class="display-3 text-body-emphasis text-center fw-normal lh-1 pt-3 pt-md-">Our Services</h2>
           <hr class="w-25 border-2 text-secondary-dark mt-2 mb-4 border-opacity-50"/>
         </div>
 
@@ -334,11 +340,11 @@
           <!-- Interior decoration -->
           <div class="col ">
             <div class="card card-cover card--service h-100 overflow-hidden bg-secondary rounded-4 services--interior"
-              style="background-image: url('https://images.unsplash.com/photo-1589834390005-5d4fb9bf3d32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'); background-position: center center; background-size: cover;">
+              style="background-image: url('./img/interior.jpg'); background-position: center center; background-size: cover;">
               <div class="serviceEffect"></div>
               <div class="d-flex flex-column h-100 p-5 pb-3">
                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center ">
-                  <a href="services.html#interior" class="text-light text-shadow-1 display-6 lh-1 fw-bold stretched-link link-underline link-offset-1 link-underline-opacity-0 servicesHidden">Interior</a>
+                  <a href="services.html#interior" class="text-light text-shadow-1 display-6 lh-1 fw-bold stretched-link link-underline link-offset-1 link-underline-opacity-0 servicesHidden">Interior decoration</a>
                 </h3>
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="me-auto">
@@ -371,14 +377,14 @@
               id="servicesOne"
               class="card card-cover card--service h-100 overflow-hidden text-bg-dark rounded-4 shadow"
               style="
-                background-image: url('https://images.unsplash.com/photo-1560184897-ae75f418493e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+                background-image: url('./img/finishes.jpg');
                 background-position: center center; background-size: cover;
               ">
               <div class="serviceEffect"></div>
               <div
                 class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
                 <h3 class="pt-5 mt-5 mb-4 text-center ">
-                  <a href="contact.html"
+                  <a href="services.html#modFinishes"
                     class="text-light display-6 lh-1 fw-bold stretched-link link-underline link-offset-1 link-underline-opacity-0 servicesHidden"
                     >Finishes</a>
                 </h3>
@@ -422,7 +428,7 @@
                 class="d-flex flex-column h-100 p-5 pb-3 ">
                 <h3 class="pt-5 mt-5 mb-4 text-center">
                   <a
-                    href="contact.html"
+                    href="quote.html"
                     class="text-shadow-1 text-light display-6 lh-1 fw-bold stretched-link link-underline link-offset-1 link-underline-opacity-0 servicesHidden"
                     >Free Quotation</a
                   >
@@ -456,16 +462,18 @@
           <div class="col col--exterior">
             <div
               class="card card-cover card--service h-100 overflow-hidden bg-primary rounded-4"
-              style="background-image: url('https://images.unsplash.com/photo-1532323544230-7191fd51bc1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
-              background-position: center center; background-size: cover;
+              style="background-image: url('./img/exterior.jpg');
+              background-position: center bottom; background-size: cover;  
             ">
               <div class="serviceEffect"></div>
               <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1 ">
-                <h3
-                  class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center stretched-link link-underline link-offset-1 link-underline-opacity-0 text-light servicesHidden">
-                  Exterior
+                <h3 class="pt-5 mt-5 mb-4 text-center">
+                  <a
+                    href="quote.html"
+                    class="text-shadow-1 text-light display-6 lh-1 fw-bold stretched-link link-underline link-offset-1 link-underline-opacity-0 servicesHidden"
+                    >Exterior decoration</a
+                  >
                 </h3>
-                
                 <ul class="d-flex list-unstyled mt-auto text-dark">
                   <li class="me-auto">
                     <img
@@ -678,5 +686,8 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"></script>
+    <!-- scrollToTop   -->
+    <script src="scrollTop.js"></script>
+      
   </body>
 </html>
