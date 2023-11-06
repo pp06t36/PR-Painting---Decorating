@@ -17,8 +17,10 @@
       
     <!-- custom scss -->
     <link rel="stylesheet" href="css/main.min.css" />
-    <!-- custom css -->
+    <!-- custom style css -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- gallery modal css -->
+    <link rel="stylesheet" href="./custom_css/ourWorkImgModal.css"/>
   </head>
   <style>
 
@@ -159,7 +161,9 @@
               <i class="fa fa-2x fa-mobile-alt text-accent me-3"></i>
               <div>
                 <h5 class=" mb-1" ><small class="text-accent">Call Now</small></h5>
-                <h6 class="text-dark m-0">+012 345 6789</h6>
+                <h6 class="m-0">
+                  <a class="text-dark link-underline link-offset-1 link-underline-opacity-0" href="tel:0117 914 7343" alt="landline phone number"> 0117 914 7343</a>
+                </h6>
               </div>
             </div>
           </div>
@@ -178,9 +182,9 @@
       <div class="container col-xxl-8 py-lg-5 py-md-4 py-sm-4">
           <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 1779.03px;">
             <!-- photo card 1 -->
-            <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+            <div id="myImg" class="myImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 0px;" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <div class="card">
-                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://images.unsplash.com/photo-1505821100160-522e6d017a36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1967&q=80" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover;">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="./img/ourWork7.jpg" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover; position: center;">
                 <div class="card-img-overlay">
               </div>
                 <div class="card-body bg-light">
@@ -188,6 +192,8 @@
                 </div>
               </div>
             </div>
+           
+           
             <!-- card 2 -->
             <div class="col-sm-6 col-lg-3 col-md-4 mb-4 " style="position: absolute; left: 0%; top: 337.505px;">
               <div class="card p-3 bg-light">
@@ -202,9 +208,9 @@
               </div>
             </div>
             <!-- photo card 3 -->
-            <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 507.992px;">
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 507.992px;">
               <div class="card">
-                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://images.unsplash.com/photo-1532323544230-7191fd51bc1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80 " alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover;">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="./img/ourWork18.jpg" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover;">
         
                 <div class="card-body bg-light">
                   <h5 class="card-title">Exterior decoration</h5>
@@ -212,9 +218,9 @@
               </div>
             </div>
             <!-- photo card 4 -->
-            <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 1177.48px;">
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 1177.48px;">
               <div class="card">
-                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://scontent-gmp1-1.xx.fbcdn.net/v/t39.30808-6/302985280_1917779978405139_5020317794457641591_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=52f669&_nc_ohc=R5jCU6aJu-cAX9HALVB&_nc_ht=scontent-gmp1-1.xx&oh=00_AfB1jqOzpHZ3tFjhUU1MKtwBnkU9f7zJzIdZwcS7Yc-enQ&oe=650F1C54" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover;">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="img/ourWork1.jpg" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover;">
               </div>
             </div>
             <!-- text card 5 -->
@@ -227,15 +233,15 @@
               </div>
             </div>
             <!-- photo card 6 -->
-            <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 1177.48px;">
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 1177.48px;">
               <div class="card">
-                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://scontent-gmp1-1.xx.fbcdn.net/v/t39.30808-6/322490792_1272158080182109_5874505279641425125_n.jpg?stp=cp6_dst-jpg&_nc_cat=111&ccb=1-7&_nc_sid=5614bc&_nc_ohc=Pe2IwIEHHdgAX8O0c3D&_nc_ht=scontent-gmp1-1.xx&oh=00_AfCuJMGrVKFLlIobC4a188a9zbrayGxlb6bCkyTxhaMi_Q&oe=65145E20" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover;">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="./img/ourWork17.jpg" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover;">
               </div>
             </div>
             <!-- photo card 7 -->
-            <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
               <div class="card">
-                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://scontent-gmp1-1.xx.fbcdn.net/v/t39.30808-6/254814198_1701275503388922_795326169452014118_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5614bc&_nc_ohc=CRPQuva4fqUAX8BBhwW&_nc_ht=scontent-gmp1-1.xx&oh=00_AfCUDnZyjnM1bWfAcJ3LCtSYs-9Dj1VR6Io_pegEdYjNuw&oe=650F0934" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover;">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="./img/ourWork2.jpg" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover;">
                 <div class="card-img-overlay">
               </div>
               </div>
@@ -254,25 +260,25 @@
               </div>
             </div>
             <!-- photo card 9 -->
-            <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
               <div class="card">
-                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://scontent-gmp1-1.xx.fbcdn.net/v/t1.18169-9/11141351_377492579100561_1475179639626603936_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=rRxFybNEjO0AX-LY416&_nc_ht=scontent-gmp1-1.xx&oh=00_AfCc-SHrHAmisnCiYeSjqtuPG4W4K4MaoAuL14gqkaip8Q&oe=6535E796" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="250" src="./img/ourWork22.jpg" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <div class="card-img-overlay" style="object-fit: cover;">
               </div>
               </div>
             </div>
             <!-- photo card 10 -->
-            <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
               <div class="card">
-                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://scontent-gmp1-1.xx.fbcdn.net/v/t1.18169-9/11146252_368403993342753_1179418631951657294_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=ba80b0&_nc_ohc=ogdhiyma3UkAX872N4q&_nc_ht=scontent-gmp1-1.xx&oh=00_AfDTLwOBC_94uWY7UF5S_9BYXoY2OV9JMg2D9XfZFz9o1Q&oe=6535DEE6" alt="The team" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="./img/ourWork23.jpg" alt="The team" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
                 <div class="card-img-overlay" style="object-fit: cover;">
               </div>
               </div>
             </div>
             <!--photo card 11 -->
-            <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 507.992px;">
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 507.992px;">
               <div class="card">
-                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://scontent-gmp1-1.xx.fbcdn.net/v/t1.6435-9/86643508_1224365234413287_2599509894839140352_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=u-tIBGjvnYwAX9aFGAY&_nc_ht=scontent-gmp1-1.xx&oh=00_AfAXEJJzlmcBjLdpwBP0FHJtJAloxdaqQ8ATlRswr3vESA&oe=6530D785" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover;">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="./img/ourWork11.jpg" alt="interior wallpaper decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover;">
               </div>
             </div>
             <!-- photo card 12 -->
@@ -293,37 +299,30 @@
               </div>
             </div>
             <!-- card 14 -->
-            <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 507.992px;">
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 507.992px;">
               <div class="card">
-                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://scontent-gmp1-1.xx.fbcdn.net/v/t1.18169-9/10922621_337060689810417_8454610989315175884_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=DVl5-ikyG84AX8fEFjD&_nc_ht=scontent-gmp1-1.xx&oh=00_AfAHqzycMw9MobOzn7yW1ScZomNnyYrtlm7_l8LGQKgtew&oe=6535DBED" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: fit;">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="./img/ourWork21.jpg" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover;">
               </div>
             </div>
             <!-- card 15 -->
-            <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 507.992px;">
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 507.992px;">
               <div class="card">
-                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://scontent-gmp1-1.xx.fbcdn.net/v/t1.18169-9/10599373_337062529810233_5768143048626814896_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=KiqUzsT1vVEAX_kRNG5&_nc_ht=scontent-gmp1-1.xx&oh=00_AfCpn-e5L4gc3ggbHKXZzV-PCBo9xkcpDhVPd9At5VhbmQ&oe=6535F92D" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: fit;">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="./img/ourWork8.jpg" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: fit;">
               </div>
             </div>
             <!-- card 16 -->
-            <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 507.992px;">
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 507.992px;">
               <div class="card">
-                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://scontent-gmp1-1.xx.fbcdn.net/v/t1.18169-9/10858494_337063579810128_7240700297874152004_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=9HVn5LsHvlUAX_WPl4F&_nc_ht=scontent-gmp1-1.xx&oh=00_AfDDXQAqNzJ9cOVCiyn9ryDCXLttq6DWQjvUdMXsleKO-g&oe=6535DE5A" alt=" decorated window" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: fit;">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="./img/ourWork9.jpg" alt=" decorated window" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: fit;">
               </div>
             </div>
-            <!-- card 1 -->
-            <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+            <!-- card 17 -->
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
               <div class="card">
-                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://scontent-gmp1-1.xx.fbcdn.net/v/t1.6435-9/50717495_952773618239118_3966269600546422784_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=y-tdTIX-LvgAX-ZU-Ue&_nc_ht=scontent-gmp1-1.xx&oh=00_AfDMLUjBxOxaJiRUkTyXSDKUbLQI4NQkgt0a1Rk9rF2NGw&oe=6530C8EC" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <div class="card-img-overlay">
-                  <!-- <h5 class="card-title text-primary-dark fw-bold">Interior Decoration</h5> -->
-              </div>
-                <div class="card-body bg-light">
-                  <h5 class="card-title">Interior Decoration</h5>
-                  <!-- <p class="card-text"></p> -->
-                </div>
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="./img/finishes.jpg" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover;">
               </div>
             </div>
-            <!-- card 2 -->
+            <!-- card 18 -->
             <div class="col-sm-6 col-lg-3 col-md-4 mb-4 " style="position: absolute; left: 0%; top: 337.505px;">
               <div class="card p-3 bg-light">
                 <figure class="p-3 mb-0">
@@ -336,32 +335,23 @@
                 </figure>
               </div>
             </div>
-            <!-- card 3 -->
-            <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 507.992px;">
+            <!-- card 19 -->
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 507.992px;">
               <div class="card">
-                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://scontent-gmp1-1.xx.fbcdn.net/v/t1.18169-9/13256463_490463041136847_5854161718437123567_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ZHaw32VAA8cAX8PeZkx&_nc_ht=scontent-gmp1-1.xx&oh=00_AfBBjoQ7IWH_g9S1Up6D_SCrTatwLg5aqA0SqWCoSTDXXw&oe=6530C374" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
-        
-                <div class="card-body bg-light">
-                  <h5 class="card-title">Exterior decoration</h5>
-                  <!-- <p class="card-text"></p> -->
-                </div>
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="./img/ourWork13.jpg" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
               </div>
             </div>
-            <!-- card 4 -->
+            <!-- card 20 -->
             <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 885.48px;">
               <div class="card bg-primary text-white text-center p-3">
                 <figure class="mb-0">
                   <blockquote class="blockquote">
                     <p>Need help picking a colour scheme?</p>
                   </blockquote>
-                  <!-- <figcaption class="blockquote-footer mb-0 text-white">
-                    Someone famous in <cite title="Source Title">Source Title</cite>
-                  </figcaption>
-                </figure> -->
               </div>
             </div>
-            <!-- card 5 -->
-            <div class="col-sm-6 col-lg-3 col-md-4 mb-4 " style="position: absolute; left: 0%; top: 1023.99px;">
+            <!-- card 21 -->
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4 " style="position: absolute; left: 0%; top: 1023.99px;">
               <div class="card text-center">
                 <div class="card-body bg-secondary">
                   <h5 class="card-title">Do you have a project?</h5>
@@ -369,13 +359,13 @@
                 </div>
               </div>
             </div>
-            <!-- card 6 -->
-            <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 1177.48px;">
+            <!-- card 22 -->
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 1177.48px;">
               <div class="card">
-                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://scontent-gmp1-1.xx.fbcdn.net/v/t1.18169-9/11825157_403884516461367_4223700382441182999_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=UCpYTJ-z1C4AX8sahE4&_nc_ht=scontent-gmp1-1.xx&oh=00_AfDlGQ6tYgf4iwrW0l6KSdBSq_uV5YCCx9eBl3C0pJAoPw&oe=6530E615" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="./img/ourWork16.jpg" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
               </div>
             </div>
-            <!-- card 7 -->
+            <!-- card 23 -->
             <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 1463.03px;">
               <div class="card p-3 text-end">
                 <figure class="mb-0">
@@ -388,14 +378,99 @@
                 </figure>
               </div>
             </div>
-            <!-- card 8 -->
-            <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 1601.54px;">
+            <!-- card 24 -->
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 1601.54px;">
               <div class="card">
                 <div class="card-body bg-accent">
                   <p class="card-text text-light">Would you like to know more?</p>
                 </div>
               </div>
             </div>
+
+            <!-- photo card 25 -->
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+              <div class="card">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="./img/ourWork3.jpg" alt="interior wallpaper decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover; position: center;">
+                <div class="card-img-overlay">
+              </div>
+                <div class="card-body bg-light">
+                  <h5 class="card-title">Interior Decoration</h5>
+                </div>
+              </div>
+            </div>
+            <!-- card 26 -->
+            <div class="col-sm-6 col-lg-3 col-md-4 mb-4 " style="position: absolute; left: 0%; top: 337.505px;">
+              <div class="card p-3 bg-light">
+                <figure class="p-3 mb-0">
+                  <blockquote class="blockquote">
+                    <p>Color is a power which directly influences the soul.</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mb-0 text-muted">
+                    Wassily Kandinsky
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <!-- photo card 27 -->
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 507.992px;">
+              <div class="card">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="./img/ourWork12.jpg" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: cover;">
+        
+                <div class="card-body bg-light">
+                  <h5 class="card-title">Staircases</h5>
+                </div>
+              </div>
+            </div>
+            <!-- photo card 28 -->
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 1177.48px;">
+              <div class="card">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="img/ourWork19.jpg" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: fit;">
+              </div>
+            </div>
+            <!-- photo card 29 -->
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 1177.48px;">
+              <div class="card">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="./img/ourWork24.jpg" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: fit;">
+              </div>
+            </div>
+            <!-- photo card 30 -->
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+              <div class="card">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="./img/ourWork25.jpg" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" style="object-fit: fit;">
+                <div class="card-img-overlay">
+              </div>
+              </div>
+            </div>
+            <!-- text card 31 -->
+            <div class="col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 1463.03px;">
+              <div class="card p-3 text-end bg-accent ">
+                <figure class="mb-0 text-light">
+                  <blockquote class="blockquote">
+                    <p>Home is not a place… it’s a feeling.</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mb-0 text-light">
+                    Cecelia Ahern
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <!-- photo card 32 -->
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+              <div class="card">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="250" src="./img/ourWork26.jpg" alt="interior decoration" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <div class="card-img-overlay" style="object-fit: cover;">
+              </div>
+              </div>
+            </div>
+            <!-- photo card 33 -->
+            <div class="ourWorkImg col-sm-6 col-lg-3 col-md-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+              <div class="card">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="./img/ourWork27.jpg" alt="The team" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <div class="card-img-overlay" style="object-fit: cover;">
+              </div>
+              </div>
+            </div>
+           
           </div>
       </div>
     </div>
@@ -556,6 +631,7 @@
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 
     <!-- scrollToTop   -->
-    <script src="scrollTop.js"></script>
+    <script src="custom js/scrollTop.js"></script>
+    
   </body>
 </html>
